@@ -1,12 +1,10 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2009-02-22T22:08:06
+# Project created by QtCreator 2009-02-24T15:40:23
 #
 #-------------------------------------------------
 
-QT       += xml xmlpatterns
-
-TARGET = BraveNewModder
+TARGET = Bravenewmodder
 TEMPLATE = app
 
 

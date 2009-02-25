@@ -18,6 +18,9 @@ public:
 
 private:
     Ui::MainWindowClass *ui;
+
+private slots:
+    void on_spinBox_customContextMenuRequested(QPoint pos);
 };
 
 #endif // MAINWINDOW_H
