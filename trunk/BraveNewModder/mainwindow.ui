@@ -36,7 +36,7 @@
      </sizepolicy>
     </property>
     <property name="currentIndex">
-     <number>9</number>
+     <number>4</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideLeft</enum>
@@ -621,7 +621,7 @@ p, li { white-space: pre-wrap; }
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_20">
        <attribute name="title">
@@ -665,17 +665,12 @@ p, li { white-space: pre-wrap; }
         <x>0</x>
         <y>0</y>
         <width>781</width>
-        <height>411</height>
+        <height>441</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
-      <widget class="QWidget" name="tab_23">
-       <attribute name="title">
-        <string>Main</string>
-       </attribute>
-      </widget>
       <widget class="QWidget" name="tab_15">
        <attribute name="title">
         <string>Advisors</string>
@@ -733,7 +728,7 @@ p, li { white-space: pre-wrap; }
         <x>0</x>
         <y>0</y>
         <width>781</width>
-        <height>411</height>
+        <height>441</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -785,7 +780,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>783</width>
-     <height>22</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -804,7 +799,7 @@ p, li { white-space: pre-wrap; }
    </widget>
    <widget class="QMenu" name="menuScripts">
     <property name="title">
-     <string>Scripts</string>
+     <string>Tools</string>
     </property>
     <addaction name="actionUnlimited_play"/>
    </widget>

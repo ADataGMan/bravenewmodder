@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Tue Feb 24 21:08:44 2009
+** Created: Tue Feb 24 19:18:12 2009
 **      by: Qt User Interface Compiler version 4.4.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -74,7 +74,6 @@ public:
     QWidget *tab_5;
     QWidget *tab_6;
     QTabWidget *tabWidget_3;
-    QWidget *tab_23;
     QWidget *tab_15;
     QWidget *tab_16;
     QWidget *tab_21;
@@ -287,10 +286,7 @@ public:
     tab_6->setObjectName(QString::fromUtf8("tab_6"));
     tabWidget_3 = new QTabWidget(tab_6);
     tabWidget_3->setObjectName(QString::fromUtf8("tabWidget_3"));
-    tabWidget_3->setGeometry(QRect(0, 0, 781, 411));
-    tab_23 = new QWidget();
-    tab_23->setObjectName(QString::fromUtf8("tab_23"));
-    tabWidget_3->addTab(tab_23, QString());
+    tabWidget_3->setGeometry(QRect(0, 0, 781, 441));
     tab_15 = new QWidget();
     tab_15->setObjectName(QString::fromUtf8("tab_15"));
     tabWidget_3->addTab(tab_15, QString());
@@ -323,7 +319,7 @@ public:
     tab_10->setObjectName(QString::fromUtf8("tab_10"));
     tabWidget_4 = new QTabWidget(tab_10);
     tabWidget_4->setObjectName(QString::fromUtf8("tabWidget_4"));
-    tabWidget_4->setGeometry(QRect(0, 0, 781, 411));
+    tabWidget_4->setGeometry(QRect(0, 0, 781, 441));
     tab_17 = new QWidget();
     tab_17->setObjectName(QString::fromUtf8("tab_17"));
     tabWidget_4->addTab(tab_17, QString());
@@ -345,7 +341,7 @@ public:
     MainWindowClass->setCentralWidget(centralWidget);
     menuBar = new QMenuBar(MainWindowClass);
     menuBar->setObjectName(QString::fromUtf8("menuBar"));
-    menuBar->setGeometry(QRect(0, 0, 783, 22));
+    menuBar->setGeometry(QRect(0, 0, 783, 19));
     menuFile = new QMenu(menuBar);
     menuFile->setObjectName(QString::fromUtf8("menuFile"));
     menuSettings = new QMenu(menuBar);
@@ -368,9 +364,9 @@ public:
 
     retranslateUi(MainWindowClass);
 
-    tabWidget->setCurrentIndex(9);
-    tabWidget_2->setCurrentIndex(0);
-    tabWidget_3->setCurrentIndex(4);
+    tabWidget->setCurrentIndex(4);
+    tabWidget_2->setCurrentIndex(2);
+    tabWidget_3->setCurrentIndex(0);
     tabWidget_4->setCurrentIndex(0);
 
 
@@ -477,7 +473,6 @@ public:
     tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindowClass", "Common", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindowClass", "Decisions", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindowClass", "Events", 0, QApplication::UnicodeUTF8));
-    tabWidget_3->setTabText(tabWidget_3->indexOf(tab_23), QApplication::translate("MainWindowClass", "Main", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_15), QApplication::translate("MainWindowClass", "Advisors", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindowClass", "Countries", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_21), QApplication::translate("MainWindowClass", "Diplomacy", 0, QApplication::UnicodeUTF8));
@@ -495,7 +490,7 @@ public:
     tabWidget->setTabText(tabWidget->indexOf(tab_11), QApplication::translate("MainWindowClass", "Savegames", 0, QApplication::UnicodeUTF8));
     menuFile->setTitle(QApplication::translate("MainWindowClass", "File", 0, QApplication::UnicodeUTF8));
     menuSettings->setTitle(QApplication::translate("MainWindowClass", "Settings", 0, QApplication::UnicodeUTF8));
-    menuScripts->setTitle(QApplication::translate("MainWindowClass", "Scripts", 0, QApplication::UnicodeUTF8));
+    menuScripts->setTitle(QApplication::translate("MainWindowClass", "Tools", 0, QApplication::UnicodeUTF8));
     menuHelp->setTitle(QApplication::translate("MainWindowClass", "Help", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
