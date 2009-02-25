@@ -1413,12 +1413,32 @@ p, li { white-space: pre-wrap; }
           </rect>
          </property>
          <property name="currentIndex">
-          <number>3</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="tab_28">
           <attribute name="title">
            <string>Flags</string>
           </attribute>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>231</width>
+             <height>161</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;A list of triggers, effects,scopes &lt;br /&gt;will be displayed in the first few &lt;br /&gt;tabs, while in the index a &lt;br /&gt;list of all flags, modifiers, &lt;br /&gt;variables, and country data &lt;br /&gt;such as tags, cultures, &lt;br /&gt;trade goods will be displayed here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+          </widget>
          </widget>
          <widget class="QWidget" name="tab_29">
           <attribute name="title">
@@ -1447,6 +1467,19 @@ p, li { white-space: pre-wrap; }
         <width>1021</width>
         <height>81</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>660</y>
+        <width>411</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>This space will display information based on a selection from the reference menu</string>
       </property>
      </widget>
     </widget>

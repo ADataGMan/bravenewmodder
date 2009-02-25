@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Wed Feb 25 04:28:47 2009
+** Created: Wed Feb 25 04:50:11 2009
 **      by: Qt User Interface Compiler version 4.4.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -135,10 +135,12 @@ public:
     QWidget *tab_27;
     QTabWidget *tabWidget_6;
     QWidget *tab_28;
+    QLabel *label_17;
     QWidget *tab_29;
     QWidget *tab_30;
     QWidget *tab_31;
     QTextBrowser *textBrowser_2;
+    QLabel *label_16;
     QWidget *tab_6;
     QTabWidget *tabWidget_3;
     QWidget *tab_15;
@@ -524,6 +526,10 @@ public:
     tabWidget_6->setGeometry(QRect(4, 0, 261, 601));
     tab_28 = new QWidget();
     tab_28->setObjectName(QString::fromUtf8("tab_28"));
+    label_17 = new QLabel(tab_28);
+    label_17->setObjectName(QString::fromUtf8("label_17"));
+    label_17->setGeometry(QRect(0, 10, 231, 161));
+    label_17->setTextFormat(Qt::RichText);
     tabWidget_6->addTab(tab_28, QString());
     tab_29 = new QWidget();
     tab_29->setObjectName(QString::fromUtf8("tab_29"));
@@ -538,6 +544,9 @@ public:
     textBrowser_2 = new QTextBrowser(tab_5);
     textBrowser_2->setObjectName(QString::fromUtf8("textBrowser_2"));
     textBrowser_2->setGeometry(QRect(0, 650, 1021, 81));
+    label_16 = new QLabel(tab_5);
+    label_16->setObjectName(QString::fromUtf8("label_16"));
+    label_16->setGeometry(QRect(20, 660, 411, 21));
     tabWidget->addTab(tab_5, QString());
     tab_6 = new QWidget();
     tab_6->setObjectName(QString::fromUtf8("tab_6"));
@@ -621,7 +630,7 @@ public:
     tabWidget->setCurrentIndex(3);
     tabWidget_2->setCurrentIndex(2);
     tabWidget_5->setCurrentIndex(3);
-    tabWidget_6->setCurrentIndex(3);
+    tabWidget_6->setCurrentIndex(0);
     tabWidget_3->setCurrentIndex(0);
     tabWidget_4->setCurrentIndex(2);
 
@@ -813,11 +822,17 @@ public:
     tabWidget_5->setTabText(tabWidget_5->indexOf(tab_23), QApplication::translate("MainWindowClass", "Triggers", 0, QApplication::UnicodeUTF8));
     tabWidget_5->setTabText(tabWidget_5->indexOf(tab_25), QApplication::translate("MainWindowClass", "Effects", 0, QApplication::UnicodeUTF8));
     tabWidget_5->setTabText(tabWidget_5->indexOf(tab_26), QApplication::translate("MainWindowClass", "Scope", 0, QApplication::UnicodeUTF8));
+    label_17->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">A list of triggers, effects,scopes <br />will be displayed in the first few <br />tabs, while in the index a <br />list of all flags, modifiers, <br />variables, and country data <br />such as tags, cultures, <br />trade goods will be displayed here</span></p></body></html>", 0, QApplication::UnicodeUTF8));
     tabWidget_6->setTabText(tabWidget_6->indexOf(tab_28), QApplication::translate("MainWindowClass", "Flags", 0, QApplication::UnicodeUTF8));
     tabWidget_6->setTabText(tabWidget_6->indexOf(tab_29), QApplication::translate("MainWindowClass", "Modifiers", 0, QApplication::UnicodeUTF8));
     tabWidget_6->setTabText(tabWidget_6->indexOf(tab_30), QApplication::translate("MainWindowClass", "Variables", 0, QApplication::UnicodeUTF8));
     tabWidget_6->setTabText(tabWidget_6->indexOf(tab_31), QApplication::translate("MainWindowClass", "Data", 0, QApplication::UnicodeUTF8));
     tabWidget_5->setTabText(tabWidget_5->indexOf(tab_27), QApplication::translate("MainWindowClass", "Index", 0, QApplication::UnicodeUTF8));
+    label_16->setText(QApplication::translate("MainWindowClass", "This space will display information based on a selection from the reference menu", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindowClass", "Events", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_15), QApplication::translate("MainWindowClass", "Advisors", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindowClass", "Countries", 0, QApplication::UnicodeUTF8));
