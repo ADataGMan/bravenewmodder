@@ -26,7 +26,7 @@
       <x>0</x>
       <y>0</y>
       <width>1031</width>
-      <height>671</height>
+      <height>751</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -600,6 +600,16 @@ p, li { white-space: pre-wrap; }
        <string>Normal</string>
       </property>
      </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>-5</x>
+        <y>571</y>
+        <width>1031</width>
+        <height>161</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
@@ -610,8 +620,8 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>781</width>
-        <height>441</height>
+        <width>1031</width>
+        <height>731</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -657,7 +667,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>310</x>
         <y>0</y>
         <width>181</width>
         <height>31</height>
@@ -674,7 +684,7 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>80</x>
          <y>10</y>
-         <width>16</width>
+         <width>51</width>
          <height>21</height>
         </rect>
        </property>
@@ -730,8 +740,8 @@ p, li { white-space: pre-wrap; }
      <widget class="QComboBox" name="comboBox">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>10</y>
+        <x>150</x>
+        <y>0</y>
         <width>151</width>
         <height>21</height>
        </rect>
@@ -751,7 +761,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>10</y>
+        <y>0</y>
         <width>141</width>
         <height>21</height>
        </rect>
@@ -770,8 +780,8 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>0</x>
         <y>30</y>
-        <width>61</width>
-        <height>411</height>
+        <width>71</width>
+        <height>621</height>
        </rect>
       </property>
       <column>
@@ -791,7 +801,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QScrollArea" name="scrollArea">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>70</x>
         <y>30</y>
         <width>701</width>
         <height>621</height>
@@ -812,9 +822,9 @@ p, li { white-space: pre-wrap; }
        <widget class="QGroupBox" name="groupBox_2">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>70</y>
-          <width>641</width>
+          <x>0</x>
+          <y>40</y>
+          <width>661</width>
           <height>81</height>
          </rect>
         </property>
@@ -826,8 +836,8 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>0</x>
            <y>20</y>
-           <width>641</width>
-           <height>71</height>
+           <width>671</width>
+           <height>81</height>
           </rect>
          </property>
         </widget>
@@ -835,9 +845,9 @@ p, li { white-space: pre-wrap; }
        <widget class="QGroupBox" name="groupBox_3">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>160</y>
-          <width>641</width>
+          <x>0</x>
+          <y>120</y>
+          <width>661</width>
           <height>71</height>
          </rect>
         </property>
@@ -849,7 +859,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>0</x>
            <y>20</y>
-           <width>641</width>
+           <width>661</width>
            <height>61</height>
           </rect>
          </property>
@@ -860,9 +870,9 @@ p, li { white-space: pre-wrap; }
        <widget class="QGroupBox" name="groupBox_4">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>250</y>
-          <width>641</width>
+          <x>0</x>
+          <y>190</y>
+          <width>661</width>
           <height>81</height>
          </rect>
         </property>
@@ -874,7 +884,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>0</x>
            <y>20</y>
-           <width>641</width>
+           <width>661</width>
            <height>21</height>
           </rect>
          </property>
@@ -893,7 +903,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>0</x>
            <y>40</y>
-           <width>641</width>
+           <width>661</width>
            <height>41</height>
           </rect>
          </property>
@@ -905,10 +915,10 @@ p, li { white-space: pre-wrap; }
        <widget class="QGroupBox" name="groupBox_5">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>340</y>
-          <width>611</width>
-          <height>81</height>
+          <x>0</x>
+          <y>270</y>
+          <width>661</width>
+          <height>71</height>
          </rect>
         </property>
         <property name="title">
@@ -919,7 +929,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>0</x>
            <y>40</y>
-           <width>611</width>
+           <width>661</width>
            <height>41</height>
           </rect>
          </property>
@@ -929,7 +939,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>60</x>
            <y>20</y>
-           <width>551</width>
+           <width>601</width>
            <height>21</height>
           </rect>
          </property>
@@ -955,8 +965,8 @@ p, li { white-space: pre-wrap; }
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>420</y>
-          <width>611</width>
+          <y>340</y>
+          <width>661</width>
           <height>71</height>
          </rect>
         </property>
@@ -968,7 +978,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>0</x>
            <y>40</y>
-           <width>611</width>
+           <width>661</width>
            <height>41</height>
           </rect>
          </property>
@@ -978,7 +988,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>60</x>
            <y>20</y>
-           <width>551</width>
+           <width>601</width>
            <height>21</height>
           </rect>
          </property>
@@ -1005,8 +1015,8 @@ p, li { white-space: pre-wrap; }
          <rect>
           <x>670</x>
           <y>10</y>
-          <width>20</width>
-          <height>591</height>
+          <width>21</width>
+          <height>601</height>
          </rect>
         </property>
         <property name="orientation">
@@ -1018,8 +1028,8 @@ p, li { white-space: pre-wrap; }
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>651</width>
-          <height>80</height>
+          <width>661</width>
+          <height>41</height>
          </rect>
         </property>
         <property name="title">
@@ -1029,8 +1039,8 @@ p, li { white-space: pre-wrap; }
          <property name="geometry">
           <rect>
            <x>340</x>
-           <y>30</y>
-           <width>301</width>
+           <y>20</y>
+           <width>331</width>
            <height>21</height>
           </rect>
          </property>
@@ -1041,7 +1051,7 @@ p, li { white-space: pre-wrap; }
         <widget class="QSpinBox" name="spinBox_16">
          <property name="geometry">
           <rect>
-           <x>230</x>
+           <x>280</x>
            <y>20</y>
            <width>61</width>
            <height>21</height>
@@ -1054,7 +1064,7 @@ p, li { white-space: pre-wrap; }
         <widget class="QComboBox" name="comboBox_4">
          <property name="geometry">
           <rect>
-           <x>110</x>
+           <x>100</x>
            <y>20</y>
            <width>91</width>
            <height>21</height>
@@ -1119,8 +1129,8 @@ p, li { white-space: pre-wrap; }
         <widget class="QComboBox" name="comboBox_3">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>30</y>
+           <x>190</x>
+           <y>20</y>
            <width>91</width>
            <height>21</height>
           </rect>
@@ -1184,8 +1194,8 @@ p, li { white-space: pre-wrap; }
         <widget class="QSpinBox" name="spinBox_15">
          <property name="geometry">
           <rect>
-           <x>10</x>
-           <y>10</y>
+           <x>0</x>
+           <y>20</y>
            <width>101</width>
            <height>21</height>
           </rect>
@@ -1198,19 +1208,245 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>410</y>
+          <width>661</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Option C</string>
+        </property>
+        <widget class="QTextEdit" name="textEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>661</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_7">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>20</y>
+           <width>601</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Title of Option C</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_8">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>AI Chance</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>480</y>
+          <width>661</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Option D</string>
+        </property>
+        <widget class="QTextEdit" name="textEdit_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>661</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_9">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>20</y>
+           <width>601</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Title of Option D</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>AI Chance</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>550</y>
+          <width>661</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Option E</string>
+        </property>
+        <widget class="QTextEdit" name="textEdit_7">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>661</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_11">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>20</y>
+           <width>601</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Title of Option E</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_12">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>AI Chance</string>
+         </property>
+        </widget>
+       </widget>
       </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_8">
       <property name="geometry">
        <rect>
-        <x>760</x>
+        <x>770</x>
         <y>0</y>
-        <width>271</width>
+        <width>261</width>
         <height>651</height>
        </rect>
       </property>
       <property name="title">
        <string>Reference</string>
+      </property>
+      <widget class="QTabWidget" name="tabWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>271</width>
+         <height>631</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>3</number>
+       </property>
+       <property name="elideMode">
+        <enum>Qt::ElideLeft</enum>
+       </property>
+       <widget class="QWidget" name="tab_23">
+        <attribute name="title">
+         <string>Triggers</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_25">
+        <attribute name="title">
+         <string>Effects</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_26">
+        <attribute name="title">
+         <string>Scope</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_27">
+        <attribute name="title">
+         <string>Index</string>
+        </attribute>
+        <widget class="QTabWidget" name="tabWidget_6">
+         <property name="geometry">
+          <rect>
+           <x>4</x>
+           <y>0</y>
+           <width>261</width>
+           <height>601</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <widget class="QWidget" name="tab_28">
+          <attribute name="title">
+           <string>Flags</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="tab_29">
+          <attribute name="title">
+           <string>Modifiers</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="tab_30">
+          <attribute name="title">
+           <string>Variables</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="tab_31">
+          <attribute name="title">
+           <string>Data</string>
+          </attribute>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>650</y>
+        <width>1021</width>
+        <height>81</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -1279,7 +1515,7 @@ p, li { white-space: pre-wrap; }
     </widget>
     <widget class="QWidget" name="tab_10">
      <attribute name="title">
-      <string>Index</string>
+      <string>Reference</string>
      </attribute>
      <widget class="QTabWidget" name="tabWidget_4">
       <property name="geometry">
@@ -1291,7 +1527,7 @@ p, li { white-space: pre-wrap; }
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_17">
        <attribute name="title">
@@ -1315,22 +1551,6 @@ p, li { white-space: pre-wrap; }
       <string>********</string>
      </attribute>
     </widget>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>670</y>
-      <width>1031</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Panel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Sunken</enum>
-    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
