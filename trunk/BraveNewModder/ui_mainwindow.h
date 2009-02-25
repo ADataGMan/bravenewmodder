@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Wed Feb 25 01:23:25 2009
+** Created: Wed Feb 25 02:03:46 2009
 **      by: Qt User Interface Compiler version 4.4.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -24,6 +24,7 @@
 #include <QtGui/QPlainTextEdit>
 #include <QtGui/QRadioButton>
 #include <QtGui/QScrollArea>
+#include <QtGui/QSlider>
 #include <QtGui/QSpinBox>
 #include <QtGui/QTabWidget>
 #include <QtGui/QTextBrowser>
@@ -82,7 +83,6 @@ public:
     QWidget *tab_14;
     QWidget *tab_4;
     QWidget *tab_5;
-    QTextBrowser *textBrowser_3;
     QGroupBox *groupBox;
     QRadioButton *radioButton_2;
     QRadioButton *radioButton;
@@ -92,11 +92,6 @@ public:
     QTreeWidget *treeWidget;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
-    QComboBox *comboBox_3;
-    QComboBox *comboBox_4;
-    QSpinBox *spinBox_15;
-    QSpinBox *spinBox_16;
-    QLineEdit *lineEdit;
     QGroupBox *groupBox_2;
     QTextEdit *textEdit;
     QGroupBox *groupBox_3;
@@ -112,6 +107,14 @@ public:
     QTextEdit *textEdit_4;
     QLineEdit *lineEdit_5;
     QLineEdit *lineEdit_6;
+    QSlider *verticalSlider;
+    QGroupBox *groupBox_7;
+    QLineEdit *lineEdit;
+    QSpinBox *spinBox_16;
+    QComboBox *comboBox_4;
+    QComboBox *comboBox_3;
+    QSpinBox *spinBox_15;
+    QGroupBox *groupBox_8;
     QWidget *tab_6;
     QTabWidget *tabWidget_3;
     QWidget *tab_15;
@@ -140,8 +143,8 @@ public:
     {
     if (MainWindowClass->objectName().isEmpty())
         MainWindowClass->setObjectName(QString::fromUtf8("MainWindowClass"));
-    MainWindowClass->resize(780, 562);
-    QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    MainWindowClass->resize(1024, 768);
+    QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
     sizePolicy.setHorizontalStretch(0);
     sizePolicy.setVerticalStretch(0);
     sizePolicy.setHeightForWidth(MainWindowClass->sizePolicy().hasHeightForWidth());
@@ -164,9 +167,12 @@ public:
     centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
     tabWidget = new QTabWidget(centralWidget);
     tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-    tabWidget->setGeometry(QRect(0, 0, 781, 461));
-    sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
-    tabWidget->setSizePolicy(sizePolicy);
+    tabWidget->setGeometry(QRect(0, 0, 1031, 671));
+    QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    sizePolicy1.setHorizontalStretch(0);
+    sizePolicy1.setVerticalStretch(0);
+    sizePolicy1.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
+    tabWidget->setSizePolicy(sizePolicy1);
     tabWidget->setElideMode(Qt::ElideLeft);
     tab = new QWidget();
     tab->setObjectName(QString::fromUtf8("tab"));
@@ -305,8 +311,8 @@ public:
     tabWidget_2 = new QTabWidget(tab_3);
     tabWidget_2->setObjectName(QString::fromUtf8("tabWidget_2"));
     tabWidget_2->setGeometry(QRect(0, 0, 781, 441));
-    sizePolicy.setHeightForWidth(tabWidget_2->sizePolicy().hasHeightForWidth());
-    tabWidget_2->setSizePolicy(sizePolicy);
+    sizePolicy1.setHeightForWidth(tabWidget_2->sizePolicy().hasHeightForWidth());
+    tabWidget_2->setSizePolicy(sizePolicy1);
     tab_20 = new QWidget();
     tab_20->setObjectName(QString::fromUtf8("tab_20"));
     tabWidget_2->addTab(tab_20, QString());
@@ -325,9 +331,6 @@ public:
     tabWidget->addTab(tab_4, QString());
     tab_5 = new QWidget();
     tab_5->setObjectName(QString::fromUtf8("tab_5"));
-    textBrowser_3 = new QTextBrowser(tab_5);
-    textBrowser_3->setObjectName(QString::fromUtf8("textBrowser_3"));
-    textBrowser_3->setGeometry(QRect(670, 0, 101, 431));
     groupBox = new QGroupBox(tab_5);
     groupBox->setObjectName(QString::fromUtf8("groupBox"));
     groupBox->setGeometry(QRect(290, 0, 181, 31));
@@ -341,11 +344,8 @@ public:
     comboBox_2 = new QComboBox(groupBox);
     comboBox_2->setObjectName(QString::fromUtf8("comboBox_2"));
     comboBox_2->setGeometry(QRect(140, 12, 41, 20));
-    QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
-    sizePolicy1.setHorizontalStretch(0);
-    sizePolicy1.setVerticalStretch(0);
-    sizePolicy1.setHeightForWidth(comboBox_2->sizePolicy().hasHeightForWidth());
-    comboBox_2->setSizePolicy(sizePolicy1);
+    sizePolicy.setHeightForWidth(comboBox_2->sizePolicy().hasHeightForWidth());
+    comboBox_2->setSizePolicy(sizePolicy);
     comboBox = new QComboBox(tab_5);
     comboBox->setObjectName(QString::fromUtf8("comboBox"));
     comboBox->setGeometry(QRect(140, 10, 151, 21));
@@ -359,45 +359,30 @@ public:
     treeWidget->setGeometry(QRect(0, 30, 61, 411));
     scrollArea = new QScrollArea(tab_5);
     scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-    scrollArea->setGeometry(QRect(60, 30, 611, 411));
+    scrollArea->setGeometry(QRect(60, 30, 701, 621));
     scrollArea->setWidgetResizable(true);
     scrollAreaWidgetContents = new QWidget();
     scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-    scrollAreaWidgetContents->setGeometry(QRect(0, 0, 607, 407));
-    comboBox_3 = new QComboBox(scrollAreaWidgetContents);
-    comboBox_3->setObjectName(QString::fromUtf8("comboBox_3"));
-    comboBox_3->setGeometry(QRect(100, 0, 91, 21));
-    comboBox_4 = new QComboBox(scrollAreaWidgetContents);
-    comboBox_4->setObjectName(QString::fromUtf8("comboBox_4"));
-    comboBox_4->setGeometry(QRect(190, 0, 91, 21));
-    spinBox_15 = new QSpinBox(scrollAreaWidgetContents);
-    spinBox_15->setObjectName(QString::fromUtf8("spinBox_15"));
-    spinBox_15->setGeometry(QRect(0, 0, 101, 21));
-    spinBox_15->setMaximum(1);
-    spinBox_16 = new QSpinBox(scrollAreaWidgetContents);
-    spinBox_16->setObjectName(QString::fromUtf8("spinBox_16"));
-    spinBox_16->setGeometry(QRect(280, 0, 61, 21));
-    lineEdit = new QLineEdit(scrollAreaWidgetContents);
-    lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-    lineEdit->setGeometry(QRect(340, 0, 271, 21));
+    scrollAreaWidgetContents->setGeometry(QRect(0, 0, 697, 617));
     groupBox_2 = new QGroupBox(scrollAreaWidgetContents);
     groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-    groupBox_2->setGeometry(QRect(0, 20, 611, 81));
+    groupBox_2->setGeometry(QRect(10, 70, 641, 81));
     textEdit = new QTextEdit(groupBox_2);
     textEdit->setObjectName(QString::fromUtf8("textEdit"));
-    textEdit->setGeometry(QRect(0, 20, 611, 71));
+    textEdit->setGeometry(QRect(0, 20, 641, 71));
     groupBox_3 = new QGroupBox(scrollAreaWidgetContents);
     groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-    groupBox_3->setGeometry(QRect(0, 100, 611, 71));
+    groupBox_3->setGeometry(QRect(10, 160, 641, 71));
     textEdit_2 = new QTextEdit(groupBox_3);
     textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
-    textEdit_2->setGeometry(QRect(0, 20, 611, 61));
+    textEdit_2->setGeometry(QRect(0, 20, 641, 61));
+    textEdit_2->raise();
     groupBox_4 = new QGroupBox(scrollAreaWidgetContents);
     groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-    groupBox_4->setGeometry(QRect(0, 170, 611, 81));
+    groupBox_4->setGeometry(QRect(20, 250, 641, 81));
     lineEdit_2 = new QLineEdit(groupBox_4);
     lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-    lineEdit_2->setGeometry(QRect(0, 20, 611, 21));
+    lineEdit_2->setGeometry(QRect(0, 20, 641, 21));
     QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Fixed);
     sizePolicy2.setHorizontalStretch(0);
     sizePolicy2.setVerticalStretch(0);
@@ -405,10 +390,10 @@ public:
     lineEdit_2->setSizePolicy(sizePolicy2);
     plainTextEdit = new QPlainTextEdit(groupBox_4);
     plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
-    plainTextEdit->setGeometry(QRect(0, 40, 611, 41));
+    plainTextEdit->setGeometry(QRect(0, 40, 641, 41));
     groupBox_5 = new QGroupBox(scrollAreaWidgetContents);
     groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
-    groupBox_5->setGeometry(QRect(0, 250, 611, 81));
+    groupBox_5->setGeometry(QRect(20, 340, 611, 81));
     textEdit_3 = new QTextEdit(groupBox_5);
     textEdit_3->setObjectName(QString::fromUtf8("textEdit_3"));
     textEdit_3->setGeometry(QRect(0, 40, 611, 41));
@@ -420,7 +405,7 @@ public:
     lineEdit_4->setGeometry(QRect(0, 20, 61, 21));
     groupBox_6 = new QGroupBox(scrollAreaWidgetContents);
     groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
-    groupBox_6->setGeometry(QRect(0, 330, 611, 71));
+    groupBox_6->setGeometry(QRect(0, 420, 611, 71));
     textEdit_4 = new QTextEdit(groupBox_6);
     textEdit_4->setObjectName(QString::fromUtf8("textEdit_4"));
     textEdit_4->setGeometry(QRect(0, 40, 611, 41));
@@ -430,7 +415,33 @@ public:
     lineEdit_6 = new QLineEdit(groupBox_6);
     lineEdit_6->setObjectName(QString::fromUtf8("lineEdit_6"));
     lineEdit_6->setGeometry(QRect(0, 20, 61, 21));
+    verticalSlider = new QSlider(scrollAreaWidgetContents);
+    verticalSlider->setObjectName(QString::fromUtf8("verticalSlider"));
+    verticalSlider->setGeometry(QRect(670, 10, 20, 591));
+    verticalSlider->setOrientation(Qt::Vertical);
+    groupBox_7 = new QGroupBox(scrollAreaWidgetContents);
+    groupBox_7->setObjectName(QString::fromUtf8("groupBox_7"));
+    groupBox_7->setGeometry(QRect(0, 0, 651, 80));
+    lineEdit = new QLineEdit(groupBox_7);
+    lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+    lineEdit->setGeometry(QRect(340, 30, 301, 21));
+    spinBox_16 = new QSpinBox(groupBox_7);
+    spinBox_16->setObjectName(QString::fromUtf8("spinBox_16"));
+    spinBox_16->setGeometry(QRect(230, 20, 61, 21));
+    comboBox_4 = new QComboBox(groupBox_7);
+    comboBox_4->setObjectName(QString::fromUtf8("comboBox_4"));
+    comboBox_4->setGeometry(QRect(110, 20, 91, 21));
+    comboBox_3 = new QComboBox(groupBox_7);
+    comboBox_3->setObjectName(QString::fromUtf8("comboBox_3"));
+    comboBox_3->setGeometry(QRect(30, 30, 91, 21));
+    spinBox_15 = new QSpinBox(groupBox_7);
+    spinBox_15->setObjectName(QString::fromUtf8("spinBox_15"));
+    spinBox_15->setGeometry(QRect(10, 10, 101, 21));
+    spinBox_15->setMaximum(1);
     scrollArea->setWidget(scrollAreaWidgetContents);
+    groupBox_8 = new QGroupBox(tab_5);
+    groupBox_8->setObjectName(QString::fromUtf8("groupBox_8"));
+    groupBox_8->setGeometry(QRect(760, 0, 271, 651));
     tabWidget->addTab(tab_5, QString());
     tab_6 = new QWidget();
     tab_6->setObjectName(QString::fromUtf8("tab_6"));
@@ -469,7 +480,7 @@ public:
     tab_10->setObjectName(QString::fromUtf8("tab_10"));
     tabWidget_4 = new QTabWidget(tab_10);
     tabWidget_4->setObjectName(QString::fromUtf8("tabWidget_4"));
-    tabWidget_4->setGeometry(QRect(0, 0, 781, 441));
+    tabWidget_4->setGeometry(QRect(0, 0, 1021, 651));
     tab_17 = new QWidget();
     tab_17->setObjectName(QString::fromUtf8("tab_17"));
     tabWidget_4->addTab(tab_17, QString());
@@ -485,13 +496,13 @@ public:
     tabWidget->addTab(tab_11, QString());
     textBrowser = new QTextBrowser(centralWidget);
     textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-    textBrowser->setGeometry(QRect(0, 460, 781, 81));
+    textBrowser->setGeometry(QRect(0, 670, 1031, 81));
     textBrowser->setFrameShape(QFrame::Panel);
     textBrowser->setFrameShadow(QFrame::Sunken);
     MainWindowClass->setCentralWidget(centralWidget);
     menuBar = new QMenuBar(MainWindowClass);
     menuBar->setObjectName(QString::fromUtf8("menuBar"));
-    menuBar->setGeometry(QRect(0, 0, 780, 19));
+    menuBar->setGeometry(QRect(0, 0, 1024, 19));
     menuFile = new QMenu(menuBar);
     menuFile->setObjectName(QString::fromUtf8("menuFile"));
     menuSettings = new QMenu(menuBar);
@@ -653,20 +664,20 @@ public:
     treeWidget->topLevelItem(0)->setText(0, QApplication::translate("MainWindowClass", "24001000", 0, QApplication::UnicodeUTF8));
 
     treeWidget->setSortingEnabled(__sortingEnabled);
-    comboBox_3->clear();
-    comboBox_3->insertItems(0, QStringList()
-     << QApplication::translate("MainWindowClass", "- Legacy ID", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "0 Government", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "1 Diplomacy", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "2 Economy", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "3 Military", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "4 Religion", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "5 Colonial", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "6 Custom", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "7 Custom", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "8 Custom", 0, QApplication::UnicodeUTF8)
-     << QApplication::translate("MainWindowClass", "9 Custom", 0, QApplication::UnicodeUTF8)
-    );
+    groupBox_2->setTitle(QApplication::translate("MainWindowClass", "Trigger", 0, QApplication::UnicodeUTF8));
+    groupBox_3->setTitle(QApplication::translate("MainWindowClass", "Mean Time To Happen", 0, QApplication::UnicodeUTF8));
+    groupBox_4->setTitle(QApplication::translate("MainWindowClass", "Title and description", 0, QApplication::UnicodeUTF8));
+    lineEdit_2->setText(QApplication::translate("MainWindowClass", "Displayed Title", 0, QApplication::UnicodeUTF8));
+    plainTextEdit->setPlainText(QApplication::translate("MainWindowClass", "Displayed Description", 0, QApplication::UnicodeUTF8));
+    groupBox_5->setTitle(QApplication::translate("MainWindowClass", "Option A", 0, QApplication::UnicodeUTF8));
+    lineEdit_3->setText(QApplication::translate("MainWindowClass", "Title of Option A", 0, QApplication::UnicodeUTF8));
+    lineEdit_4->setText(QApplication::translate("MainWindowClass", "AI Chance", 0, QApplication::UnicodeUTF8));
+    groupBox_6->setTitle(QApplication::translate("MainWindowClass", "Option B", 0, QApplication::UnicodeUTF8));
+    lineEdit_5->setText(QApplication::translate("MainWindowClass", "Title of Option B", 0, QApplication::UnicodeUTF8));
+    lineEdit_6->setText(QApplication::translate("MainWindowClass", "AI Chance", 0, QApplication::UnicodeUTF8));
+    groupBox_7->setTitle(QApplication::translate("MainWindowClass", "Event ID and Type", 0, QApplication::UnicodeUTF8));
+    lineEdit->setText(QApplication::translate("MainWindowClass", "Event Title,  blank will fill in with event ID - 24001000", 0, QApplication::UnicodeUTF8));
+    spinBox_16->setSpecialValueText(QApplication::translate("MainWindowClass", "001110", 0, QApplication::UnicodeUTF8));
     comboBox_4->clear();
     comboBox_4->insertItems(0, QStringList()
      << QApplication::translate("MainWindowClass", "- Legacy ID", 0, QApplication::UnicodeUTF8)
@@ -681,20 +692,22 @@ public:
      << QApplication::translate("MainWindowClass", "8 Unique", 0, QApplication::UnicodeUTF8)
      << QApplication::translate("MainWindowClass", "9 Unique", 0, QApplication::UnicodeUTF8)
     );
+    comboBox_3->clear();
+    comboBox_3->insertItems(0, QStringList()
+     << QApplication::translate("MainWindowClass", "- Legacy ID", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "0 Government", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "1 Diplomacy", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "2 Economy", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "3 Military", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "4 Religion", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "5 Colonial", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "6 Custom", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "7 Custom", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "8 Custom", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "9 Custom", 0, QApplication::UnicodeUTF8)
+    );
     spinBox_15->setSpecialValueText(QApplication::translate("MainWindowClass", "Country Event", 0, QApplication::UnicodeUTF8));
-    spinBox_16->setSpecialValueText(QApplication::translate("MainWindowClass", "001110", 0, QApplication::UnicodeUTF8));
-    lineEdit->setText(QApplication::translate("MainWindowClass", "Event Title,  blank will fill in with event ID - 24001000", 0, QApplication::UnicodeUTF8));
-    groupBox_2->setTitle(QApplication::translate("MainWindowClass", "Trigger", 0, QApplication::UnicodeUTF8));
-    groupBox_3->setTitle(QApplication::translate("MainWindowClass", "Mean Time To Happen", 0, QApplication::UnicodeUTF8));
-    groupBox_4->setTitle(QApplication::translate("MainWindowClass", "Title and description", 0, QApplication::UnicodeUTF8));
-    lineEdit_2->setText(QApplication::translate("MainWindowClass", "Displayed Title", 0, QApplication::UnicodeUTF8));
-    plainTextEdit->setPlainText(QApplication::translate("MainWindowClass", "Displayed Description", 0, QApplication::UnicodeUTF8));
-    groupBox_5->setTitle(QApplication::translate("MainWindowClass", "Option A", 0, QApplication::UnicodeUTF8));
-    lineEdit_3->setText(QApplication::translate("MainWindowClass", "Title of Option A", 0, QApplication::UnicodeUTF8));
-    lineEdit_4->setText(QApplication::translate("MainWindowClass", "AI Chance", 0, QApplication::UnicodeUTF8));
-    groupBox_6->setTitle(QApplication::translate("MainWindowClass", "Option B", 0, QApplication::UnicodeUTF8));
-    lineEdit_5->setText(QApplication::translate("MainWindowClass", "Title of Option B", 0, QApplication::UnicodeUTF8));
-    lineEdit_6->setText(QApplication::translate("MainWindowClass", "AI Chance", 0, QApplication::UnicodeUTF8));
+    groupBox_8->setTitle(QApplication::translate("MainWindowClass", "Reference", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindowClass", "Events", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_15), QApplication::translate("MainWindowClass", "Advisors", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindowClass", "Countries", 0, QApplication::UnicodeUTF8));
