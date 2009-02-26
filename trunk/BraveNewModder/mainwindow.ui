@@ -864,8 +864,6 @@ p, li { white-space: pre-wrap; }
           </rect>
          </property>
         </widget>
-        <zorder>textEdit_2</zorder>
-        <zorder>groupBox_8</zorder>
        </widget>
        <widget class="QGroupBox" name="groupBox_4">
         <property name="geometry">
@@ -1009,19 +1007,6 @@ p, li { white-space: pre-wrap; }
           <string>AI Chance</string>
          </property>
         </widget>
-       </widget>
-       <widget class="QSlider" name="verticalSlider">
-        <property name="geometry">
-         <rect>
-          <x>670</x>
-          <y>10</y>
-          <width>21</width>
-          <height>601</height>
-         </rect>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
        </widget>
        <widget class="QGroupBox" name="groupBox_7">
         <property name="geometry">
@@ -1354,6 +1339,19 @@ p, li { white-space: pre-wrap; }
           <string>AI Chance</string>
          </property>
         </widget>
+       </widget>
+       <widget class="QScrollBar" name="verticalScrollBar">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>-1</y>
+          <width>20</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
        </widget>
       </widget>
      </widget>
