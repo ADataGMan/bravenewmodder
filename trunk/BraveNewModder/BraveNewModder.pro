@@ -9,5 +9,7 @@ HEADERS += mainwindow.h
 FORMS += mainwindow.ui \
     advisortypes.ui \
     Createnewmod.ui \
-    bookmarks.ui
+    bookmarks.ui \
+    buildings.ui \
+    Countries.ui
 RESOURCES += BraveNewModder.qrc
