@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Wed Feb 25 04:50:11 2009
+** Created: Wed Feb 25 21:44:23 2009
 **      by: Qt User Interface Compiler version 4.4.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -24,7 +24,7 @@
 #include <QtGui/QPlainTextEdit>
 #include <QtGui/QRadioButton>
 #include <QtGui/QScrollArea>
-#include <QtGui/QSlider>
+#include <QtGui/QScrollBar>
 #include <QtGui/QSpinBox>
 #include <QtGui/QTabWidget>
 #include <QtGui/QTextBrowser>
@@ -47,35 +47,36 @@ public:
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tab;
+    QTextBrowser *textBrowser;
+    QGroupBox *groupBox_12;
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
     QLabel *label_4;
     QLabel *label_5;
-    QLabel *label_6;
     QLabel *label_7;
-    QSpinBox *spinBox;
-    QSpinBox *spinBox_2;
+    QLabel *label_6;
     QSpinBox *spinBox_3;
     QSpinBox *spinBox_4;
+    QSpinBox *spinBox_2;
+    QSpinBox *spinBox;
     QSpinBox *spinBox_5;
     QSpinBox *spinBox_6;
     QSpinBox *spinBox_7;
     QLabel *label_8;
-    QLabel *label_9;
+    QLabel *label_13;
     QLabel *label_10;
+    QLabel *label_9;
     QLabel *label_11;
     QLabel *label_12;
-    QLabel *label_13;
     QLabel *label_14;
-    QSpinBox *spinBox_8;
-    QSpinBox *spinBox_9;
+    QSpinBox *spinBox_13;
+    QSpinBox *spinBox_12;
+    QSpinBox *spinBox_14;
     QSpinBox *spinBox_10;
     QSpinBox *spinBox_11;
-    QSpinBox *spinBox_12;
-    QSpinBox *spinBox_13;
-    QSpinBox *spinBox_14;
-    QTextBrowser *textBrowser;
+    QSpinBox *spinBox_9;
+    QSpinBox *spinBox_8;
     QWidget *tab_3;
     QTabWidget *tabWidget_2;
     QWidget *tab_20;
@@ -108,7 +109,6 @@ public:
     QTextEdit *textEdit_4;
     QLineEdit *lineEdit_5;
     QLineEdit *lineEdit_6;
-    QSlider *verticalSlider;
     QGroupBox *groupBox_7;
     QLineEdit *lineEdit;
     QSpinBox *spinBox_16;
@@ -127,6 +127,7 @@ public:
     QTextEdit *textEdit_7;
     QLineEdit *lineEdit_11;
     QLineEdit *lineEdit_12;
+    QScrollBar *verticalScrollBar;
     QGroupBox *groupBox_8;
     QTabWidget *tabWidget_5;
     QWidget *tab_23;
@@ -201,138 +202,141 @@ public:
     tabWidget->setElideMode(Qt::ElideLeft);
     tab = new QWidget();
     tab->setObjectName(QString::fromUtf8("tab"));
-    label = new QLabel(tab);
-    label->setObjectName(QString::fromUtf8("label"));
-    label->setGeometry(QRect(20, 10, 61, 16));
-    label->setContextMenuPolicy(Qt::NoContextMenu);
-    label_2 = new QLabel(tab);
-    label_2->setObjectName(QString::fromUtf8("label_2"));
-    label_2->setGeometry(QRect(20, 40, 71, 21));
-    label_2->setContextMenuPolicy(Qt::NoContextMenu);
-    label_3 = new QLabel(tab);
-    label_3->setObjectName(QString::fromUtf8("label_3"));
-    label_3->setGeometry(QRect(20, 70, 71, 16));
-    label_3->setContextMenuPolicy(Qt::NoContextMenu);
-    label_4 = new QLabel(tab);
-    label_4->setObjectName(QString::fromUtf8("label_4"));
-    label_4->setGeometry(QRect(20, 100, 81, 16));
-    label_4->setContextMenuPolicy(Qt::NoContextMenu);
-    label_5 = new QLabel(tab);
-    label_5->setObjectName(QString::fromUtf8("label_5"));
-    label_5->setGeometry(QRect(20, 130, 91, 21));
-    label_5->setContextMenuPolicy(Qt::NoContextMenu);
-    label_5->setFrameShape(QFrame::NoFrame);
-    label_5->setFrameShadow(QFrame::Raised);
-    label_6 = new QLabel(tab);
-    label_6->setObjectName(QString::fromUtf8("label_6"));
-    label_6->setGeometry(QRect(20, 190, 51, 21));
-    label_6->setContextMenuPolicy(Qt::NoContextMenu);
-    label_7 = new QLabel(tab);
-    label_7->setObjectName(QString::fromUtf8("label_7"));
-    label_7->setGeometry(QRect(20, 160, 101, 21));
-    label_7->setContextMenuPolicy(Qt::NoContextMenu);
-    spinBox = new QSpinBox(tab);
-    spinBox->setObjectName(QString::fromUtf8("spinBox"));
-    spinBox->setGeometry(QRect(130, 100, 101, 21));
-    spinBox->setFocusPolicy(Qt::ClickFocus);
-    spinBox->setFrame(true);
-    spinBox_2 = new QSpinBox(tab);
-    spinBox_2->setObjectName(QString::fromUtf8("spinBox_2"));
-    spinBox_2->setGeometry(QRect(130, 70, 101, 21));
-    spinBox_2->setFocusPolicy(Qt::ClickFocus);
-    spinBox_2->setFrame(true);
-    spinBox_3 = new QSpinBox(tab);
-    spinBox_3->setObjectName(QString::fromUtf8("spinBox_3"));
-    spinBox_3->setGeometry(QRect(130, 10, 101, 21));
-    spinBox_3->setFocusPolicy(Qt::ClickFocus);
-    spinBox_3->setFrame(true);
-    spinBox_3->setValue(0);
-    spinBox_4 = new QSpinBox(tab);
-    spinBox_4->setObjectName(QString::fromUtf8("spinBox_4"));
-    spinBox_4->setGeometry(QRect(130, 40, 101, 21));
-    spinBox_4->setFocusPolicy(Qt::ClickFocus);
-    spinBox_4->setFrame(true);
-    spinBox_5 = new QSpinBox(tab);
-    spinBox_5->setObjectName(QString::fromUtf8("spinBox_5"));
-    spinBox_5->setGeometry(QRect(130, 130, 101, 21));
-    spinBox_5->setFocusPolicy(Qt::ClickFocus);
-    spinBox_5->setFrame(true);
-    spinBox_6 = new QSpinBox(tab);
-    spinBox_6->setObjectName(QString::fromUtf8("spinBox_6"));
-    spinBox_6->setGeometry(QRect(130, 160, 101, 21));
-    spinBox_6->setFocusPolicy(Qt::ClickFocus);
-    spinBox_6->setFrame(true);
-    spinBox_7 = new QSpinBox(tab);
-    spinBox_7->setObjectName(QString::fromUtf8("spinBox_7"));
-    spinBox_7->setGeometry(QRect(130, 190, 101, 21));
-    spinBox_7->setFocusPolicy(Qt::ClickFocus);
-    spinBox_7->setFrame(true);
-    label_8 = new QLabel(tab);
-    label_8->setObjectName(QString::fromUtf8("label_8"));
-    label_8->setGeometry(QRect(330, 10, 71, 16));
-    label_8->setContextMenuPolicy(Qt::NoContextMenu);
-    label_9 = new QLabel(tab);
-    label_9->setObjectName(QString::fromUtf8("label_9"));
-    label_9->setGeometry(QRect(330, 100, 161, 16));
-    label_9->setContextMenuPolicy(Qt::NoContextMenu);
-    label_10 = new QLabel(tab);
-    label_10->setObjectName(QString::fromUtf8("label_10"));
-    label_10->setGeometry(QRect(330, 70, 81, 21));
-    label_10->setContextMenuPolicy(Qt::NoContextMenu);
-    label_11 = new QLabel(tab);
-    label_11->setObjectName(QString::fromUtf8("label_11"));
-    label_11->setGeometry(QRect(330, 190, 121, 21));
-    label_11->setContextMenuPolicy(Qt::NoContextMenu);
-    label_12 = new QLabel(tab);
-    label_12->setObjectName(QString::fromUtf8("label_12"));
-    label_12->setGeometry(QRect(330, 160, 201, 16));
-    label_12->setContextMenuPolicy(Qt::NoContextMenu);
-    label_13 = new QLabel(tab);
-    label_13->setObjectName(QString::fromUtf8("label_13"));
-    label_13->setGeometry(QRect(330, 40, 141, 21));
-    label_13->setContextMenuPolicy(Qt::NoContextMenu);
-    label_14 = new QLabel(tab);
-    label_14->setObjectName(QString::fromUtf8("label_14"));
-    label_14->setGeometry(QRect(330, 130, 211, 21));
-    label_14->setContextMenuPolicy(Qt::NoContextMenu);
-    spinBox_8 = new QSpinBox(tab);
-    spinBox_8->setObjectName(QString::fromUtf8("spinBox_8"));
-    spinBox_8->setGeometry(QRect(550, 190, 101, 21));
-    spinBox_8->setFocusPolicy(Qt::ClickFocus);
-    spinBox_8->setFrame(true);
-    spinBox_9 = new QSpinBox(tab);
-    spinBox_9->setObjectName(QString::fromUtf8("spinBox_9"));
-    spinBox_9->setGeometry(QRect(550, 160, 101, 21));
-    spinBox_9->setFocusPolicy(Qt::ClickFocus);
-    spinBox_9->setFrame(true);
-    spinBox_10 = new QSpinBox(tab);
-    spinBox_10->setObjectName(QString::fromUtf8("spinBox_10"));
-    spinBox_10->setGeometry(QRect(550, 100, 101, 21));
-    spinBox_10->setFocusPolicy(Qt::ClickFocus);
-    spinBox_10->setFrame(true);
-    spinBox_11 = new QSpinBox(tab);
-    spinBox_11->setObjectName(QString::fromUtf8("spinBox_11"));
-    spinBox_11->setGeometry(QRect(550, 130, 101, 21));
-    spinBox_11->setFocusPolicy(Qt::ClickFocus);
-    spinBox_11->setFrame(true);
-    spinBox_12 = new QSpinBox(tab);
-    spinBox_12->setObjectName(QString::fromUtf8("spinBox_12"));
-    spinBox_12->setGeometry(QRect(550, 40, 101, 21));
-    spinBox_12->setFocusPolicy(Qt::ClickFocus);
-    spinBox_12->setFrame(true);
-    spinBox_13 = new QSpinBox(tab);
-    spinBox_13->setObjectName(QString::fromUtf8("spinBox_13"));
-    spinBox_13->setGeometry(QRect(550, 10, 101, 21));
-    spinBox_13->setFocusPolicy(Qt::ClickFocus);
-    spinBox_13->setFrame(true);
-    spinBox_14 = new QSpinBox(tab);
-    spinBox_14->setObjectName(QString::fromUtf8("spinBox_14"));
-    spinBox_14->setGeometry(QRect(550, 70, 101, 21));
-    spinBox_14->setFocusPolicy(Qt::ClickFocus);
-    spinBox_14->setFrame(true);
     textBrowser = new QTextBrowser(tab);
     textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
     textBrowser->setGeometry(QRect(-5, 571, 1031, 161));
+    groupBox_12 = new QGroupBox(tab);
+    groupBox_12->setObjectName(QString::fromUtf8("groupBox_12"));
+    groupBox_12->setGeometry(QRect(0, 0, 1031, 571));
+    label = new QLabel(groupBox_12);
+    label->setObjectName(QString::fromUtf8("label"));
+    label->setGeometry(QRect(20, 20, 61, 16));
+    label->setContextMenuPolicy(Qt::NoContextMenu);
+    label_2 = new QLabel(groupBox_12);
+    label_2->setObjectName(QString::fromUtf8("label_2"));
+    label_2->setGeometry(QRect(20, 50, 71, 21));
+    label_2->setContextMenuPolicy(Qt::NoContextMenu);
+    label_3 = new QLabel(groupBox_12);
+    label_3->setObjectName(QString::fromUtf8("label_3"));
+    label_3->setGeometry(QRect(20, 80, 71, 21));
+    label_3->setContextMenuPolicy(Qt::NoContextMenu);
+    label_4 = new QLabel(groupBox_12);
+    label_4->setObjectName(QString::fromUtf8("label_4"));
+    label_4->setGeometry(QRect(20, 110, 81, 21));
+    label_4->setContextMenuPolicy(Qt::NoContextMenu);
+    label_5 = new QLabel(groupBox_12);
+    label_5->setObjectName(QString::fromUtf8("label_5"));
+    label_5->setGeometry(QRect(20, 140, 91, 21));
+    label_5->setContextMenuPolicy(Qt::NoContextMenu);
+    label_5->setFrameShape(QFrame::NoFrame);
+    label_5->setFrameShadow(QFrame::Raised);
+    label_7 = new QLabel(groupBox_12);
+    label_7->setObjectName(QString::fromUtf8("label_7"));
+    label_7->setGeometry(QRect(20, 170, 101, 21));
+    label_7->setContextMenuPolicy(Qt::NoContextMenu);
+    label_6 = new QLabel(groupBox_12);
+    label_6->setObjectName(QString::fromUtf8("label_6"));
+    label_6->setGeometry(QRect(20, 200, 51, 21));
+    label_6->setContextMenuPolicy(Qt::NoContextMenu);
+    spinBox_3 = new QSpinBox(groupBox_12);
+    spinBox_3->setObjectName(QString::fromUtf8("spinBox_3"));
+    spinBox_3->setGeometry(QRect(130, 20, 101, 21));
+    spinBox_3->setFocusPolicy(Qt::ClickFocus);
+    spinBox_3->setFrame(true);
+    spinBox_3->setValue(0);
+    spinBox_4 = new QSpinBox(groupBox_12);
+    spinBox_4->setObjectName(QString::fromUtf8("spinBox_4"));
+    spinBox_4->setGeometry(QRect(130, 50, 101, 21));
+    spinBox_4->setFocusPolicy(Qt::ClickFocus);
+    spinBox_4->setFrame(true);
+    spinBox_2 = new QSpinBox(groupBox_12);
+    spinBox_2->setObjectName(QString::fromUtf8("spinBox_2"));
+    spinBox_2->setGeometry(QRect(130, 80, 101, 21));
+    spinBox_2->setFocusPolicy(Qt::ClickFocus);
+    spinBox_2->setFrame(true);
+    spinBox = new QSpinBox(groupBox_12);
+    spinBox->setObjectName(QString::fromUtf8("spinBox"));
+    spinBox->setGeometry(QRect(130, 110, 101, 21));
+    spinBox->setFocusPolicy(Qt::ClickFocus);
+    spinBox->setFrame(true);
+    spinBox_5 = new QSpinBox(groupBox_12);
+    spinBox_5->setObjectName(QString::fromUtf8("spinBox_5"));
+    spinBox_5->setGeometry(QRect(130, 140, 101, 20));
+    spinBox_5->setFocusPolicy(Qt::ClickFocus);
+    spinBox_5->setFrame(true);
+    spinBox_6 = new QSpinBox(groupBox_12);
+    spinBox_6->setObjectName(QString::fromUtf8("spinBox_6"));
+    spinBox_6->setGeometry(QRect(130, 170, 101, 21));
+    spinBox_6->setFocusPolicy(Qt::ClickFocus);
+    spinBox_6->setFrame(true);
+    spinBox_7 = new QSpinBox(groupBox_12);
+    spinBox_7->setObjectName(QString::fromUtf8("spinBox_7"));
+    spinBox_7->setGeometry(QRect(130, 200, 101, 21));
+    spinBox_7->setFocusPolicy(Qt::ClickFocus);
+    spinBox_7->setFrame(true);
+    label_8 = new QLabel(groupBox_12);
+    label_8->setObjectName(QString::fromUtf8("label_8"));
+    label_8->setGeometry(QRect(410, 20, 71, 16));
+    label_8->setContextMenuPolicy(Qt::NoContextMenu);
+    label_13 = new QLabel(groupBox_12);
+    label_13->setObjectName(QString::fromUtf8("label_13"));
+    label_13->setGeometry(QRect(410, 50, 141, 21));
+    label_13->setContextMenuPolicy(Qt::NoContextMenu);
+    label_10 = new QLabel(groupBox_12);
+    label_10->setObjectName(QString::fromUtf8("label_10"));
+    label_10->setGeometry(QRect(410, 80, 81, 21));
+    label_10->setContextMenuPolicy(Qt::NoContextMenu);
+    label_9 = new QLabel(groupBox_12);
+    label_9->setObjectName(QString::fromUtf8("label_9"));
+    label_9->setGeometry(QRect(410, 110, 161, 21));
+    label_9->setContextMenuPolicy(Qt::NoContextMenu);
+    label_11 = new QLabel(groupBox_12);
+    label_11->setObjectName(QString::fromUtf8("label_11"));
+    label_11->setGeometry(QRect(410, 200, 121, 21));
+    label_11->setContextMenuPolicy(Qt::NoContextMenu);
+    label_12 = new QLabel(groupBox_12);
+    label_12->setObjectName(QString::fromUtf8("label_12"));
+    label_12->setGeometry(QRect(410, 170, 201, 16));
+    label_12->setContextMenuPolicy(Qt::NoContextMenu);
+    label_14 = new QLabel(groupBox_12);
+    label_14->setObjectName(QString::fromUtf8("label_14"));
+    label_14->setGeometry(QRect(410, 140, 211, 21));
+    label_14->setContextMenuPolicy(Qt::NoContextMenu);
+    spinBox_13 = new QSpinBox(groupBox_12);
+    spinBox_13->setObjectName(QString::fromUtf8("spinBox_13"));
+    spinBox_13->setGeometry(QRect(620, 20, 101, 21));
+    spinBox_13->setFocusPolicy(Qt::ClickFocus);
+    spinBox_13->setFrame(true);
+    spinBox_12 = new QSpinBox(groupBox_12);
+    spinBox_12->setObjectName(QString::fromUtf8("spinBox_12"));
+    spinBox_12->setGeometry(QRect(620, 50, 101, 21));
+    spinBox_12->setFocusPolicy(Qt::ClickFocus);
+    spinBox_12->setFrame(true);
+    spinBox_14 = new QSpinBox(groupBox_12);
+    spinBox_14->setObjectName(QString::fromUtf8("spinBox_14"));
+    spinBox_14->setGeometry(QRect(620, 80, 101, 21));
+    spinBox_14->setFocusPolicy(Qt::ClickFocus);
+    spinBox_14->setFrame(true);
+    spinBox_10 = new QSpinBox(groupBox_12);
+    spinBox_10->setObjectName(QString::fromUtf8("spinBox_10"));
+    spinBox_10->setGeometry(QRect(620, 110, 101, 21));
+    spinBox_10->setFocusPolicy(Qt::ClickFocus);
+    spinBox_10->setFrame(true);
+    spinBox_11 = new QSpinBox(groupBox_12);
+    spinBox_11->setObjectName(QString::fromUtf8("spinBox_11"));
+    spinBox_11->setGeometry(QRect(620, 140, 101, 21));
+    spinBox_11->setFocusPolicy(Qt::ClickFocus);
+    spinBox_11->setFrame(true);
+    spinBox_9 = new QSpinBox(groupBox_12);
+    spinBox_9->setObjectName(QString::fromUtf8("spinBox_9"));
+    spinBox_9->setGeometry(QRect(620, 170, 101, 21));
+    spinBox_9->setFocusPolicy(Qt::ClickFocus);
+    spinBox_9->setFrame(true);
+    spinBox_8 = new QSpinBox(groupBox_12);
+    spinBox_8->setObjectName(QString::fromUtf8("spinBox_8"));
+    spinBox_8->setGeometry(QRect(620, 200, 101, 21));
+    spinBox_8->setFocusPolicy(Qt::ClickFocus);
+    spinBox_8->setFrame(true);
     tabWidget->addTab(tab, QString());
     tab_3 = new QWidget();
     tab_3->setObjectName(QString::fromUtf8("tab_3"));
@@ -404,7 +408,6 @@ public:
     textEdit_2 = new QTextEdit(groupBox_3);
     textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
     textEdit_2->setGeometry(QRect(0, 20, 661, 61));
-    textEdit_2->raise();
     groupBox_4 = new QGroupBox(scrollAreaWidgetContents);
     groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
     groupBox_4->setGeometry(QRect(0, 190, 661, 81));
@@ -443,10 +446,6 @@ public:
     lineEdit_6 = new QLineEdit(groupBox_6);
     lineEdit_6->setObjectName(QString::fromUtf8("lineEdit_6"));
     lineEdit_6->setGeometry(QRect(0, 20, 61, 21));
-    verticalSlider = new QSlider(scrollAreaWidgetContents);
-    verticalSlider->setObjectName(QString::fromUtf8("verticalSlider"));
-    verticalSlider->setGeometry(QRect(670, 10, 21, 601));
-    verticalSlider->setOrientation(Qt::Vertical);
     groupBox_7 = new QGroupBox(scrollAreaWidgetContents);
     groupBox_7->setObjectName(QString::fromUtf8("groupBox_7"));
     groupBox_7->setGeometry(QRect(0, 0, 661, 41));
@@ -502,6 +501,10 @@ public:
     lineEdit_12 = new QLineEdit(groupBox_11);
     lineEdit_12->setObjectName(QString::fromUtf8("lineEdit_12"));
     lineEdit_12->setGeometry(QRect(0, 20, 61, 21));
+    verticalScrollBar = new QScrollBar(scrollAreaWidgetContents);
+    verticalScrollBar->setObjectName(QString::fromUtf8("verticalScrollBar"));
+    verticalScrollBar->setGeometry(QRect(670, -1, 20, 611));
+    verticalScrollBar->setOrientation(Qt::Vertical);
     scrollArea->setWidget(scrollAreaWidgetContents);
     groupBox_8 = new QGroupBox(tab_5);
     groupBox_8->setObjectName(QString::fromUtf8("groupBox_8"));
@@ -627,7 +630,7 @@ public:
 
     retranslateUi(MainWindowClass);
 
-    tabWidget->setCurrentIndex(3);
+    tabWidget->setCurrentIndex(0);
     tabWidget_2->setCurrentIndex(2);
     tabWidget_5->setCurrentIndex(3);
     tabWidget_6->setCurrentIndex(0);
@@ -648,6 +651,7 @@ public:
     actionUnlimited_play->setText(QApplication::translate("MainWindowClass", "Unlimited play", 0, QApplication::UnicodeUTF8));
     actionHelp->setText(QApplication::translate("MainWindowClass", "Help", 0, QApplication::UnicodeUTF8));
     actionAbout->setText(QApplication::translate("MainWindowClass", "About", 0, QApplication::UnicodeUTF8));
+    groupBox_12->setTitle(QApplication::translate("MainWindowClass", "Gameplay Settings", 0, QApplication::UnicodeUTF8));
     label->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -673,20 +677,20 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Merchants</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_6->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Spies</span></p></body></html>", 0, QApplication::UnicodeUTF8));
     label_7->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Missionaries</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    spinBox->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
-    spinBox_2->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
+    label_6->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Spies</span></p></body></html>", 0, QApplication::UnicodeUTF8));
     spinBox_3->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
     spinBox_4->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
+    spinBox_2->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
+    spinBox->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
     spinBox_5->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
     spinBox_6->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
     spinBox_7->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
@@ -695,16 +699,21 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Inflation</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_9->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+    label_13->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">AI Aggressiveness</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Size of Colonists</span></p></body></html>", 0, QApplication::UnicodeUTF8));
     label_10->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Difficulty</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+    label_9->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">AI Aggressiveness</span></p></body></html>", 0, QApplication::UnicodeUTF8));
     label_11->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -715,23 +724,18 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Spread of Sea Provinces</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_13->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Size of Colonists</span></p></body></html>", 0, QApplication::UnicodeUTF8));
     label_14->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Spread of Land Provinces</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    spinBox_8->setSpecialValueText(QApplication::translate("MainWindowClass", "Historical", 0, QApplication::UnicodeUTF8));
-    spinBox_9->setSpecialValueText(QApplication::translate("MainWindowClass", "50 (Normal)", 0, QApplication::UnicodeUTF8));
+    spinBox_13->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
+    spinBox_12->setSpecialValueText(QApplication::translate("MainWindowClass", "100", 0, QApplication::UnicodeUTF8));
+    spinBox_14->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
     spinBox_10->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
     spinBox_11->setSpecialValueText(QApplication::translate("MainWindowClass", "50 (Normal)", 0, QApplication::UnicodeUTF8));
-    spinBox_12->setSpecialValueText(QApplication::translate("MainWindowClass", "100", 0, QApplication::UnicodeUTF8));
-    spinBox_13->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
-    spinBox_14->setSpecialValueText(QApplication::translate("MainWindowClass", "Normal", 0, QApplication::UnicodeUTF8));
+    spinBox_9->setSpecialValueText(QApplication::translate("MainWindowClass", "50 (Normal)", 0, QApplication::UnicodeUTF8));
+    spinBox_8->setSpecialValueText(QApplication::translate("MainWindowClass", "Historical", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindowClass", "Gameplay Settings", 0, QApplication::UnicodeUTF8));
     tabWidget_2->setTabText(tabWidget_2->indexOf(tab_20), QApplication::translate("MainWindowClass", "Main", 0, QApplication::UnicodeUTF8));
     tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindowClass", "Countries", 0, QApplication::UnicodeUTF8));
