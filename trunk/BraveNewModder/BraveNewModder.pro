@@ -7,6 +7,6 @@ SOURCES += main.cpp \
     mainwindow.cpp
 HEADERS += mainwindow.h
 FORMS += mainwindow.ui \
-    groupbox.ui \
-    advisortypes.ui
+    advisortypes.ui \
+    Createnewmod.ui
 RESOURCES += BraveNewModder.qrc
