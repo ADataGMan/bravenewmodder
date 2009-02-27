@@ -6,5 +6,7 @@ TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp
 HEADERS += mainwindow.h
-FORMS += mainwindow.ui
+FORMS += mainwindow.ui \
+    groupbox.ui \
+    advisortypes.ui
 RESOURCES += BraveNewModder.qrc

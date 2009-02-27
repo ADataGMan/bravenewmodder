@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Wed Feb 25 21:44:23 2009
+** Created: Thu Feb 26 18:21:05 2009
 **      by: Qt User Interface Compiler version 4.4.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -15,6 +15,7 @@
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
 #include <QtGui/QComboBox>
+#include <QtGui/QFrame>
 #include <QtGui/QGroupBox>
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
@@ -80,6 +81,9 @@ public:
     QWidget *tab_3;
     QTabWidget *tabWidget_2;
     QWidget *tab_20;
+    QLabel *label_18;
+    QComboBox *comboBox_5;
+    QFrame *frame;
     QWidget *tab_12;
     QWidget *tab_13;
     QWidget *tab_14;
@@ -347,6 +351,17 @@ public:
     tabWidget_2->setSizePolicy(sizePolicy1);
     tab_20 = new QWidget();
     tab_20->setObjectName(QString::fromUtf8("tab_20"));
+    label_18 = new QLabel(tab_20);
+    label_18->setObjectName(QString::fromUtf8("label_18"));
+    label_18->setGeometry(QRect(10, 0, 141, 21));
+    comboBox_5 = new QComboBox(tab_20);
+    comboBox_5->setObjectName(QString::fromUtf8("comboBox_5"));
+    comboBox_5->setGeometry(QRect(160, 0, 121, 21));
+    frame = new QFrame(tab_20);
+    frame->setObjectName(QString::fromUtf8("frame"));
+    frame->setGeometry(QRect(0, 20, 1021, 691));
+    frame->setFrameShape(QFrame::StyledPanel);
+    frame->setFrameShadow(QFrame::Raised);
     tabWidget_2->addTab(tab_20, QString());
     tab_12 = new QWidget();
     tab_12->setObjectName(QString::fromUtf8("tab_12"));
@@ -555,7 +570,7 @@ public:
     tab_6->setObjectName(QString::fromUtf8("tab_6"));
     tabWidget_3 = new QTabWidget(tab_6);
     tabWidget_3->setObjectName(QString::fromUtf8("tabWidget_3"));
-    tabWidget_3->setGeometry(QRect(0, 0, 781, 441));
+    tabWidget_3->setGeometry(QRect(0, 0, 1031, 731));
     tab_15 = new QWidget();
     tab_15->setObjectName(QString::fromUtf8("tab_15"));
     tabWidget_3->addTab(tab_15, QString());
@@ -630,12 +645,12 @@ public:
 
     retranslateUi(MainWindowClass);
 
-    tabWidget->setCurrentIndex(0);
-    tabWidget_2->setCurrentIndex(2);
+    tabWidget->setCurrentIndex(1);
+    tabWidget_2->setCurrentIndex(0);
     tabWidget_5->setCurrentIndex(3);
     tabWidget_6->setCurrentIndex(0);
     tabWidget_3->setCurrentIndex(0);
-    tabWidget_4->setCurrentIndex(2);
+    tabWidget_4->setCurrentIndex(0);
 
 
     QMetaObject::connectSlotsByName(MainWindowClass);
@@ -737,6 +752,15 @@ public:
     spinBox_9->setSpecialValueText(QApplication::translate("MainWindowClass", "50 (Normal)", 0, QApplication::UnicodeUTF8));
     spinBox_8->setSpecialValueText(QApplication::translate("MainWindowClass", "Historical", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindowClass", "Gameplay Settings", 0, QApplication::UnicodeUTF8));
+    label_18->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Select Document</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+    comboBox_5->clear();
+    comboBox_5->insertItems(0, QStringList()
+     << QApplication::translate("MainWindowClass", "Advisor Types", 0, QApplication::UnicodeUTF8)
+    );
     tabWidget_2->setTabText(tabWidget_2->indexOf(tab_20), QApplication::translate("MainWindowClass", "Main", 0, QApplication::UnicodeUTF8));
     tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindowClass", "Countries", 0, QApplication::UnicodeUTF8));
     tabWidget_2->setTabText(tabWidget_2->indexOf(tab_13), QApplication::translate("MainWindowClass", "Technologies", 0, QApplication::UnicodeUTF8));
