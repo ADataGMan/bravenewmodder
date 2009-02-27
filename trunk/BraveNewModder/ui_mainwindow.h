@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Thu Feb 26 22:26:47 2009
+** Created: Thu Feb 26 22:49:47 2009
 **      by: Qt User Interface Compiler version 4.4.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -146,6 +146,8 @@ public:
     QWidget *tab_31;
     QTextBrowser *textBrowser_2;
     QLabel *label_16;
+    QLabel *label_19;
+    QComboBox *comboBox_6;
     QWidget *tab_6;
     QTabWidget *tabWidget_3;
     QWidget *tab_15;
@@ -380,7 +382,7 @@ public:
     tab_5->setObjectName(QString::fromUtf8("tab_5"));
     groupBox = new QGroupBox(tab_5);
     groupBox->setObjectName(QString::fromUtf8("groupBox"));
-    groupBox->setGeometry(QRect(310, 0, 181, 31));
+    groupBox->setGeometry(QRect(300, 0, 181, 31));
     groupBox->setLayoutDirection(Qt::LeftToRight);
     radioButton_2 = new QRadioButton(groupBox);
     radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
@@ -390,12 +392,12 @@ public:
     radioButton->setGeometry(QRect(10, 10, 61, 21));
     comboBox_2 = new QComboBox(groupBox);
     comboBox_2->setObjectName(QString::fromUtf8("comboBox_2"));
-    comboBox_2->setGeometry(QRect(140, 12, 41, 20));
+    comboBox_2->setGeometry(QRect(130, 12, 51, 20));
     sizePolicy.setHeightForWidth(comboBox_2->sizePolicy().hasHeightForWidth());
     comboBox_2->setSizePolicy(sizePolicy);
     comboBox = new QComboBox(tab_5);
     comboBox->setObjectName(QString::fromUtf8("comboBox"));
-    comboBox->setGeometry(QRect(150, 0, 151, 21));
+    comboBox->setGeometry(QRect(140, 0, 151, 21));
     label_15 = new QLabel(tab_5);
     label_15->setObjectName(QString::fromUtf8("label_15"));
     label_15->setGeometry(QRect(0, 0, 141, 21));
@@ -565,6 +567,12 @@ public:
     label_16 = new QLabel(tab_5);
     label_16->setObjectName(QString::fromUtf8("label_16"));
     label_16->setGeometry(QRect(20, 660, 411, 21));
+    label_19 = new QLabel(tab_5);
+    label_19->setObjectName(QString::fromUtf8("label_19"));
+    label_19->setGeometry(QRect(490, 0, 141, 16));
+    comboBox_6 = new QComboBox(tab_5);
+    comboBox_6->setObjectName(QString::fromUtf8("comboBox_6"));
+    comboBox_6->setGeometry(QRect(630, 0, 141, 21));
     tabWidget->addTab(tab_5, QString());
     tab_6 = new QWidget();
     tab_6->setObjectName(QString::fromUtf8("tab_6"));
@@ -645,7 +653,7 @@ public:
 
     retranslateUi(MainWindowClass);
 
-    tabWidget->setCurrentIndex(1);
+    tabWidget->setCurrentIndex(3);
     tabWidget_2->setCurrentIndex(0);
     tabWidget_5->setCurrentIndex(3);
     tabWidget_6->setCurrentIndex(0);
@@ -861,6 +869,17 @@ public:
     tabWidget_6->setTabText(tabWidget_6->indexOf(tab_31), QApplication::translate("MainWindowClass", "Data", 0, QApplication::UnicodeUTF8));
     tabWidget_5->setTabText(tabWidget_5->indexOf(tab_27), QApplication::translate("MainWindowClass", "Index", 0, QApplication::UnicodeUTF8));
     label_16->setText(QApplication::translate("MainWindowClass", "This space will display information based on a selection from the reference menu", 0, QApplication::UnicodeUTF8));
+    label_19->setText(QApplication::translate("MainWindowClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Select Template</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+    comboBox_6->clear();
+    comboBox_6->insertItems(0, QStringList()
+     << QApplication::translate("MainWindowClass", "Blank", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "Initial", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("MainWindowClass", "Set-up", 0, QApplication::UnicodeUTF8)
+    );
     tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindowClass", "Events", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_15), QApplication::translate("MainWindowClass", "Advisors", 0, QApplication::UnicodeUTF8));
     tabWidget_3->setTabText(tabWidget_3->indexOf(tab_16), QApplication::translate("MainWindowClass", "Countries", 0, QApplication::UnicodeUTF8));

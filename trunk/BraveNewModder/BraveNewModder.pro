@@ -8,5 +8,6 @@ SOURCES += main.cpp \
 HEADERS += mainwindow.h
 FORMS += mainwindow.ui \
     advisortypes.ui \
-    Createnewmod.ui
+    Createnewmod.ui \
+    bookmarks.ui
 RESOURCES += BraveNewModder.qrc
