@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Tue Mar 31 01:06:33 2009
+** Created: Tue Mar 31 07:50:37 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
