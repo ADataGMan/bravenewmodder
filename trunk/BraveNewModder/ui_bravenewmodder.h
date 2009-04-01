@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Wed Apr 1 00:32:15 2009
+** Created: Wed Apr 1 00:41:24 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -200,12 +200,14 @@ public:
         sclEventeditor->setGeometry(QRect(180, 50, 571, 601));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(133);
+        sizePolicy.setVerticalStretch(255);
         sizePolicy.setHeightForWidth(sclEventeditor->sizePolicy().hasHeightForWidth());
         sclEventeditor->setSizePolicy(sizePolicy);
+        sclEventeditor->setMinimumSize(QSize(0, 200));
         sclEventeditor->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
         sclEventeditor->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-        sclEventeditor->setWidgetResizable(true);
+        sclEventeditor->setWidgetResizable(false);
+        sclEventeditor->setAlignment(Qt::AlignCenter);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 551, 597));
@@ -242,13 +244,13 @@ public:
         textEdit->setGeometry(QRect(0, 13, 551, 61));
         groupBox_7 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_7->setObjectName(QString::fromUtf8("groupBox_7"));
-        groupBox_7->setGeometry(QRect(0, 460, 551, 91));
+        groupBox_7->setGeometry(QRect(0, 460, 551, 31));
         lineEdit_3 = new QLineEdit(groupBox_7);
         lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
         lineEdit_3->setGeometry(QRect(0, 13, 551, 20));
-        plainTextEdit_3 = new QPlainTextEdit(groupBox_7);
+        plainTextEdit_3 = new QPlainTextEdit(scrollAreaWidgetContents);
         plainTextEdit_3->setObjectName(QString::fromUtf8("plainTextEdit_3"));
-        plainTextEdit_3->setGeometry(QRect(0, 30, 551, 51));
+        plainTextEdit_3->setGeometry(QRect(0, 540, 551, 121));
         sclEventeditor->setWidget(scrollAreaWidgetContents);
         textBrowser = new QTextBrowser(TabEvents);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
