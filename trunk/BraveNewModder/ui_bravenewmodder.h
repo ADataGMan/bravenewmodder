@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Tue Mar 31 21:39:58 2009
+** Created: Wed Apr 1 00:32:15 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -58,12 +58,13 @@ public:
     QAction *actionGenerate_List;
     QAction *actionImport_Content;
     QAction *actionUndo;
+    QAction *actionEditor_Settings;
     QWidget *centralWidget;
     QTabWidget *tbxMain;
     QWidget *tabGameplaySettings;
     QWidget *tabCommon;
     QWidget *TabEvents;
-    QScrollArea *scrollArea;
+    QScrollArea *sclEventeditor;
     QWidget *scrollAreaWidgetContents;
     QGroupBox *groupBox_3;
     QPlainTextEdit *plainTextEdit;
@@ -78,22 +79,22 @@ public:
     QPlainTextEdit *plainTextEdit_3;
     QTextBrowser *textBrowser;
     QTreeWidget *treeWidget;
-    QFrame *frame;
-    QGroupBox *gbx;
-    QRadioButton *radioButton;
-    QRadioButton *radioButton_2;
-    QGroupBox *groupBox;
-    QComboBox *comboBox;
-    QComboBox *comboBox_2;
-    QSpinBox *spinBox;
+    QFrame *frmEventStyle;
+    QGroupBox *gbxType;
+    QRadioButton *rdbCountry;
+    QRadioButton *rdbProvince;
+    QGroupBox *gbxNumber;
+    QComboBox *cbxType;
+    QComboBox *cbxRange;
+    QSpinBox *sbxNumber;
     QGroupBox *groupBox_2;
-    QRadioButton *radioButton_3;
-    QRadioButton *radioButton_4;
-    QSpinBox *spinBox_2;
-    QLineEdit *lineEdit;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QRadioButton *rdbUnique;
+    QRadioButton *rdbSeries;
+    QSpinBox *sbxRange;
+    QLineEdit *lneInternaleventname;
+    QPushButton *psbNew;
+    QPushButton *psbPreview;
+    QPushButton *psbSave;
     QTabWidget *tabWidget;
     QWidget *tab;
     QTextBrowser *textBrowser_5;
@@ -177,6 +178,8 @@ public:
         actionImport_Content->setObjectName(QString::fromUtf8("actionImport_Content"));
         actionUndo = new QAction(BravenewmodderClass);
         actionUndo->setObjectName(QString::fromUtf8("actionUndo"));
+        actionEditor_Settings = new QAction(BravenewmodderClass);
+        actionEditor_Settings->setObjectName(QString::fromUtf8("actionEditor_Settings"));
         centralWidget = new QWidget(BravenewmodderClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         tbxMain = new QTabWidget(centralWidget);
@@ -192,26 +195,26 @@ public:
         tbxMain->addTab(tabCommon, QString());
         TabEvents = new QWidget();
         TabEvents->setObjectName(QString::fromUtf8("TabEvents"));
-        scrollArea = new QScrollArea(TabEvents);
-        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setGeometry(QRect(180, 50, 571, 601));
+        sclEventeditor = new QScrollArea(TabEvents);
+        sclEventeditor->setObjectName(QString::fromUtf8("sclEventeditor"));
+        sclEventeditor->setGeometry(QRect(180, 50, 571, 601));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(10);
-        sizePolicy.setHeightForWidth(scrollArea->sizePolicy().hasHeightForWidth());
-        scrollArea->setSizePolicy(sizePolicy);
-        scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
-        scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-        scrollArea->setWidgetResizable(true);
+        sizePolicy.setVerticalStretch(133);
+        sizePolicy.setHeightForWidth(sclEventeditor->sizePolicy().hasHeightForWidth());
+        sclEventeditor->setSizePolicy(sizePolicy);
+        sclEventeditor->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+        sclEventeditor->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        sclEventeditor->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 551, 597));
         groupBox_3 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(0, 0, 541, 171));
+        groupBox_3->setGeometry(QRect(0, 120, 551, 171));
         plainTextEdit = new QPlainTextEdit(groupBox_3);
         plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
-        plainTextEdit->setGeometry(QRect(0, 13, 541, 151));
+        plainTextEdit->setGeometry(QRect(0, 13, 551, 151));
         QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Expanding);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -219,34 +222,34 @@ public:
         plainTextEdit->setSizePolicy(sizePolicy1);
         groupBox_4 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-        groupBox_4->setGeometry(QRect(0, 170, 541, 171));
+        groupBox_4->setGeometry(QRect(0, 290, 551, 171));
         plainTextEdit_2 = new QPlainTextEdit(groupBox_4);
         plainTextEdit_2->setObjectName(QString::fromUtf8("plainTextEdit_2"));
-        plainTextEdit_2->setGeometry(QRect(0, 13, 541, 151));
+        plainTextEdit_2->setGeometry(QRect(0, 13, 551, 151));
         sizePolicy1.setHeightForWidth(plainTextEdit_2->sizePolicy().hasHeightForWidth());
         plainTextEdit_2->setSizePolicy(sizePolicy1);
         groupBox_5 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
-        groupBox_5->setGeometry(QRect(0, 340, 541, 41));
+        groupBox_5->setGeometry(QRect(0, 0, 551, 41));
         lineEdit_2 = new QLineEdit(groupBox_5);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(0, 13, 541, 22));
+        lineEdit_2->setGeometry(QRect(0, 13, 551, 22));
         groupBox_6 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
-        groupBox_6->setGeometry(QRect(0, 380, 541, 80));
+        groupBox_6->setGeometry(QRect(0, 40, 551, 80));
         textEdit = new QTextEdit(groupBox_6);
         textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(0, 13, 541, 61));
+        textEdit->setGeometry(QRect(0, 13, 551, 61));
         groupBox_7 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_7->setObjectName(QString::fromUtf8("groupBox_7"));
-        groupBox_7->setGeometry(QRect(0, 460, 541, 91));
+        groupBox_7->setGeometry(QRect(0, 460, 551, 91));
         lineEdit_3 = new QLineEdit(groupBox_7);
         lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
-        lineEdit_3->setGeometry(QRect(0, 13, 541, 20));
+        lineEdit_3->setGeometry(QRect(0, 13, 551, 20));
         plainTextEdit_3 = new QPlainTextEdit(groupBox_7);
         plainTextEdit_3->setObjectName(QString::fromUtf8("plainTextEdit_3"));
-        plainTextEdit_3->setGeometry(QRect(0, 30, 541, 41));
-        scrollArea->setWidget(scrollAreaWidgetContents);
+        plainTextEdit_3->setGeometry(QRect(0, 30, 551, 51));
+        sclEventeditor->setWidget(scrollAreaWidgetContents);
         textBrowser = new QTextBrowser(TabEvents);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setGeometry(QRect(10, 651, 741, 71));
@@ -259,65 +262,65 @@ public:
         new QTreeWidgetItem(treeWidget);
         treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
         treeWidget->setGeometry(QRect(10, 0, 171, 651));
-        frame = new QFrame(TabEvents);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(180, 0, 571, 51));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Sunken);
-        gbx = new QGroupBox(frame);
-        gbx->setObjectName(QString::fromUtf8("gbx"));
-        gbx->setGeometry(QRect(10, 0, 141, 31));
-        gbx->setAlignment(Qt::AlignCenter);
-        radioButton = new QRadioButton(gbx);
-        radioButton->setObjectName(QString::fromUtf8("radioButton"));
-        radioButton->setGeometry(QRect(10, 10, 61, 16));
-        radioButton_2 = new QRadioButton(gbx);
-        radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
-        radioButton_2->setGeometry(QRect(70, 10, 61, 16));
-        groupBox = new QGroupBox(frame);
-        groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(150, 0, 241, 31));
-        groupBox->setAlignment(Qt::AlignCenter);
-        comboBox = new QComboBox(groupBox);
-        comboBox->setObjectName(QString::fromUtf8("comboBox"));
-        comboBox->setGeometry(QRect(0, 11, 91, 20));
-        comboBox_2 = new QComboBox(groupBox);
-        comboBox_2->setObjectName(QString::fromUtf8("comboBox_2"));
-        comboBox_2->setGeometry(QRect(90, 11, 91, 20));
-        spinBox = new QSpinBox(groupBox);
-        spinBox->setObjectName(QString::fromUtf8("spinBox"));
-        spinBox->setGeometry(QRect(180, 11, 61, 20));
-        spinBox->setMaximum(999999);
-        spinBox->setValue(560000);
-        groupBox_2 = new QGroupBox(frame);
+        frmEventStyle = new QFrame(TabEvents);
+        frmEventStyle->setObjectName(QString::fromUtf8("frmEventStyle"));
+        frmEventStyle->setGeometry(QRect(180, 0, 571, 51));
+        frmEventStyle->setFrameShape(QFrame::StyledPanel);
+        frmEventStyle->setFrameShadow(QFrame::Sunken);
+        gbxType = new QGroupBox(frmEventStyle);
+        gbxType->setObjectName(QString::fromUtf8("gbxType"));
+        gbxType->setGeometry(QRect(10, 0, 141, 31));
+        gbxType->setAlignment(Qt::AlignCenter);
+        rdbCountry = new QRadioButton(gbxType);
+        rdbCountry->setObjectName(QString::fromUtf8("rdbCountry"));
+        rdbCountry->setGeometry(QRect(10, 10, 61, 16));
+        rdbProvince = new QRadioButton(gbxType);
+        rdbProvince->setObjectName(QString::fromUtf8("rdbProvince"));
+        rdbProvince->setGeometry(QRect(70, 10, 61, 16));
+        gbxNumber = new QGroupBox(frmEventStyle);
+        gbxNumber->setObjectName(QString::fromUtf8("gbxNumber"));
+        gbxNumber->setGeometry(QRect(150, 0, 241, 31));
+        gbxNumber->setAlignment(Qt::AlignCenter);
+        cbxType = new QComboBox(gbxNumber);
+        cbxType->setObjectName(QString::fromUtf8("cbxType"));
+        cbxType->setGeometry(QRect(0, 11, 91, 20));
+        cbxRange = new QComboBox(gbxNumber);
+        cbxRange->setObjectName(QString::fromUtf8("cbxRange"));
+        cbxRange->setGeometry(QRect(90, 11, 91, 20));
+        sbxNumber = new QSpinBox(gbxNumber);
+        sbxNumber->setObjectName(QString::fromUtf8("sbxNumber"));
+        sbxNumber->setGeometry(QRect(180, 11, 61, 20));
+        sbxNumber->setMaximum(999999);
+        sbxNumber->setValue(560000);
+        groupBox_2 = new QGroupBox(frmEventStyle);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(390, 0, 171, 31));
         groupBox_2->setAlignment(Qt::AlignCenter);
-        radioButton_3 = new QRadioButton(groupBox_2);
-        radioButton_3->setObjectName(QString::fromUtf8("radioButton_3"));
-        radioButton_3->setGeometry(QRect(10, 10, 51, 19));
-        radioButton_4 = new QRadioButton(groupBox_2);
-        radioButton_4->setObjectName(QString::fromUtf8("radioButton_4"));
-        radioButton_4->setGeometry(QRect(70, 10, 51, 19));
-        spinBox_2 = new QSpinBox(groupBox_2);
-        spinBox_2->setObjectName(QString::fromUtf8("spinBox_2"));
-        spinBox_2->setGeometry(QRect(120, 10, 51, 20));
-        spinBox_2->setFrame(true);
-        spinBox_2->setMinimum(10);
-        spinBox_2->setMaximum(1000);
-        spinBox_2->setValue(1000);
-        lineEdit = new QLineEdit(frame);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(10, 30, 441, 20));
-        pushButton_3 = new QPushButton(frame);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(450, 30, 31, 21));
-        pushButton = new QPushButton(frame);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(480, 30, 51, 21));
-        pushButton_2 = new QPushButton(frame);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(530, 30, 31, 21));
+        rdbUnique = new QRadioButton(groupBox_2);
+        rdbUnique->setObjectName(QString::fromUtf8("rdbUnique"));
+        rdbUnique->setGeometry(QRect(10, 10, 51, 19));
+        rdbSeries = new QRadioButton(groupBox_2);
+        rdbSeries->setObjectName(QString::fromUtf8("rdbSeries"));
+        rdbSeries->setGeometry(QRect(70, 10, 51, 19));
+        sbxRange = new QSpinBox(groupBox_2);
+        sbxRange->setObjectName(QString::fromUtf8("sbxRange"));
+        sbxRange->setGeometry(QRect(120, 10, 51, 20));
+        sbxRange->setFrame(true);
+        sbxRange->setMinimum(10);
+        sbxRange->setMaximum(1000);
+        sbxRange->setValue(1000);
+        lneInternaleventname = new QLineEdit(frmEventStyle);
+        lneInternaleventname->setObjectName(QString::fromUtf8("lneInternaleventname"));
+        lneInternaleventname->setGeometry(QRect(10, 30, 441, 20));
+        psbNew = new QPushButton(frmEventStyle);
+        psbNew->setObjectName(QString::fromUtf8("psbNew"));
+        psbNew->setGeometry(QRect(450, 30, 31, 21));
+        psbPreview = new QPushButton(frmEventStyle);
+        psbPreview->setObjectName(QString::fromUtf8("psbPreview"));
+        psbPreview->setGeometry(QRect(480, 30, 51, 21));
+        psbSave = new QPushButton(frmEventStyle);
+        psbSave->setObjectName(QString::fromUtf8("psbSave"));
+        psbSave->setGeometry(QRect(530, 30, 31, 21));
         tabWidget = new QTabWidget(TabEvents);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tabWidget->setGeometry(QRect(750, 0, 291, 721));
@@ -432,6 +435,7 @@ public:
         menuSettings->addAction(menuSyntax_Check->menuAction());
         menuSettings->addAction(actionAdd_New_Syntax);
         menuSettings->addSeparator();
+        menuSettings->addAction(actionEditor_Settings);
         menuSettings->addAction(actionManage_My_Mod);
         menuSyntax_Check->addAction(actionForce_Check);
         menuSyntax_Check->addAction(actionSuggested);
@@ -483,6 +487,7 @@ public:
 #endif // QT_NO_TOOLTIP
         actionImport_Content->setText(QApplication::translate("BravenewmodderClass", "Import EUIII Content", 0, QApplication::UnicodeUTF8));
         actionUndo->setText(QApplication::translate("BravenewmodderClass", "Undo", 0, QApplication::UnicodeUTF8));
+        actionEditor_Settings->setText(QApplication::translate("BravenewmodderClass", "Editor Settings", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabGameplaySettings), QApplication::translate("BravenewmodderClass", "Gameplay Settings", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabCommon), QApplication::translate("BravenewmodderClass", "Common", 0, QApplication::UnicodeUTF8));
         groupBox_3->setTitle(QApplication::translate("BravenewmodderClass", "Trigger", 0, QApplication::UnicodeUTF8));
@@ -509,12 +514,12 @@ public:
         ___qtreewidgetitem6->setText(0, QApplication::translate("BravenewmodderClass", "Replace with TreeVIEW", 0, QApplication::UnicodeUTF8));
         treeWidget->setSortingEnabled(__sortingEnabled);
 
-        gbx->setTitle(QApplication::translate("BravenewmodderClass", "Event Type", 0, QApplication::UnicodeUTF8));
-        radioButton->setText(QApplication::translate("BravenewmodderClass", "Country", 0, QApplication::UnicodeUTF8));
-        radioButton_2->setText(QApplication::translate("BravenewmodderClass", "Province", 0, QApplication::UnicodeUTF8));
-        groupBox->setTitle(QApplication::translate("BravenewmodderClass", "Event Number", 0, QApplication::UnicodeUTF8));
-        comboBox->clear();
-        comboBox->insertItems(0, QStringList()
+        gbxType->setTitle(QApplication::translate("BravenewmodderClass", "Event Type", 0, QApplication::UnicodeUTF8));
+        rdbCountry->setText(QApplication::translate("BravenewmodderClass", "Country", 0, QApplication::UnicodeUTF8));
+        rdbProvince->setText(QApplication::translate("BravenewmodderClass", "Province", 0, QApplication::UnicodeUTF8));
+        gbxNumber->setTitle(QApplication::translate("BravenewmodderClass", "Event Number", 0, QApplication::UnicodeUTF8));
+        cbxType->clear();
+        cbxType->insertItems(0, QStringList()
          << QApplication::translate("BravenewmodderClass", "- Legacy", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "0 Government", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "1 Diplomacy", 0, QApplication::UnicodeUTF8)
@@ -527,8 +532,8 @@ public:
          << QApplication::translate("BravenewmodderClass", "8 Custom", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "9 Custom", 0, QApplication::UnicodeUTF8)
         );
-        comboBox_2->clear();
-        comboBox_2->insertItems(0, QStringList()
+        cbxRange->clear();
+        cbxRange->insertItems(0, QStringList()
          << QApplication::translate("BravenewmodderClass", "- Legacy", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "0 Series", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "1 Series", 0, QApplication::UnicodeUTF8)
@@ -542,12 +547,12 @@ public:
          << QApplication::translate("BravenewmodderClass", "9 Unique", 0, QApplication::UnicodeUTF8)
         );
         groupBox_2->setTitle(QApplication::translate("BravenewmodderClass", "Event Range", 0, QApplication::UnicodeUTF8));
-        radioButton_3->setText(QApplication::translate("BravenewmodderClass", "Unique", 0, QApplication::UnicodeUTF8));
-        radioButton_4->setText(QApplication::translate("BravenewmodderClass", "Series", 0, QApplication::UnicodeUTF8));
-        lineEdit->setText(QApplication::translate("BravenewmodderClass", "Internal Event Name - \"\" = Blank - #=event number - \"Content\" will remain until changed.", 0, QApplication::UnicodeUTF8));
-        pushButton_3->setText(QApplication::translate("BravenewmodderClass", "New", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("BravenewmodderClass", "Preview", 0, QApplication::UnicodeUTF8));
-        pushButton_2->setText(QApplication::translate("BravenewmodderClass", "Save", 0, QApplication::UnicodeUTF8));
+        rdbUnique->setText(QApplication::translate("BravenewmodderClass", "Unique", 0, QApplication::UnicodeUTF8));
+        rdbSeries->setText(QApplication::translate("BravenewmodderClass", "Series", 0, QApplication::UnicodeUTF8));
+        lneInternaleventname->setText(QApplication::translate("BravenewmodderClass", "Internal Event Name - \"\" = Blank - #=event number - \"Content\" will remain until changed.", 0, QApplication::UnicodeUTF8));
+        psbNew->setText(QApplication::translate("BravenewmodderClass", "New", 0, QApplication::UnicodeUTF8));
+        psbPreview->setText(QApplication::translate("BravenewmodderClass", "Preview", 0, QApplication::UnicodeUTF8));
+        psbSave->setText(QApplication::translate("BravenewmodderClass", "Save", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("BravenewmodderClass", "Triggers", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("BravenewmodderClass", "Scopes", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("BravenewmodderClass", "Effects", 0, QApplication::UnicodeUTF8));
