@@ -70,8 +70,14 @@
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
-        <verstretch>133</verstretch>
+        <verstretch>255</verstretch>
        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>200</height>
+       </size>
       </property>
       <property name="verticalScrollBarPolicy">
        <enum>Qt::ScrollBarAlwaysOn</enum>
@@ -80,7 +86,10 @@
        <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="widgetResizable">
-       <bool>true</bool>
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
       <widget class="QWidget" name="scrollAreaWidgetContents">
        <property name="geometry">
@@ -201,7 +210,7 @@
           <x>0</x>
           <y>460</y>
           <width>551</width>
-          <height>91</height>
+          <height>31</height>
          </rect>
         </property>
         <property name="title">
@@ -217,16 +226,16 @@
           </rect>
          </property>
         </widget>
-        <widget class="QPlainTextEdit" name="plainTextEdit_3">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>30</y>
-           <width>551</width>
-           <height>51</height>
-          </rect>
-         </property>
-        </widget>
+       </widget>
+       <widget class="QPlainTextEdit" name="plainTextEdit_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>540</y>
+          <width>551</width>
+          <height>121</height>
+         </rect>
+        </property>
        </widget>
       </widget>
      </widget>
