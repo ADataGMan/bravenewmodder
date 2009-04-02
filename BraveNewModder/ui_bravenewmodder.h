@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Wed Apr 1 00:41:24 2009
+** Created: Thu Apr 2 14:34:33 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -18,6 +18,7 @@
 #include <QtGui/QFrame>
 #include <QtGui/QGroupBox>
 #include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenu>
@@ -30,6 +31,7 @@
 #include <QtGui/QTabWidget>
 #include <QtGui/QTextBrowser>
 #include <QtGui/QTextEdit>
+#include <QtGui/QTreeView>
 #include <QtGui/QTreeWidget>
 #include <QtGui/QWidget>
 
@@ -62,23 +64,24 @@ public:
     QWidget *centralWidget;
     QTabWidget *tbxMain;
     QWidget *tabGameplaySettings;
+    QFrame *frame;
+    QLabel *label;
+    QLabel *label_2;
+    QLabel *label_3;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
+    QLabel *label_7;
+    QLabel *label_8;
+    QLabel *label_9;
+    QLabel *label_10;
+    QLabel *label_11;
+    QLabel *label_12;
+    QLabel *label_13;
     QWidget *tabCommon;
     QWidget *TabEvents;
-    QScrollArea *sclEventeditor;
-    QWidget *scrollAreaWidgetContents;
-    QGroupBox *groupBox_3;
-    QPlainTextEdit *plainTextEdit;
-    QGroupBox *groupBox_4;
-    QPlainTextEdit *plainTextEdit_2;
-    QGroupBox *groupBox_5;
-    QLineEdit *lineEdit_2;
-    QGroupBox *groupBox_6;
-    QTextEdit *textEdit;
-    QGroupBox *groupBox_7;
-    QLineEdit *lineEdit_3;
-    QPlainTextEdit *plainTextEdit_3;
     QTextBrowser *textBrowser;
-    QTreeWidget *treeWidget;
+    QTreeView *treeView;
     QFrame *frmEventStyle;
     QGroupBox *gbxType;
     QRadioButton *rdbCountry;
@@ -95,6 +98,7 @@ public:
     QPushButton *psbNew;
     QPushButton *psbPreview;
     QPushButton *psbSave;
+    QPushButton *psbPreview_2;
     QTabWidget *tabWidget;
     QWidget *tab;
     QTextBrowser *textBrowser_5;
@@ -111,7 +115,21 @@ public:
     QWidget *tab_7;
     QTextBrowser *textBrowser_4;
     QWidget *tab_8;
-    QTreeWidget *treeWidget1;
+    QTreeWidget *treeWidget;
+    QWidget *widget;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
+    QGroupBox *groupBox_5;
+    QLineEdit *lineEdit_2;
+    QGroupBox *groupBox_6;
+    QTextEdit *textEdit;
+    QGroupBox *groupBox_4;
+    QPlainTextEdit *plainTextEdit_2;
+    QGroupBox *groupBox_3;
+    QPlainTextEdit *plainTextEdit;
+    QGroupBox *groupBox_7;
+    QLineEdit *lineEdit_3;
+    QPlainTextEdit *plainTextEdit_3;
     QWidget *tabHistory;
     QWidget *tabInterface;
     QWidget *tabLocalisation;
@@ -189,96 +207,77 @@ public:
         tbxMain->setUsesScrollButtons(false);
         tabGameplaySettings = new QWidget();
         tabGameplaySettings->setObjectName(QString::fromUtf8("tabGameplaySettings"));
+        frame = new QFrame(tabGameplaySettings);
+        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setGeometry(QRect(150, 310, 531, 351));
+        frame->setFrameShape(QFrame::StyledPanel);
+        frame->setFrameShadow(QFrame::Raised);
+        label = new QLabel(frame);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(0, 0, 71, 21));
+        label_2 = new QLabel(frame);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(0, 60, 91, 21));
+        label_3 = new QLabel(frame);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(0, 80, 111, 21));
+        label_4 = new QLabel(frame);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(0, 20, 91, 21));
+        label_5 = new QLabel(frame);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(0, 40, 81, 21));
+        label_6 = new QLabel(frame);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setGeometry(QRect(150, 120, 231, 21));
+        label_7 = new QLabel(frame);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setGeometry(QRect(140, 170, 91, 21));
+        label_8 = new QLabel(frame);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(50, 220, 231, 21));
+        label_9 = new QLabel(frame);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setGeometry(QRect(0, 120, 61, 21));
+        label_10 = new QLabel(frame);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setGeometry(QRect(0, 100, 131, 21));
+        label_11 = new QLabel(frame);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setGeometry(QRect(250, 70, 131, 21));
+        label_12 = new QLabel(frame);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setGeometry(QRect(170, 30, 181, 21));
+        label_13 = new QLabel(frame);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setGeometry(QRect(170, 200, 181, 21));
         tbxMain->addTab(tabGameplaySettings, QString());
         tabCommon = new QWidget();
         tabCommon->setObjectName(QString::fromUtf8("tabCommon"));
         tbxMain->addTab(tabCommon, QString());
         TabEvents = new QWidget();
         TabEvents->setObjectName(QString::fromUtf8("TabEvents"));
-        sclEventeditor = new QScrollArea(TabEvents);
-        sclEventeditor->setObjectName(QString::fromUtf8("sclEventeditor"));
-        sclEventeditor->setGeometry(QRect(180, 50, 571, 601));
-        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(255);
-        sizePolicy.setHeightForWidth(sclEventeditor->sizePolicy().hasHeightForWidth());
-        sclEventeditor->setSizePolicy(sizePolicy);
-        sclEventeditor->setMinimumSize(QSize(0, 200));
-        sclEventeditor->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
-        sclEventeditor->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-        sclEventeditor->setWidgetResizable(false);
-        sclEventeditor->setAlignment(Qt::AlignCenter);
-        scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 551, 597));
-        groupBox_3 = new QGroupBox(scrollAreaWidgetContents);
-        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(0, 120, 551, 171));
-        plainTextEdit = new QPlainTextEdit(groupBox_3);
-        plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
-        plainTextEdit->setGeometry(QRect(0, 13, 551, 151));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Expanding);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(plainTextEdit->sizePolicy().hasHeightForWidth());
-        plainTextEdit->setSizePolicy(sizePolicy1);
-        groupBox_4 = new QGroupBox(scrollAreaWidgetContents);
-        groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-        groupBox_4->setGeometry(QRect(0, 290, 551, 171));
-        plainTextEdit_2 = new QPlainTextEdit(groupBox_4);
-        plainTextEdit_2->setObjectName(QString::fromUtf8("plainTextEdit_2"));
-        plainTextEdit_2->setGeometry(QRect(0, 13, 551, 151));
-        sizePolicy1.setHeightForWidth(plainTextEdit_2->sizePolicy().hasHeightForWidth());
-        plainTextEdit_2->setSizePolicy(sizePolicy1);
-        groupBox_5 = new QGroupBox(scrollAreaWidgetContents);
-        groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
-        groupBox_5->setGeometry(QRect(0, 0, 551, 41));
-        lineEdit_2 = new QLineEdit(groupBox_5);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(0, 13, 551, 22));
-        groupBox_6 = new QGroupBox(scrollAreaWidgetContents);
-        groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
-        groupBox_6->setGeometry(QRect(0, 40, 551, 80));
-        textEdit = new QTextEdit(groupBox_6);
-        textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(0, 13, 551, 61));
-        groupBox_7 = new QGroupBox(scrollAreaWidgetContents);
-        groupBox_7->setObjectName(QString::fromUtf8("groupBox_7"));
-        groupBox_7->setGeometry(QRect(0, 460, 551, 31));
-        lineEdit_3 = new QLineEdit(groupBox_7);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
-        lineEdit_3->setGeometry(QRect(0, 13, 551, 20));
-        plainTextEdit_3 = new QPlainTextEdit(scrollAreaWidgetContents);
-        plainTextEdit_3->setObjectName(QString::fromUtf8("plainTextEdit_3"));
-        plainTextEdit_3->setGeometry(QRect(0, 540, 551, 121));
-        sclEventeditor->setWidget(scrollAreaWidgetContents);
         textBrowser = new QTextBrowser(TabEvents);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(10, 651, 741, 71));
-        treeWidget = new QTreeWidget(TabEvents);
-        QTreeWidgetItem *__qtreewidgetitem = new QTreeWidgetItem(treeWidget);
-        new QTreeWidgetItem(__qtreewidgetitem);
-        QTreeWidgetItem *__qtreewidgetitem1 = new QTreeWidgetItem(treeWidget);
-        new QTreeWidgetItem(__qtreewidgetitem1);
-        new QTreeWidgetItem(__qtreewidgetitem1);
-        new QTreeWidgetItem(treeWidget);
-        treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
-        treeWidget->setGeometry(QRect(10, 0, 171, 651));
+        textBrowser->setGeometry(QRect(10, 661, 781, 61));
+        treeView = new QTreeView(TabEvents);
+        treeView->setObjectName(QString::fromUtf8("treeView"));
+        treeView->setGeometry(QRect(10, 0, 171, 661));
         frmEventStyle = new QFrame(TabEvents);
         frmEventStyle->setObjectName(QString::fromUtf8("frmEventStyle"));
-        frmEventStyle->setGeometry(QRect(180, 0, 571, 51));
+        frmEventStyle->setGeometry(QRect(180, 0, 611, 51));
         frmEventStyle->setFrameShape(QFrame::StyledPanel);
         frmEventStyle->setFrameShadow(QFrame::Sunken);
         gbxType = new QGroupBox(frmEventStyle);
         gbxType->setObjectName(QString::fromUtf8("gbxType"));
-        gbxType->setGeometry(QRect(10, 0, 141, 31));
+        gbxType->setGeometry(QRect(2, 0, 148, 31));
         gbxType->setAlignment(Qt::AlignCenter);
         rdbCountry = new QRadioButton(gbxType);
         rdbCountry->setObjectName(QString::fromUtf8("rdbCountry"));
         rdbCountry->setGeometry(QRect(10, 10, 61, 16));
         rdbProvince = new QRadioButton(gbxType);
         rdbProvince->setObjectName(QString::fromUtf8("rdbProvince"));
-        rdbProvince->setGeometry(QRect(70, 10, 61, 16));
+        rdbProvince->setGeometry(QRect(80, 10, 61, 16));
         gbxNumber = new QGroupBox(frmEventStyle);
         gbxNumber->setObjectName(QString::fromUtf8("gbxNumber"));
         gbxNumber->setGeometry(QRect(150, 0, 241, 31));
@@ -293,7 +292,7 @@ public:
         sbxNumber->setObjectName(QString::fromUtf8("sbxNumber"));
         sbxNumber->setGeometry(QRect(180, 11, 61, 20));
         sbxNumber->setMaximum(999999);
-        sbxNumber->setValue(560000);
+        sbxNumber->setValue(100500);
         groupBox_2 = new QGroupBox(frmEventStyle);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(390, 0, 171, 31));
@@ -313,24 +312,27 @@ public:
         sbxRange->setValue(1000);
         lneInternaleventname = new QLineEdit(frmEventStyle);
         lneInternaleventname->setObjectName(QString::fromUtf8("lneInternaleventname"));
-        lneInternaleventname->setGeometry(QRect(10, 30, 441, 20));
+        lneInternaleventname->setGeometry(QRect(2, 30, 437, 20));
         psbNew = new QPushButton(frmEventStyle);
         psbNew->setObjectName(QString::fromUtf8("psbNew"));
-        psbNew->setGeometry(QRect(450, 30, 31, 21));
+        psbNew->setGeometry(QRect(560, 8, 50, 21));
         psbPreview = new QPushButton(frmEventStyle);
         psbPreview->setObjectName(QString::fromUtf8("psbPreview"));
-        psbPreview->setGeometry(QRect(480, 30, 51, 21));
+        psbPreview->setGeometry(QRect(510, 30, 51, 21));
         psbSave = new QPushButton(frmEventStyle);
         psbSave->setObjectName(QString::fromUtf8("psbSave"));
-        psbSave->setGeometry(QRect(530, 30, 31, 21));
+        psbSave->setGeometry(QRect(560, 28, 50, 23));
+        psbPreview_2 = new QPushButton(frmEventStyle);
+        psbPreview_2->setObjectName(QString::fromUtf8("psbPreview_2"));
+        psbPreview_2->setGeometry(QRect(440, 30, 71, 21));
         tabWidget = new QTabWidget(TabEvents);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(750, 0, 291, 721));
-        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
-        tabWidget->setSizePolicy(sizePolicy2);
+        tabWidget->setGeometry(QRect(790, 0, 251, 721));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
+        tabWidget->setSizePolicy(sizePolicy);
         tabWidget->setElideMode(Qt::ElideLeft);
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
@@ -376,18 +378,70 @@ public:
         tabWidget_2->addTab(tab_7, QString());
         tab_8 = new QWidget();
         tab_8->setObjectName(QString::fromUtf8("tab_8"));
-        treeWidget1 = new QTreeWidget(tab_8);
-        new QTreeWidgetItem(treeWidget1);
-        new QTreeWidgetItem(treeWidget1);
-        new QTreeWidgetItem(treeWidget1);
-        new QTreeWidgetItem(treeWidget1);
-        new QTreeWidgetItem(treeWidget1);
-        new QTreeWidgetItem(treeWidget1);
-        new QTreeWidgetItem(treeWidget1);
-        treeWidget1->setObjectName(QString::fromUtf8("treeWidget1"));
-        treeWidget1->setGeometry(QRect(0, 0, 281, 681));
+        treeWidget = new QTreeWidget(tab_8);
+        new QTreeWidgetItem(treeWidget);
+        new QTreeWidgetItem(treeWidget);
+        new QTreeWidgetItem(treeWidget);
+        new QTreeWidgetItem(treeWidget);
+        new QTreeWidgetItem(treeWidget);
+        new QTreeWidgetItem(treeWidget);
+        new QTreeWidgetItem(treeWidget);
+        treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
+        treeWidget->setGeometry(QRect(0, 0, 281, 681));
         tabWidget_2->addTab(tab_8, QString());
         tabWidget->addTab(tab_4, QString());
+        widget = new QWidget(TabEvents);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(180, 50, 611, 611));
+        scrollArea = new QScrollArea(widget);
+        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
+        scrollArea->setGeometry(QRect(0, 0, 611, 741));
+        scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 591, 737));
+        groupBox_5 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
+        groupBox_5->setGeometry(QRect(0, 0, 591, 31));
+        lineEdit_2 = new QLineEdit(groupBox_5);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(0, 12, 591, 20));
+        groupBox_6 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
+        groupBox_6->setGeometry(QRect(0, 30, 591, 80));
+        textEdit = new QTextEdit(groupBox_6);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+        textEdit->setGeometry(QRect(0, 13, 591, 61));
+        groupBox_4 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
+        groupBox_4->setGeometry(QRect(0, 280, 591, 171));
+        plainTextEdit_2 = new QPlainTextEdit(groupBox_4);
+        plainTextEdit_2->setObjectName(QString::fromUtf8("plainTextEdit_2"));
+        plainTextEdit_2->setGeometry(QRect(0, 13, 591, 151));
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(plainTextEdit_2->sizePolicy().hasHeightForWidth());
+        plainTextEdit_2->setSizePolicy(sizePolicy1);
+        groupBox_3 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
+        groupBox_3->setGeometry(QRect(0, 110, 591, 171));
+        plainTextEdit = new QPlainTextEdit(groupBox_3);
+        plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
+        plainTextEdit->setGeometry(QRect(0, 13, 591, 151));
+        sizePolicy1.setHeightForWidth(plainTextEdit->sizePolicy().hasHeightForWidth());
+        plainTextEdit->setSizePolicy(sizePolicy1);
+        groupBox_7 = new QGroupBox(scrollAreaWidgetContents);
+        groupBox_7->setObjectName(QString::fromUtf8("groupBox_7"));
+        groupBox_7->setGeometry(QRect(0, 450, 591, 161));
+        lineEdit_3 = new QLineEdit(groupBox_7);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_3->setGeometry(QRect(0, 13, 591, 20));
+        plainTextEdit_3 = new QPlainTextEdit(groupBox_7);
+        plainTextEdit_3->setObjectName(QString::fromUtf8("plainTextEdit_3"));
+        plainTextEdit_3->setGeometry(QRect(0, 40, 591, 121));
+        scrollArea->setWidget(scrollAreaWidgetContents);
         tbxMain->addTab(TabEvents, QString());
         tabHistory = new QWidget();
         tabHistory->setObjectName(QString::fromUtf8("tabHistory"));
@@ -490,32 +544,73 @@ public:
         actionImport_Content->setText(QApplication::translate("BravenewmodderClass", "Import EUIII Content", 0, QApplication::UnicodeUTF8));
         actionUndo->setText(QApplication::translate("BravenewmodderClass", "Undo", 0, QApplication::UnicodeUTF8));
         actionEditor_Settings->setText(QApplication::translate("BravenewmodderClass", "Editor Settings", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Rulers</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Colonists</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Merchants</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Advisors</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Leaders</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Spread of Sea Provinces</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_7->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Inflation</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_8->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Spread of Land Provinces</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_9->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Spies</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Missionaries</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_11->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Difficulty</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_12->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">AI Aggressiveness</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        label_13->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Size of Colonists</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabGameplaySettings), QApplication::translate("BravenewmodderClass", "Gameplay Settings", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabCommon), QApplication::translate("BravenewmodderClass", "Common", 0, QApplication::UnicodeUTF8));
-        groupBox_3->setTitle(QApplication::translate("BravenewmodderClass", "Trigger", 0, QApplication::UnicodeUTF8));
-        groupBox_4->setTitle(QApplication::translate("BravenewmodderClass", "Mean Time To Happen", 0, QApplication::UnicodeUTF8));
-        groupBox_5->setTitle(QApplication::translate("BravenewmodderClass", "Event Title", 0, QApplication::UnicodeUTF8));
-        groupBox_6->setTitle(QApplication::translate("BravenewmodderClass", "Event Description", 0, QApplication::UnicodeUTF8));
-        groupBox_7->setTitle(QApplication::translate("BravenewmodderClass", "Option 1", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem = treeWidget->headerItem();
-        ___qtreewidgetitem->setText(0, QApplication::translate("BravenewmodderClass", "Events", 0, QApplication::UnicodeUTF8));
-
-        const bool __sortingEnabled = treeWidget->isSortingEnabled();
-        treeWidget->setSortingEnabled(false);
-        QTreeWidgetItem *___qtreewidgetitem1 = treeWidget->topLevelItem(0);
-        ___qtreewidgetitem1->setText(0, QApplication::translate("BravenewmodderClass", "Eventpool1.txt", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem2 = ___qtreewidgetitem1->child(0);
-        ___qtreewidgetitem2->setText(0, QApplication::translate("BravenewmodderClass", "Event25000500", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem3 = treeWidget->topLevelItem(1);
-        ___qtreewidgetitem3->setText(0, QApplication::translate("BravenewmodderClass", "Eventpool2.txt", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem4 = ___qtreewidgetitem3->child(0);
-        ___qtreewidgetitem4->setText(0, QApplication::translate("BravenewmodderClass", "Event35000500", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem5 = ___qtreewidgetitem3->child(1);
-        ___qtreewidgetitem5->setText(0, QApplication::translate("BravenewmodderClass", "Event36000500", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem6 = treeWidget->topLevelItem(2);
-        ___qtreewidgetitem6->setText(0, QApplication::translate("BravenewmodderClass", "Replace with TreeVIEW", 0, QApplication::UnicodeUTF8));
-        treeWidget->setSortingEnabled(__sortingEnabled);
-
         gbxType->setTitle(QApplication::translate("BravenewmodderClass", "Event Type", 0, QApplication::UnicodeUTF8));
         rdbCountry->setText(QApplication::translate("BravenewmodderClass", "Country", 0, QApplication::UnicodeUTF8));
         rdbProvince->setText(QApplication::translate("BravenewmodderClass", "Province", 0, QApplication::UnicodeUTF8));
@@ -542,8 +637,8 @@ public:
          << QApplication::translate("BravenewmodderClass", "2 Series", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "3 Series", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "4 Series", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("BravenewmodderClass", "5 Unique", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("BravenewmodderClass", "6 Unique", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("BravenewmodderClass", "5 Series", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("BravenewmodderClass", "6 Series", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "7 Unique", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "8 Unique", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("BravenewmodderClass", "9 Unique", 0, QApplication::UnicodeUTF8)
@@ -551,39 +646,45 @@ public:
         groupBox_2->setTitle(QApplication::translate("BravenewmodderClass", "Event Range", 0, QApplication::UnicodeUTF8));
         rdbUnique->setText(QApplication::translate("BravenewmodderClass", "Unique", 0, QApplication::UnicodeUTF8));
         rdbSeries->setText(QApplication::translate("BravenewmodderClass", "Series", 0, QApplication::UnicodeUTF8));
-        lneInternaleventname->setText(QApplication::translate("BravenewmodderClass", "Internal Event Name - \"\" = Blank - #=event number - \"Content\" will remain until changed.", 0, QApplication::UnicodeUTF8));
+        lneInternaleventname->setText(QApplication::translate("BravenewmodderClass", "\"Internal Event Series Name\" *Series range&active number* [Internal Event Name]", 0, QApplication::UnicodeUTF8));
         psbNew->setText(QApplication::translate("BravenewmodderClass", "New", 0, QApplication::UnicodeUTF8));
         psbPreview->setText(QApplication::translate("BravenewmodderClass", "Preview", 0, QApplication::UnicodeUTF8));
         psbSave->setText(QApplication::translate("BravenewmodderClass", "Save", 0, QApplication::UnicodeUTF8));
+        psbPreview_2->setText(QApplication::translate("BravenewmodderClass", "Syntax Check", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("BravenewmodderClass", "Triggers", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("BravenewmodderClass", "Scopes", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("BravenewmodderClass", "Effects", 0, QApplication::UnicodeUTF8));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("BravenewmodderClass", "Flags", 0, QApplication::UnicodeUTF8));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_6), QApplication::translate("BravenewmodderClass", "Modifiers", 0, QApplication::UnicodeUTF8));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_7), QApplication::translate("BravenewmodderClass", "Variables", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem7 = treeWidget1->headerItem();
-        ___qtreewidgetitem7->setText(0, QApplication::translate("BravenewmodderClass", "Data", 0, QApplication::UnicodeUTF8));
+        QTreeWidgetItem *___qtreewidgetitem = treeWidget->headerItem();
+        ___qtreewidgetitem->setText(0, QApplication::translate("BravenewmodderClass", "Data List", 0, QApplication::UnicodeUTF8));
 
-        const bool __sortingEnabled1 = treeWidget1->isSortingEnabled();
-        treeWidget1->setSortingEnabled(false);
-        QTreeWidgetItem *___qtreewidgetitem8 = treeWidget1->topLevelItem(0);
-        ___qtreewidgetitem8->setText(0, QApplication::translate("BravenewmodderClass", "Countries", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem9 = treeWidget1->topLevelItem(1);
-        ___qtreewidgetitem9->setText(0, QApplication::translate("BravenewmodderClass", "Religions", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem10 = treeWidget1->topLevelItem(2);
-        ___qtreewidgetitem10->setText(0, QApplication::translate("BravenewmodderClass", "Cultures", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem11 = treeWidget1->topLevelItem(3);
-        ___qtreewidgetitem11->setText(0, QApplication::translate("BravenewmodderClass", "Trade Goods", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem12 = treeWidget1->topLevelItem(4);
-        ___qtreewidgetitem12->setText(0, QApplication::translate("BravenewmodderClass", "National Ideas", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem13 = treeWidget1->topLevelItem(5);
-        ___qtreewidgetitem13->setText(0, QApplication::translate("BravenewmodderClass", "Policies", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem14 = treeWidget1->topLevelItem(6);
-        ___qtreewidgetitem14->setText(0, QApplication::translate("BravenewmodderClass", "Governments", 0, QApplication::UnicodeUTF8));
-        treeWidget1->setSortingEnabled(__sortingEnabled1);
+        const bool __sortingEnabled = treeWidget->isSortingEnabled();
+        treeWidget->setSortingEnabled(false);
+        QTreeWidgetItem *___qtreewidgetitem1 = treeWidget->topLevelItem(0);
+        ___qtreewidgetitem1->setText(0, QApplication::translate("BravenewmodderClass", "Countries", 0, QApplication::UnicodeUTF8));
+        QTreeWidgetItem *___qtreewidgetitem2 = treeWidget->topLevelItem(1);
+        ___qtreewidgetitem2->setText(0, QApplication::translate("BravenewmodderClass", "Religions", 0, QApplication::UnicodeUTF8));
+        QTreeWidgetItem *___qtreewidgetitem3 = treeWidget->topLevelItem(2);
+        ___qtreewidgetitem3->setText(0, QApplication::translate("BravenewmodderClass", "Cultures", 0, QApplication::UnicodeUTF8));
+        QTreeWidgetItem *___qtreewidgetitem4 = treeWidget->topLevelItem(3);
+        ___qtreewidgetitem4->setText(0, QApplication::translate("BravenewmodderClass", "Trade Goods", 0, QApplication::UnicodeUTF8));
+        QTreeWidgetItem *___qtreewidgetitem5 = treeWidget->topLevelItem(4);
+        ___qtreewidgetitem5->setText(0, QApplication::translate("BravenewmodderClass", "National Ideas", 0, QApplication::UnicodeUTF8));
+        QTreeWidgetItem *___qtreewidgetitem6 = treeWidget->topLevelItem(5);
+        ___qtreewidgetitem6->setText(0, QApplication::translate("BravenewmodderClass", "Policies", 0, QApplication::UnicodeUTF8));
+        QTreeWidgetItem *___qtreewidgetitem7 = treeWidget->topLevelItem(6);
+        ___qtreewidgetitem7->setText(0, QApplication::translate("BravenewmodderClass", "Governments", 0, QApplication::UnicodeUTF8));
+        treeWidget->setSortingEnabled(__sortingEnabled);
 
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_8), QApplication::translate("BravenewmodderClass", "Data", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("BravenewmodderClass", "Index", 0, QApplication::UnicodeUTF8));
+        groupBox_5->setTitle(QApplication::translate("BravenewmodderClass", "Event Title", 0, QApplication::UnicodeUTF8));
+        groupBox_6->setTitle(QApplication::translate("BravenewmodderClass", "Event Description", 0, QApplication::UnicodeUTF8));
+        groupBox_4->setTitle(QApplication::translate("BravenewmodderClass", "Mean Time To Happen", 0, QApplication::UnicodeUTF8));
+        groupBox_3->setTitle(QApplication::translate("BravenewmodderClass", "Trigger", 0, QApplication::UnicodeUTF8));
+        groupBox_7->setTitle(QApplication::translate("BravenewmodderClass", "Option 1", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(TabEvents), QApplication::translate("BravenewmodderClass", "Events", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabHistory), QApplication::translate("BravenewmodderClass", "History", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabInterface), QApplication::translate("BravenewmodderClass", "Interface", 0, QApplication::UnicodeUTF8));
