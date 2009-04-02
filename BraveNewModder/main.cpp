@@ -1,5 +1,6 @@
 #include <QtGui/QApplication>
 #include "bravenewmodder.h"
+#include "events.h"
 
 int main(int argc, char *argv[])
 {
