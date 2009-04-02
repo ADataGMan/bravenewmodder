@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Thu Apr 2 14:34:33 2009
+** Created: Thu Apr 2 18:10:52 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -32,7 +32,6 @@
 #include <QtGui/QTextBrowser>
 #include <QtGui/QTextEdit>
 #include <QtGui/QTreeView>
-#include <QtGui/QTreeWidget>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -115,7 +114,7 @@ public:
     QWidget *tab_7;
     QTextBrowser *textBrowser_4;
     QWidget *tab_8;
-    QTreeWidget *treeWidget;
+    QTreeView *treeView1;
     QWidget *widget;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
@@ -378,16 +377,9 @@ public:
         tabWidget_2->addTab(tab_7, QString());
         tab_8 = new QWidget();
         tab_8->setObjectName(QString::fromUtf8("tab_8"));
-        treeWidget = new QTreeWidget(tab_8);
-        new QTreeWidgetItem(treeWidget);
-        new QTreeWidgetItem(treeWidget);
-        new QTreeWidgetItem(treeWidget);
-        new QTreeWidgetItem(treeWidget);
-        new QTreeWidgetItem(treeWidget);
-        new QTreeWidgetItem(treeWidget);
-        new QTreeWidgetItem(treeWidget);
-        treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
-        treeWidget->setGeometry(QRect(0, 0, 281, 681));
+        treeView1 = new QTreeView(tab_8);
+        treeView1->setObjectName(QString::fromUtf8("treeView1"));
+        treeView1->setGeometry(QRect(0, 0, 281, 681));
         tabWidget_2->addTab(tab_8, QString());
         tabWidget->addTab(tab_4, QString());
         widget = new QWidget(TabEvents);
@@ -657,27 +649,6 @@ public:
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("BravenewmodderClass", "Flags", 0, QApplication::UnicodeUTF8));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_6), QApplication::translate("BravenewmodderClass", "Modifiers", 0, QApplication::UnicodeUTF8));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_7), QApplication::translate("BravenewmodderClass", "Variables", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem = treeWidget->headerItem();
-        ___qtreewidgetitem->setText(0, QApplication::translate("BravenewmodderClass", "Data List", 0, QApplication::UnicodeUTF8));
-
-        const bool __sortingEnabled = treeWidget->isSortingEnabled();
-        treeWidget->setSortingEnabled(false);
-        QTreeWidgetItem *___qtreewidgetitem1 = treeWidget->topLevelItem(0);
-        ___qtreewidgetitem1->setText(0, QApplication::translate("BravenewmodderClass", "Countries", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem2 = treeWidget->topLevelItem(1);
-        ___qtreewidgetitem2->setText(0, QApplication::translate("BravenewmodderClass", "Religions", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem3 = treeWidget->topLevelItem(2);
-        ___qtreewidgetitem3->setText(0, QApplication::translate("BravenewmodderClass", "Cultures", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem4 = treeWidget->topLevelItem(3);
-        ___qtreewidgetitem4->setText(0, QApplication::translate("BravenewmodderClass", "Trade Goods", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem5 = treeWidget->topLevelItem(4);
-        ___qtreewidgetitem5->setText(0, QApplication::translate("BravenewmodderClass", "National Ideas", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem6 = treeWidget->topLevelItem(5);
-        ___qtreewidgetitem6->setText(0, QApplication::translate("BravenewmodderClass", "Policies", 0, QApplication::UnicodeUTF8));
-        QTreeWidgetItem *___qtreewidgetitem7 = treeWidget->topLevelItem(6);
-        ___qtreewidgetitem7->setText(0, QApplication::translate("BravenewmodderClass", "Governments", 0, QApplication::UnicodeUTF8));
-        treeWidget->setSortingEnabled(__sortingEnabled);
-
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_8), QApplication::translate("BravenewmodderClass", "Data", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("BravenewmodderClass", "Index", 0, QApplication::UnicodeUTF8));
         groupBox_5->setTitle(QApplication::translate("BravenewmodderClass", "Event Title", 0, QApplication::UnicodeUTF8));

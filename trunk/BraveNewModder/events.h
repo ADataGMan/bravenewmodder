@@ -2,6 +2,8 @@
 #define EVENTS_H
 
 #include <QtCore>
+#include <QtGlobal>
+#include <QtDebug>
 
 /*
  * A simple structure for storing the information
@@ -34,11 +36,13 @@ public:
     events(QString file);
 
 private:
+    //vars
     QString filename;
     QVector<event> vectorEvents;
 
+    //functions
     void parseEvent();
-    QVector<QString> readFile();
+    QString readFile();
 };
 
 
