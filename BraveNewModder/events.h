@@ -2,7 +2,6 @@
 #define EVENTS_H
 
 #include <QtCore>
-#include <QtGlobal>
 #include <QtDebug>
 
 /*

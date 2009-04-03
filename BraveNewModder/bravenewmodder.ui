@@ -305,7 +305,7 @@ p, li { white-space: pre-wrap; }
        </rect>
       </property>
      </widget>
-     <widget class="QTreeView" name="treeView">
+     <widget class="QTreeView" name="trvEvents">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -313,6 +313,9 @@ p, li { white-space: pre-wrap; }
         <width>171</width>
         <height>661</height>
        </rect>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QFrame" name="frmEventStyle">
@@ -680,7 +683,7 @@ p, li { white-space: pre-wrap; }
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideLeft</enum>
@@ -744,7 +747,7 @@ p, li { white-space: pre-wrap; }
          </rect>
         </property>
         <property name="currentIndex">
-         <number>3</number>
+         <number>0</number>
         </property>
         <property name="elideMode">
          <enum>Qt::ElideLeft</enum>
@@ -841,8 +844,8 @@ p, li { white-space: pre-wrap; }
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>591</width>
-          <height>737</height>
+          <width>592</width>
+          <height>739</height>
          </rect>
         </property>
         <widget class="QGroupBox" name="groupBox_5">
@@ -1024,7 +1027,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>19</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

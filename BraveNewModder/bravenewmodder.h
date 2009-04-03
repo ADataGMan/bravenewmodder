@@ -1,7 +1,7 @@
 #ifndef BRAVENEWMODDER_H
 #define BRAVENEWMODDER_H
 
-#include <QtGui/QMainWindow>
+#include <QtGui>
 
 namespace Ui
 {
@@ -18,6 +18,9 @@ public:
 
 private:
     Ui::BravenewmodderClass *ui;
+
+private slots:
+    void on_actionLoad_Mod_triggered();
 };
 
 #endif // BRAVENEWMODDER_H

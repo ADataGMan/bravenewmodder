@@ -34,9 +34,7 @@ void events::parseEvent()
     while(index < eventData.length())
     {
         indexc = eventData.indexOf(country,index);
-        qDebug() << "Country Index: " << indexc <<endl;
         indexp = eventData.indexOf(province,index);
-        qDebug() << "Province Index: " << indexp <<endl;
         if(indexc < indexp && indexc > -1)
         {
             //we found a country
@@ -55,7 +53,6 @@ void events::parseEvent()
                 segment.append(item);
             }
             this->vectorEvents.push_back(deepParse(segment));
-          //  qDebug() << "Country Segment: \n" << segment <<endl;
             segment.clear();
             index += i;
         } else if( indexc > indexp && indexp > -1)
@@ -76,7 +73,6 @@ void events::parseEvent()
                 segment.append(item);
             }
             this->vectorEvents.push_back(deepParse(segment));
-        //    qDebug() << "Province Segment: \n" << segment <<endl;
             segment.clear();
             index += i;
         } else if( indexc == -1 && indexp == -1)
@@ -104,7 +100,6 @@ void events::parseEvent()
                     segment.append(item);
                 }
                 this->vectorEvents.push_back(deepParse(segment));
-       //         qDebug() << "Province Segment: \n" << segment <<endl;
                 segment.clear();
                 index += i;
             } else
@@ -125,7 +120,6 @@ void events::parseEvent()
                     segment.append(item);
                 }
                 this->vectorEvents.push_back(deepParse(segment));
-       //         qDebug() << "Country Segment: \n" << segment <<endl;
                 segment.clear();
                 index += i;
                 }
