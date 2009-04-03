@@ -295,7 +295,7 @@ p, li { white-space: pre-wrap; }
      <attribute name="title">
       <string>Events</string>
      </attribute>
-     <widget class="QTextBrowser" name="textBrowser">
+     <widget class="QTextBrowser" name="tbrInfo">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -537,7 +537,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </widget>
-      <widget class="QGroupBox" name="groupBox_2">
+      <widget class="QGroupBox" name="gbxRange">
        <property name="geometry">
         <rect>
          <x>390</x>
@@ -667,7 +667,7 @@ p, li { white-space: pre-wrap; }
        </property>
       </widget>
      </widget>
-     <widget class="QTabWidget" name="tabWidget">
+     <widget class="QTabWidget" name="tbxReference_2">
       <property name="geometry">
        <rect>
         <x>790</x>
@@ -683,16 +683,16 @@ p, li { white-space: pre-wrap; }
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideLeft</enum>
       </property>
-      <widget class="QWidget" name="tab">
+      <widget class="QWidget" name="tabTriggers">
        <attribute name="title">
         <string>Triggers</string>
        </attribute>
-       <widget class="QTextBrowser" name="textBrowser_5">
+       <widget class="QTextBrowser" name="tbrTriggers">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -703,11 +703,11 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_2">
+      <widget class="QWidget" name="tabScopes">
        <attribute name="title">
         <string>Scopes</string>
        </attribute>
-       <widget class="QTextBrowser" name="textBrowser_6">
+       <widget class="QTextBrowser" name="tbrScopes">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -718,11 +718,11 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_3">
+      <widget class="QWidget" name="tabEffects">
        <attribute name="title">
         <string>Effects</string>
        </attribute>
-       <widget class="QTextBrowser" name="textBrowser_7">
+       <widget class="QTextBrowser" name="tbrEffects">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -733,11 +733,11 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_4">
+      <widget class="QWidget" name="tabIndex">
        <attribute name="title">
         <string>Index</string>
        </attribute>
-       <widget class="QTabWidget" name="tabWidget_2">
+       <widget class="QTabWidget" name="tbxUserdata">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -747,16 +747,16 @@ p, li { white-space: pre-wrap; }
          </rect>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>3</number>
         </property>
         <property name="elideMode">
          <enum>Qt::ElideLeft</enum>
         </property>
-        <widget class="QWidget" name="tab_5">
+        <widget class="QWidget" name="tabFlags">
          <attribute name="title">
           <string>Flags</string>
          </attribute>
-         <widget class="QTextBrowser" name="textBrowser_2">
+         <widget class="QTextBrowser" name="tbrFlags">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -767,11 +767,11 @@ p, li { white-space: pre-wrap; }
           </property>
          </widget>
         </widget>
-        <widget class="QWidget" name="tab_6">
+        <widget class="QWidget" name="tabModifiers">
          <attribute name="title">
           <string>Modifiers</string>
          </attribute>
-         <widget class="QTextBrowser" name="textBrowser_3">
+         <widget class="QTextBrowser" name="tbrModifiers">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -782,11 +782,11 @@ p, li { white-space: pre-wrap; }
           </property>
          </widget>
         </widget>
-        <widget class="QWidget" name="tab_7">
+        <widget class="QWidget" name="tabVariables">
          <attribute name="title">
           <string>Variables</string>
          </attribute>
-         <widget class="QTextBrowser" name="textBrowser_4">
+         <widget class="QTextBrowser" name="tbrVariables">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -797,11 +797,11 @@ p, li { white-space: pre-wrap; }
           </property>
          </widget>
         </widget>
-        <widget class="QWidget" name="tab_8">
+        <widget class="QWidget" name="tabData">
          <attribute name="title">
           <string>Data</string>
          </attribute>
-         <widget class="QTreeView" name="treeView">
+         <widget class="QTreeView" name="trvLData">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -815,7 +815,7 @@ p, li { white-space: pre-wrap; }
        </widget>
       </widget>
      </widget>
-     <widget class="QWidget" name="widget" native="true">
+     <widget class="QWidget" name="frmEventmain" native="true">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -824,7 +824,7 @@ p, li { white-space: pre-wrap; }
         <height>611</height>
        </rect>
       </property>
-      <widget class="QScrollArea" name="scrollArea">
+      <widget class="QScrollArea" name="scrEventmain">
        <property name="geometry">
         <rect>
          <x>0</x>
@@ -839,16 +839,16 @@ p, li { white-space: pre-wrap; }
        <property name="widgetResizable">
         <bool>true</bool>
        </property>
-       <widget class="QWidget" name="scrollAreaWidgetContents">
+       <widget class="QWidget" name="sacEventmain">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>592</width>
-          <height>739</height>
+          <width>591</width>
+          <height>737</height>
          </rect>
         </property>
-        <widget class="QGroupBox" name="groupBox_5">
+        <widget class="QGroupBox" name="gbxEventTitle">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -860,7 +860,7 @@ p, li { white-space: pre-wrap; }
          <property name="title">
           <string>Event Title</string>
          </property>
-         <widget class="QLineEdit" name="lineEdit_2">
+         <widget class="QLineEdit" name="lneEventTitle">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -871,7 +871,7 @@ p, li { white-space: pre-wrap; }
           </property>
          </widget>
         </widget>
-        <widget class="QGroupBox" name="groupBox_6">
+        <widget class="QGroupBox" name="gbxEventDesc">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -883,7 +883,7 @@ p, li { white-space: pre-wrap; }
          <property name="title">
           <string>Event Description</string>
          </property>
-         <widget class="QTextEdit" name="textEdit">
+         <widget class="QTextEdit" name="txeEventDesc">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -894,7 +894,7 @@ p, li { white-space: pre-wrap; }
           </property>
          </widget>
         </widget>
-        <widget class="QGroupBox" name="groupBox_4">
+        <widget class="QGroupBox" name="gbxMTTH">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -906,7 +906,7 @@ p, li { white-space: pre-wrap; }
          <property name="title">
           <string>Mean Time To Happen</string>
          </property>
-         <widget class="QPlainTextEdit" name="plainTextEdit_2">
+         <widget class="QPlainTextEdit" name="pteMTTH">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -923,7 +923,7 @@ p, li { white-space: pre-wrap; }
           </property>
          </widget>
         </widget>
-        <widget class="QGroupBox" name="groupBox_3">
+        <widget class="QGroupBox" name="gbxTrigger">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -935,7 +935,7 @@ p, li { white-space: pre-wrap; }
          <property name="title">
           <string>Trigger</string>
          </property>
-         <widget class="QPlainTextEdit" name="plainTextEdit">
+         <widget class="QPlainTextEdit" name="pteTrigger">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -952,7 +952,7 @@ p, li { white-space: pre-wrap; }
           </property>
          </widget>
         </widget>
-        <widget class="QGroupBox" name="groupBox_7">
+        <widget class="QGroupBox" name="gbxOption1">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -964,7 +964,7 @@ p, li { white-space: pre-wrap; }
          <property name="title">
           <string>Option 1</string>
          </property>
-         <widget class="QLineEdit" name="lineEdit_3">
+         <widget class="QLineEdit" name="lneOptionTitle">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -974,7 +974,7 @@ p, li { white-space: pre-wrap; }
            </rect>
           </property>
          </widget>
-         <widget class="QPlainTextEdit" name="plainTextEdit_3">
+         <widget class="QPlainTextEdit" name="pteOption1">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -1027,7 +1027,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>22</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
