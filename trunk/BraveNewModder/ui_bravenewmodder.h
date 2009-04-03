@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Thu Apr 2 18:10:52 2009
+** Created: Fri Apr 3 03:11:25 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -80,7 +80,7 @@ public:
     QWidget *tabCommon;
     QWidget *TabEvents;
     QTextBrowser *textBrowser;
-    QTreeView *treeView;
+    QTreeView *trvEvents;
     QFrame *frmEventStyle;
     QGroupBox *gbxType;
     QRadioButton *rdbCountry;
@@ -114,7 +114,7 @@ public:
     QWidget *tab_7;
     QTextBrowser *textBrowser_4;
     QWidget *tab_8;
-    QTreeView *treeView1;
+    QTreeView *treeView;
     QWidget *widget;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
@@ -259,9 +259,10 @@ public:
         textBrowser = new QTextBrowser(TabEvents);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setGeometry(QRect(10, 661, 781, 61));
-        treeView = new QTreeView(TabEvents);
-        treeView->setObjectName(QString::fromUtf8("treeView"));
-        treeView->setGeometry(QRect(10, 0, 171, 661));
+        trvEvents = new QTreeView(TabEvents);
+        trvEvents->setObjectName(QString::fromUtf8("trvEvents"));
+        trvEvents->setGeometry(QRect(10, 0, 171, 661));
+        trvEvents->setSortingEnabled(true);
         frmEventStyle = new QFrame(TabEvents);
         frmEventStyle->setObjectName(QString::fromUtf8("frmEventStyle"));
         frmEventStyle->setGeometry(QRect(180, 0, 611, 51));
@@ -377,9 +378,9 @@ public:
         tabWidget_2->addTab(tab_7, QString());
         tab_8 = new QWidget();
         tab_8->setObjectName(QString::fromUtf8("tab_8"));
-        treeView1 = new QTreeView(tab_8);
-        treeView1->setObjectName(QString::fromUtf8("treeView1"));
-        treeView1->setGeometry(QRect(0, 0, 281, 681));
+        treeView = new QTreeView(tab_8);
+        treeView->setObjectName(QString::fromUtf8("treeView"));
+        treeView->setGeometry(QRect(0, 0, 281, 681));
         tabWidget_2->addTab(tab_8, QString());
         tabWidget->addTab(tab_4, QString());
         widget = new QWidget(TabEvents);
@@ -392,7 +393,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 591, 737));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 592, 739));
         groupBox_5 = new QGroupBox(scrollAreaWidgetContents);
         groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
         groupBox_5->setGeometry(QRect(0, 0, 591, 31));
@@ -456,7 +457,7 @@ public:
         BravenewmodderClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(BravenewmodderClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1024, 19));
+        menuBar->setGeometry(QRect(0, 0, 1024, 22));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuSettings = new QMenu(menuBar);
@@ -499,8 +500,8 @@ public:
         retranslateUi(BravenewmodderClass);
 
         tbxMain->setCurrentIndex(2);
-        tabWidget->setCurrentIndex(3);
-        tabWidget_2->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(0);
+        tabWidget_2->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(BravenewmodderClass);
