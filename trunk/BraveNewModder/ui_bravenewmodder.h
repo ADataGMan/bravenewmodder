@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Fri Apr 3 22:37:24 2009
+** Created: Sat Apr 4 01:13:41 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -224,7 +224,7 @@ public:
         tabGameplaySettings->setObjectName(QString::fromUtf8("tabGameplaySettings"));
         frmGameplaySettings = new QFrame(tabGameplaySettings);
         frmGameplaySettings->setObjectName(QString::fromUtf8("frmGameplaySettings"));
-        frmGameplaySettings->setGeometry(QRect(160, 10, 711, 211));
+        frmGameplaySettings->setGeometry(QRect(150, 10, 741, 211));
         frmGameplaySettings->setFrameShape(QFrame::NoFrame);
         frmGameplaySettings->setFrameShadow(QFrame::Plain);
         lblRulers = new QLabel(frmGameplaySettings);
@@ -244,13 +244,13 @@ public:
         lblLeaders->setGeometry(QRect(0, 60, 81, 31));
         lblSpreadofSeaProvinces = new QLabel(frmGameplaySettings);
         lblSpreadofSeaProvinces->setObjectName(QString::fromUtf8("lblSpreadofSeaProvinces"));
-        lblSpreadofSeaProvinces->setGeometry(QRect(390, 150, 231, 31));
+        lblSpreadofSeaProvinces->setGeometry(QRect(380, 150, 231, 31));
         lblInflation = new QLabel(frmGameplaySettings);
         lblInflation->setObjectName(QString::fromUtf8("lblInflation"));
-        lblInflation->setGeometry(QRect(390, 0, 91, 31));
+        lblInflation->setGeometry(QRect(380, 0, 91, 31));
         lblSpreadofLandProvinces = new QLabel(frmGameplaySettings);
         lblSpreadofLandProvinces->setObjectName(QString::fromUtf8("lblSpreadofLandProvinces"));
-        lblSpreadofLandProvinces->setGeometry(QRect(390, 120, 231, 31));
+        lblSpreadofLandProvinces->setGeometry(QRect(380, 120, 241, 31));
         lblSpies = new QLabel(frmGameplaySettings);
         lblSpies->setObjectName(QString::fromUtf8("lblSpies"));
         lblSpies->setGeometry(QRect(0, 180, 61, 31));
@@ -259,72 +259,100 @@ public:
         lblMissionaries->setGeometry(QRect(0, 150, 131, 31));
         lblDifficulty = new QLabel(frmGameplaySettings);
         lblDifficulty->setObjectName(QString::fromUtf8("lblDifficulty"));
-        lblDifficulty->setGeometry(QRect(390, 60, 91, 31));
+        lblDifficulty->setGeometry(QRect(380, 60, 91, 31));
         lblAIAggressiveness = new QLabel(frmGameplaySettings);
         lblAIAggressiveness->setObjectName(QString::fromUtf8("lblAIAggressiveness"));
-        lblAIAggressiveness->setGeometry(QRect(390, 90, 181, 31));
+        lblAIAggressiveness->setGeometry(QRect(380, 90, 181, 31));
         lblSizeofColonists = new QLabel(frmGameplaySettings);
         lblSizeofColonists->setObjectName(QString::fromUtf8("lblSizeofColonists"));
-        lblSizeofColonists->setGeometry(QRect(390, 30, 161, 31));
+        lblSizeofColonists->setGeometry(QRect(380, 30, 161, 31));
         sbxMissionaries = new QSpinBox(frmGameplaySettings);
         sbxMissionaries->setObjectName(QString::fromUtf8("sbxMissionaries"));
-        sbxMissionaries->setGeometry(QRect(130, 150, 81, 21));
+        sbxMissionaries->setGeometry(QRect(630, 150, 111, 21));
+        sbxMissionaries->setWrapping(true);
         sbxMissionaries->setReadOnly(true);
+        sbxMissionaries->setMaximum(4);
         sbxRulers = new QSpinBox(frmGameplaySettings);
         sbxRulers->setObjectName(QString::fromUtf8("sbxRulers"));
-        sbxRulers->setGeometry(QRect(130, 2, 81, 20));
+        sbxRulers->setGeometry(QRect(130, 2, 111, 21));
+        sbxRulers->setWrapping(true);
         sbxRulers->setReadOnly(true);
+        sbxRulers->setMaximum(2);
         sbxColonists = new QSpinBox(frmGameplaySettings);
         sbxColonists->setObjectName(QString::fromUtf8("sbxColonists"));
-        sbxColonists->setGeometry(QRect(130, 90, 81, 21));
+        sbxColonists->setGeometry(QRect(130, 90, 111, 21));
+        sbxColonists->setWrapping(true);
         sbxColonists->setReadOnly(true);
+        sbxColonists->setMaximum(1);
         sbxLeaders = new QSpinBox(frmGameplaySettings);
         sbxLeaders->setObjectName(QString::fromUtf8("sbxLeaders"));
-        sbxLeaders->setGeometry(QRect(130, 60, 81, 21));
+        sbxLeaders->setGeometry(QRect(130, 60, 111, 21));
+        sbxLeaders->setWrapping(true);
         sbxLeaders->setReadOnly(true);
+        sbxLeaders->setMaximum(2);
         sbxAdvisors = new QSpinBox(frmGameplaySettings);
         sbxAdvisors->setObjectName(QString::fromUtf8("sbxAdvisors"));
-        sbxAdvisors->setGeometry(QRect(130, 30, 81, 21));
+        sbxAdvisors->setGeometry(QRect(130, 30, 111, 21));
+        sbxAdvisors->setWrapping(true);
         sbxAdvisors->setReadOnly(true);
+        sbxAdvisors->setMaximum(2);
         sbxMerchants = new QSpinBox(frmGameplaySettings);
         sbxMerchants->setObjectName(QString::fromUtf8("sbxMerchants"));
-        sbxMerchants->setGeometry(QRect(130, 120, 81, 21));
+        sbxMerchants->setGeometry(QRect(130, 120, 111, 21));
+        sbxMerchants->setWrapping(true);
         sbxMerchants->setReadOnly(true);
+        sbxMerchants->setMaximum(1);
         sbxSpies = new QSpinBox(frmGameplaySettings);
         sbxSpies->setObjectName(QString::fromUtf8("sbxSpies"));
-        sbxSpies->setGeometry(QRect(130, 180, 81, 21));
+        sbxSpies->setGeometry(QRect(130, 180, 111, 21));
+        sbxSpies->setWrapping(true);
         sbxSpies->setReadOnly(true);
+        sbxSpies->setMaximum(1);
         sbxAIAggressiveness = new QSpinBox(frmGameplaySettings);
         sbxAIAggressiveness->setObjectName(QString::fromUtf8("sbxAIAggressiveness"));
-        sbxAIAggressiveness->setGeometry(QRect(630, 90, 81, 21));
+        sbxAIAggressiveness->setGeometry(QRect(630, 90, 111, 21));
+        sbxAIAggressiveness->setWrapping(true);
         sbxAIAggressiveness->setReadOnly(true);
+        sbxAIAggressiveness->setMaximum(2);
         sbxSizeofColonists = new QSpinBox(frmGameplaySettings);
         sbxSizeofColonists->setObjectName(QString::fromUtf8("sbxSizeofColonists"));
-        sbxSizeofColonists->setGeometry(QRect(630, 30, 81, 21));
+        sbxSizeofColonists->setGeometry(QRect(630, 30, 111, 21));
+        sbxSizeofColonists->setWrapping(true);
         sbxSizeofColonists->setReadOnly(true);
+        sbxSizeofColonists->setMaximum(3);
         sbxSpreadofSeaProvinces = new QSpinBox(frmGameplaySettings);
         sbxSpreadofSeaProvinces->setObjectName(QString::fromUtf8("sbxSpreadofSeaProvinces"));
-        sbxSpreadofSeaProvinces->setGeometry(QRect(630, 150, 81, 21));
+        sbxSpreadofSeaProvinces->setGeometry(QRect(130, 150, 111, 21));
+        sbxSpreadofSeaProvinces->setWrapping(true);
         sbxSpreadofSeaProvinces->setReadOnly(true);
+        sbxSpreadofSeaProvinces->setMaximum(1);
         sbxDifficulty = new QSpinBox(frmGameplaySettings);
         sbxDifficulty->setObjectName(QString::fromUtf8("sbxDifficulty"));
-        sbxDifficulty->setGeometry(QRect(630, 60, 81, 21));
+        sbxDifficulty->setGeometry(QRect(630, 60, 111, 21));
+        sbxDifficulty->setWrapping(true);
         sbxDifficulty->setReadOnly(true);
+        sbxDifficulty->setMaximum(4);
         sbxInflation = new QSpinBox(frmGameplaySettings);
         sbxInflation->setObjectName(QString::fromUtf8("sbxInflation"));
-        sbxInflation->setGeometry(QRect(630, 2, 81, 20));
+        sbxInflation->setGeometry(QRect(630, 2, 111, 20));
+        sbxInflation->setWrapping(true);
         sbxInflation->setReadOnly(true);
+        sbxInflation->setMaximum(2);
         sbxSpreadofLandProvinces = new QSpinBox(frmGameplaySettings);
         sbxSpreadofLandProvinces->setObjectName(QString::fromUtf8("sbxSpreadofLandProvinces"));
-        sbxSpreadofLandProvinces->setGeometry(QRect(630, 120, 81, 21));
+        sbxSpreadofLandProvinces->setGeometry(QRect(630, 120, 111, 21));
+        sbxSpreadofLandProvinces->setWrapping(true);
         sbxSpreadofLandProvinces->setReadOnly(true);
+        sbxSpreadofLandProvinces->setMaximum(4);
         sbxLuckyNations = new QSpinBox(frmGameplaySettings);
         sbxLuckyNations->setObjectName(QString::fromUtf8("sbxLuckyNations"));
-        sbxLuckyNations->setGeometry(QRect(630, 180, 81, 21));
+        sbxLuckyNations->setGeometry(QRect(630, 180, 111, 21));
+        sbxLuckyNations->setWrapping(true);
         sbxLuckyNations->setReadOnly(true);
+        sbxLuckyNations->setMaximum(2);
         lblLuckyNations = new QLabel(frmGameplaySettings);
         lblLuckyNations->setObjectName(QString::fromUtf8("lblLuckyNations"));
-        lblLuckyNations->setGeometry(QRect(390, 180, 141, 31));
+        lblLuckyNations->setGeometry(QRect(380, 180, 141, 31));
         tbrGameplaySettings = new QTextBrowser(tabGameplaySettings);
         tbrGameplaySettings->setObjectName(QString::fromUtf8("tbrGameplaySettings"));
         tbrGameplaySettings->setGeometry(QRect(10, 581, 1021, 141));
@@ -692,8 +720,8 @@ public:
         sbxSpreadofSeaProvinces->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
         sbxDifficulty->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
         sbxInflation->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
-        sbxSpreadofLandProvinces->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
-        sbxLuckyNations->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Very Hard", 0, QApplication::UnicodeUTF8));
+        sbxSpreadofLandProvinces->setSpecialValueText(QApplication::translate("BravenewmodderClass", "50 Years (Normal)", 0, QApplication::UnicodeUTF8));
+        sbxLuckyNations->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical (Normal)", 0, QApplication::UnicodeUTF8));
         lblLuckyNations->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

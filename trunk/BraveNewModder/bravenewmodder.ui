@@ -51,9 +51,9 @@
      <widget class="QFrame" name="frmGameplaySettings">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>150</x>
         <y>10</y>
-        <width>711</width>
+        <width>741</width>
         <height>211</height>
        </rect>
       </property>
@@ -151,7 +151,7 @@ p, li { white-space: pre-wrap; }
       <widget class="QLabel" name="lblSpreadofSeaProvinces">
        <property name="geometry">
         <rect>
-         <x>390</x>
+         <x>380</x>
          <y>150</y>
          <width>231</width>
          <height>31</height>
@@ -168,7 +168,7 @@ p, li { white-space: pre-wrap; }
       <widget class="QLabel" name="lblInflation">
        <property name="geometry">
         <rect>
-         <x>390</x>
+         <x>380</x>
          <y>0</y>
          <width>91</width>
          <height>31</height>
@@ -185,9 +185,9 @@ p, li { white-space: pre-wrap; }
       <widget class="QLabel" name="lblSpreadofLandProvinces">
        <property name="geometry">
         <rect>
-         <x>390</x>
+         <x>380</x>
          <y>120</y>
-         <width>231</width>
+         <width>241</width>
          <height>31</height>
         </rect>
        </property>
@@ -236,7 +236,7 @@ p, li { white-space: pre-wrap; }
       <widget class="QLabel" name="lblDifficulty">
        <property name="geometry">
         <rect>
-         <x>390</x>
+         <x>380</x>
          <y>60</y>
          <width>91</width>
          <height>31</height>
@@ -253,7 +253,7 @@ p, li { white-space: pre-wrap; }
       <widget class="QLabel" name="lblAIAggressiveness">
        <property name="geometry">
         <rect>
-         <x>390</x>
+         <x>380</x>
          <y>90</y>
          <width>181</width>
          <height>31</height>
@@ -270,7 +270,7 @@ p, li { white-space: pre-wrap; }
       <widget class="QLabel" name="lblSizeofColonists">
        <property name="geometry">
         <rect>
-         <x>390</x>
+         <x>380</x>
          <y>30</y>
          <width>161</width>
          <height>31</height>
@@ -287,17 +287,23 @@ p, li { white-space: pre-wrap; }
       <widget class="QSpinBox" name="sbxMissionaries">
        <property name="geometry">
         <rect>
-         <x>130</x>
+         <x>630</x>
          <y>150</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>4</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxRulers">
@@ -305,15 +311,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>130</x>
          <y>2</y>
-         <width>81</width>
-         <height>20</height>
+         <width>111</width>
+         <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>2</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxColonists">
@@ -321,15 +333,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>130</x>
          <y>90</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>1</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxLeaders">
@@ -337,15 +355,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>130</x>
          <y>60</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>2</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxAdvisors">
@@ -353,15 +377,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>130</x>
          <y>30</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>2</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxMerchants">
@@ -369,15 +399,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>130</x>
          <y>120</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>1</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxSpies">
@@ -385,15 +421,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>130</x>
          <y>180</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Very Hard</string>
+       </property>
+       <property name="maximum">
+        <number>1</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxAIAggressiveness">
@@ -401,15 +443,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>630</x>
          <y>90</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>2</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxSizeofColonists">
@@ -417,31 +465,43 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>630</x>
          <y>30</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>3</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxSpreadofSeaProvinces">
        <property name="geometry">
         <rect>
-         <x>630</x>
+         <x>130</x>
          <y>150</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>1</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxDifficulty">
@@ -449,15 +509,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>630</x>
          <y>60</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>4</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxInflation">
@@ -465,15 +531,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>630</x>
          <y>2</y>
-         <width>81</width>
+         <width>111</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
         <string>Historical</string>
+       </property>
+       <property name="maximum">
+        <number>2</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxSpreadofLandProvinces">
@@ -481,15 +553,21 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>630</x>
          <y>120</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
-        <string>Historical</string>
+        <string>50 Years (Normal)</string>
+       </property>
+       <property name="maximum">
+        <number>4</number>
        </property>
       </widget>
       <widget class="QSpinBox" name="sbxLuckyNations">
@@ -497,21 +575,27 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>630</x>
          <y>180</y>
-         <width>81</width>
+         <width>111</width>
          <height>21</height>
         </rect>
+       </property>
+       <property name="wrapping">
+        <bool>true</bool>
        </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
        <property name="specialValueText">
-        <string>Very Hard</string>
+        <string>Historical (Normal)</string>
+       </property>
+       <property name="maximum">
+        <number>2</number>
        </property>
       </widget>
       <widget class="QLabel" name="lblLuckyNations">
        <property name="geometry">
         <rect>
-         <x>390</x>
+         <x>380</x>
          <y>180</y>
          <width>141</width>
          <height>31</height>
