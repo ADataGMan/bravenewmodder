@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Fri Apr 3 14:09:10 2009
+** Created: Fri Apr 3 22:37:24 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -63,20 +63,36 @@ public:
     QWidget *centralWidget;
     QTabWidget *tbxMain;
     QWidget *tabGameplaySettings;
-    QFrame *frame;
-    QLabel *label;
-    QLabel *label_2;
-    QLabel *label_3;
-    QLabel *label_4;
-    QLabel *label_5;
-    QLabel *label_6;
-    QLabel *label_7;
-    QLabel *label_8;
-    QLabel *label_9;
-    QLabel *label_10;
-    QLabel *label_11;
-    QLabel *label_12;
-    QLabel *label_13;
+    QFrame *frmGameplaySettings;
+    QLabel *lblRulers;
+    QLabel *lblColonists;
+    QLabel *lblMerchants;
+    QLabel *lblAdvisors;
+    QLabel *lblLeaders;
+    QLabel *lblSpreadofSeaProvinces;
+    QLabel *lblInflation;
+    QLabel *lblSpreadofLandProvinces;
+    QLabel *lblSpies;
+    QLabel *lblMissionaries;
+    QLabel *lblDifficulty;
+    QLabel *lblAIAggressiveness;
+    QLabel *lblSizeofColonists;
+    QSpinBox *sbxMissionaries;
+    QSpinBox *sbxRulers;
+    QSpinBox *sbxColonists;
+    QSpinBox *sbxLeaders;
+    QSpinBox *sbxAdvisors;
+    QSpinBox *sbxMerchants;
+    QSpinBox *sbxSpies;
+    QSpinBox *sbxAIAggressiveness;
+    QSpinBox *sbxSizeofColonists;
+    QSpinBox *sbxSpreadofSeaProvinces;
+    QSpinBox *sbxDifficulty;
+    QSpinBox *sbxInflation;
+    QSpinBox *sbxSpreadofLandProvinces;
+    QSpinBox *sbxLuckyNations;
+    QLabel *lblLuckyNations;
+    QTextBrowser *tbrGameplaySettings;
     QWidget *tabCommon;
     QWidget *TabEvents;
     QTextBrowser *tbrInfo;
@@ -206,50 +222,112 @@ public:
         tbxMain->setUsesScrollButtons(false);
         tabGameplaySettings = new QWidget();
         tabGameplaySettings->setObjectName(QString::fromUtf8("tabGameplaySettings"));
-        frame = new QFrame(tabGameplaySettings);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(150, 310, 531, 351));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        label = new QLabel(frame);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(0, 0, 71, 21));
-        label_2 = new QLabel(frame);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(0, 60, 91, 21));
-        label_3 = new QLabel(frame);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(0, 80, 111, 21));
-        label_4 = new QLabel(frame);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(0, 20, 91, 21));
-        label_5 = new QLabel(frame);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(0, 40, 81, 21));
-        label_6 = new QLabel(frame);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(150, 120, 231, 21));
-        label_7 = new QLabel(frame);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setGeometry(QRect(140, 170, 91, 21));
-        label_8 = new QLabel(frame);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setGeometry(QRect(50, 220, 231, 21));
-        label_9 = new QLabel(frame);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
-        label_9->setGeometry(QRect(0, 120, 61, 21));
-        label_10 = new QLabel(frame);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
-        label_10->setGeometry(QRect(0, 100, 131, 21));
-        label_11 = new QLabel(frame);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setGeometry(QRect(250, 70, 131, 21));
-        label_12 = new QLabel(frame);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(170, 30, 181, 21));
-        label_13 = new QLabel(frame);
-        label_13->setObjectName(QString::fromUtf8("label_13"));
-        label_13->setGeometry(QRect(170, 200, 181, 21));
+        frmGameplaySettings = new QFrame(tabGameplaySettings);
+        frmGameplaySettings->setObjectName(QString::fromUtf8("frmGameplaySettings"));
+        frmGameplaySettings->setGeometry(QRect(160, 10, 711, 211));
+        frmGameplaySettings->setFrameShape(QFrame::NoFrame);
+        frmGameplaySettings->setFrameShadow(QFrame::Plain);
+        lblRulers = new QLabel(frmGameplaySettings);
+        lblRulers->setObjectName(QString::fromUtf8("lblRulers"));
+        lblRulers->setGeometry(QRect(0, 0, 71, 31));
+        lblColonists = new QLabel(frmGameplaySettings);
+        lblColonists->setObjectName(QString::fromUtf8("lblColonists"));
+        lblColonists->setGeometry(QRect(0, 90, 91, 31));
+        lblMerchants = new QLabel(frmGameplaySettings);
+        lblMerchants->setObjectName(QString::fromUtf8("lblMerchants"));
+        lblMerchants->setGeometry(QRect(0, 120, 111, 31));
+        lblAdvisors = new QLabel(frmGameplaySettings);
+        lblAdvisors->setObjectName(QString::fromUtf8("lblAdvisors"));
+        lblAdvisors->setGeometry(QRect(0, 30, 91, 31));
+        lblLeaders = new QLabel(frmGameplaySettings);
+        lblLeaders->setObjectName(QString::fromUtf8("lblLeaders"));
+        lblLeaders->setGeometry(QRect(0, 60, 81, 31));
+        lblSpreadofSeaProvinces = new QLabel(frmGameplaySettings);
+        lblSpreadofSeaProvinces->setObjectName(QString::fromUtf8("lblSpreadofSeaProvinces"));
+        lblSpreadofSeaProvinces->setGeometry(QRect(390, 150, 231, 31));
+        lblInflation = new QLabel(frmGameplaySettings);
+        lblInflation->setObjectName(QString::fromUtf8("lblInflation"));
+        lblInflation->setGeometry(QRect(390, 0, 91, 31));
+        lblSpreadofLandProvinces = new QLabel(frmGameplaySettings);
+        lblSpreadofLandProvinces->setObjectName(QString::fromUtf8("lblSpreadofLandProvinces"));
+        lblSpreadofLandProvinces->setGeometry(QRect(390, 120, 231, 31));
+        lblSpies = new QLabel(frmGameplaySettings);
+        lblSpies->setObjectName(QString::fromUtf8("lblSpies"));
+        lblSpies->setGeometry(QRect(0, 180, 61, 31));
+        lblMissionaries = new QLabel(frmGameplaySettings);
+        lblMissionaries->setObjectName(QString::fromUtf8("lblMissionaries"));
+        lblMissionaries->setGeometry(QRect(0, 150, 131, 31));
+        lblDifficulty = new QLabel(frmGameplaySettings);
+        lblDifficulty->setObjectName(QString::fromUtf8("lblDifficulty"));
+        lblDifficulty->setGeometry(QRect(390, 60, 91, 31));
+        lblAIAggressiveness = new QLabel(frmGameplaySettings);
+        lblAIAggressiveness->setObjectName(QString::fromUtf8("lblAIAggressiveness"));
+        lblAIAggressiveness->setGeometry(QRect(390, 90, 181, 31));
+        lblSizeofColonists = new QLabel(frmGameplaySettings);
+        lblSizeofColonists->setObjectName(QString::fromUtf8("lblSizeofColonists"));
+        lblSizeofColonists->setGeometry(QRect(390, 30, 161, 31));
+        sbxMissionaries = new QSpinBox(frmGameplaySettings);
+        sbxMissionaries->setObjectName(QString::fromUtf8("sbxMissionaries"));
+        sbxMissionaries->setGeometry(QRect(130, 150, 81, 21));
+        sbxMissionaries->setReadOnly(true);
+        sbxRulers = new QSpinBox(frmGameplaySettings);
+        sbxRulers->setObjectName(QString::fromUtf8("sbxRulers"));
+        sbxRulers->setGeometry(QRect(130, 2, 81, 20));
+        sbxRulers->setReadOnly(true);
+        sbxColonists = new QSpinBox(frmGameplaySettings);
+        sbxColonists->setObjectName(QString::fromUtf8("sbxColonists"));
+        sbxColonists->setGeometry(QRect(130, 90, 81, 21));
+        sbxColonists->setReadOnly(true);
+        sbxLeaders = new QSpinBox(frmGameplaySettings);
+        sbxLeaders->setObjectName(QString::fromUtf8("sbxLeaders"));
+        sbxLeaders->setGeometry(QRect(130, 60, 81, 21));
+        sbxLeaders->setReadOnly(true);
+        sbxAdvisors = new QSpinBox(frmGameplaySettings);
+        sbxAdvisors->setObjectName(QString::fromUtf8("sbxAdvisors"));
+        sbxAdvisors->setGeometry(QRect(130, 30, 81, 21));
+        sbxAdvisors->setReadOnly(true);
+        sbxMerchants = new QSpinBox(frmGameplaySettings);
+        sbxMerchants->setObjectName(QString::fromUtf8("sbxMerchants"));
+        sbxMerchants->setGeometry(QRect(130, 120, 81, 21));
+        sbxMerchants->setReadOnly(true);
+        sbxSpies = new QSpinBox(frmGameplaySettings);
+        sbxSpies->setObjectName(QString::fromUtf8("sbxSpies"));
+        sbxSpies->setGeometry(QRect(130, 180, 81, 21));
+        sbxSpies->setReadOnly(true);
+        sbxAIAggressiveness = new QSpinBox(frmGameplaySettings);
+        sbxAIAggressiveness->setObjectName(QString::fromUtf8("sbxAIAggressiveness"));
+        sbxAIAggressiveness->setGeometry(QRect(630, 90, 81, 21));
+        sbxAIAggressiveness->setReadOnly(true);
+        sbxSizeofColonists = new QSpinBox(frmGameplaySettings);
+        sbxSizeofColonists->setObjectName(QString::fromUtf8("sbxSizeofColonists"));
+        sbxSizeofColonists->setGeometry(QRect(630, 30, 81, 21));
+        sbxSizeofColonists->setReadOnly(true);
+        sbxSpreadofSeaProvinces = new QSpinBox(frmGameplaySettings);
+        sbxSpreadofSeaProvinces->setObjectName(QString::fromUtf8("sbxSpreadofSeaProvinces"));
+        sbxSpreadofSeaProvinces->setGeometry(QRect(630, 150, 81, 21));
+        sbxSpreadofSeaProvinces->setReadOnly(true);
+        sbxDifficulty = new QSpinBox(frmGameplaySettings);
+        sbxDifficulty->setObjectName(QString::fromUtf8("sbxDifficulty"));
+        sbxDifficulty->setGeometry(QRect(630, 60, 81, 21));
+        sbxDifficulty->setReadOnly(true);
+        sbxInflation = new QSpinBox(frmGameplaySettings);
+        sbxInflation->setObjectName(QString::fromUtf8("sbxInflation"));
+        sbxInflation->setGeometry(QRect(630, 2, 81, 20));
+        sbxInflation->setReadOnly(true);
+        sbxSpreadofLandProvinces = new QSpinBox(frmGameplaySettings);
+        sbxSpreadofLandProvinces->setObjectName(QString::fromUtf8("sbxSpreadofLandProvinces"));
+        sbxSpreadofLandProvinces->setGeometry(QRect(630, 120, 81, 21));
+        sbxSpreadofLandProvinces->setReadOnly(true);
+        sbxLuckyNations = new QSpinBox(frmGameplaySettings);
+        sbxLuckyNations->setObjectName(QString::fromUtf8("sbxLuckyNations"));
+        sbxLuckyNations->setGeometry(QRect(630, 180, 81, 21));
+        sbxLuckyNations->setReadOnly(true);
+        lblLuckyNations = new QLabel(frmGameplaySettings);
+        lblLuckyNations->setObjectName(QString::fromUtf8("lblLuckyNations"));
+        lblLuckyNations->setGeometry(QRect(390, 180, 141, 31));
+        tbrGameplaySettings = new QTextBrowser(tabGameplaySettings);
+        tbrGameplaySettings->setObjectName(QString::fromUtf8("tbrGameplaySettings"));
+        tbrGameplaySettings->setGeometry(QRect(10, 581, 1021, 141));
         tbxMain->addTab(tabGameplaySettings, QString());
         tabCommon = new QWidget();
         tabCommon->setObjectName(QString::fromUtf8("tabCommon"));
@@ -499,7 +577,7 @@ public:
 
         retranslateUi(BravenewmodderClass);
 
-        tbxMain->setCurrentIndex(2);
+        tbxMain->setCurrentIndex(0);
         tbxReference_2->setCurrentIndex(3);
         tbxUserdata->setCurrentIndex(3);
 
@@ -537,71 +615,90 @@ public:
         actionImport_Content->setText(QApplication::translate("BravenewmodderClass", "Import EUIII Content", 0, QApplication::UnicodeUTF8));
         actionUndo->setText(QApplication::translate("BravenewmodderClass", "Undo", 0, QApplication::UnicodeUTF8));
         actionEditor_Settings->setText(QApplication::translate("BravenewmodderClass", "Editor Settings", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblRulers->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Rulers</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblColonists->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Colonists</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_3->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblMerchants->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Merchants</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblAdvisors->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Advisors</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblLeaders->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Leaders</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblSpreadofSeaProvinces->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Spread of Sea Provinces</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblInflation->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Inflation</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblSpreadofLandProvinces->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Spread of Land Provinces</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblSpies->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Spies</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_10->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblMissionaries->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Missionaries</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblDifficulty->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Difficulty</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblAIAggressiveness->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">AI Aggressiveness</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_13->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        lblSizeofColonists->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Size of Colonists</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        sbxMissionaries->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxRulers->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxColonists->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxLeaders->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxAdvisors->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxMerchants->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxSpies->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Very Hard", 0, QApplication::UnicodeUTF8));
+        sbxAIAggressiveness->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxSizeofColonists->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxSpreadofSeaProvinces->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxDifficulty->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxInflation->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxSpreadofLandProvinces->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical", 0, QApplication::UnicodeUTF8));
+        sbxLuckyNations->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Very Hard", 0, QApplication::UnicodeUTF8));
+        lblLuckyNations->setText(QApplication::translate("BravenewmodderClass", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Lucky Nations</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabGameplaySettings), QApplication::translate("BravenewmodderClass", "Gameplay Settings", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabCommon), QApplication::translate("BravenewmodderClass", "Common", 0, QApplication::UnicodeUTF8));
         gbxType->setTitle(QApplication::translate("BravenewmodderClass", "Event Type", 0, QApplication::UnicodeUTF8));
