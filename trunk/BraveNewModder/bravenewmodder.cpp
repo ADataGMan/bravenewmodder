@@ -19,5 +19,5 @@ void Bravenewmodder::on_actionLoad_Mod_triggered()
     loadMod.setOption(QFileDialog::ShowDirsOnly, true);
     QString filename = loadMod.getExistingDirectory(this,"Load Mod");
     //just a sample
-    ui->lineEdit_2->setText(filename);
+    ui->lneEventTitle->setText(filename);
 }
