@@ -20,6 +20,7 @@ private:
     Ui::BravenewmodderClass *ui;
 
 private slots:
+    void on_sbxSpies_valueChanged(QString );
     void on_actionLoad_Mod_triggered();
 };
 
