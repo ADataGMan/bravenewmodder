@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Sun Apr 5 00:03:40 2009
+** Created: Thu Apr 9 02:39:41 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -604,7 +604,7 @@ public:
 
         retranslateUi(BravenewmodderClass);
 
-        tbxMain->setCurrentIndex(2);
+        tbxMain->setCurrentIndex(0);
         tbxReference_2->setCurrentIndex(3);
         tbxUserdata->setCurrentIndex(3);
 
