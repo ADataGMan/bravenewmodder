@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Sat Apr 4 01:13:41 2009
+** Created: Sun Apr 5 00:03:40 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -96,7 +96,6 @@ public:
     QWidget *tabCommon;
     QWidget *TabEvents;
     QTextBrowser *tbrInfo;
-    QTreeView *trvEvents;
     QFrame *frmEventStyle;
     QGroupBox *gbxType;
     QRadioButton *rdbCountry;
@@ -145,6 +144,7 @@ public:
     QGroupBox *gbxOption1;
     QLineEdit *lneOptionTitle;
     QPlainTextEdit *pteOption1;
+    QTreeView *trvEvents;
     QWidget *tabHistory;
     QWidget *tabInterface;
     QWidget *tabLocalisation;
@@ -365,10 +365,6 @@ public:
         tbrInfo = new QTextBrowser(TabEvents);
         tbrInfo->setObjectName(QString::fromUtf8("tbrInfo"));
         tbrInfo->setGeometry(QRect(10, 661, 781, 61));
-        trvEvents = new QTreeView(TabEvents);
-        trvEvents->setObjectName(QString::fromUtf8("trvEvents"));
-        trvEvents->setGeometry(QRect(10, 0, 171, 661));
-        trvEvents->setSortingEnabled(true);
         frmEventStyle = new QFrame(TabEvents);
         frmEventStyle->setObjectName(QString::fromUtf8("frmEventStyle"));
         frmEventStyle->setGeometry(QRect(180, 0, 611, 51));
@@ -499,7 +495,7 @@ public:
         scrEventmain->setWidgetResizable(true);
         sacEventmain = new QWidget();
         sacEventmain->setObjectName(QString::fromUtf8("sacEventmain"));
-        sacEventmain->setGeometry(QRect(0, 0, 591, 737));
+        sacEventmain->setGeometry(QRect(0, 0, 592, 739));
         gbxEventTitle = new QGroupBox(sacEventmain);
         gbxEventTitle->setObjectName(QString::fromUtf8("gbxEventTitle"));
         gbxEventTitle->setGeometry(QRect(0, 0, 591, 31));
@@ -541,6 +537,9 @@ public:
         pteOption1->setObjectName(QString::fromUtf8("pteOption1"));
         pteOption1->setGeometry(QRect(0, 40, 591, 121));
         scrEventmain->setWidget(sacEventmain);
+        trvEvents = new QTreeView(TabEvents);
+        trvEvents->setObjectName(QString::fromUtf8("trvEvents"));
+        trvEvents->setGeometry(QRect(10, 0, 171, 661));
         tbxMain->addTab(TabEvents, QString());
         tabHistory = new QWidget();
         tabHistory->setObjectName(QString::fromUtf8("tabHistory"));
@@ -563,7 +562,7 @@ public:
         BravenewmodderClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(BravenewmodderClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1024, 19));
+        menuBar->setGeometry(QRect(0, 0, 1024, 22));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuSettings = new QMenu(menuBar);
@@ -605,7 +604,7 @@ public:
 
         retranslateUi(BravenewmodderClass);
 
-        tbxMain->setCurrentIndex(0);
+        tbxMain->setCurrentIndex(2);
         tbxReference_2->setCurrentIndex(3);
         tbxUserdata->setCurrentIndex(3);
 

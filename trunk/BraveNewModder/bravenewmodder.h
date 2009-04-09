@@ -2,6 +2,8 @@
 #define BRAVENEWMODDER_H
 
 #include <QtGui>
+#include "events.h"
+#include "eventmodel.h"
 
 namespace Ui
 {
@@ -15,9 +17,12 @@ class Bravenewmodder : public QMainWindow
 public:
     Bravenewmodder(QWidget *parent = 0);
     ~Bravenewmodder();
+    void loadEvents();
 
 private:
     Ui::BravenewmodderClass *ui;
+    QString baseDir;
+    QString eventLoc;
 
 private slots:
     void on_sbxSpies_valueChanged(QString );
