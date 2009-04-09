@@ -18,7 +18,7 @@ void Bravenewmodder::on_actionLoad_Mod_triggered()
     loadMod.setFileMode(QFileDialog::Directory);
     loadMod.setOption(QFileDialog::ShowDirsOnly, true);
     baseDir = loadMod.getExistingDirectory(this,"Load Mod");
-    eventLoc = baseDir + "/Events";
+    eventLoc = baseDir + "/events";
     //load data into all tabs
     loadEvents();
 }
@@ -30,13 +30,13 @@ void Bravenewmodder::loadEvents()
     eventDir.setFilter(QDir::Files | QDir::Hidden | QDir::NoSymLinks);
     QStringList eventFiles = eventDir.entryList();
     QRegExp text(".*txt$");
-    for( qint32 i = 0; i < 3; ++i)
+    for( qint32 i = 0; i < 3 &&  i<eventFiles.length(); ++i)
     {
         QString str = eventFiles[i];
         if(text.indexIn(str)!=-1)
         {
             Events tempEvent(eventLoc+"/"+str);
-            if(tempEvent.idToString().at(0) != "No Events");
+            if(tempEvent.size > 0);
                 eventVector.append(tempEvent);
         }
     }

@@ -6,12 +6,12 @@ TEMPLATE = app
 SOURCES += main.cpp \
     bravenewmodder.cpp \
     eventmodel.cpp \
-    treeitem.cpp\
+    treeitem.cpp \
     events.cpp
 HEADERS += bravenewmodder.h \
     events.h \
     eventmodel.h \
-    treeitem.h\
+    treeitem.h \
     events.h
-FORMS += bravenewmodder.ui
-
+FORMS += bravenewmodder.ui \
+    Event.ui
