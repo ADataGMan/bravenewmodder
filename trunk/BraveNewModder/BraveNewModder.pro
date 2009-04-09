@@ -14,4 +14,5 @@ HEADERS += bravenewmodder.h \
     treeitem.h \
     events.h
 FORMS += bravenewmodder.ui \
-    Event.ui
+    Event.ui \
+    NewMod.ui
