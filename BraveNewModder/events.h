@@ -8,7 +8,7 @@
  * A simple structure for storing the information
  * for each event from the event files
  */
-struct event
+struct Event
 {
     QString trigger;
     QString id;
@@ -29,17 +29,19 @@ struct event
  * if you have multiple event files you need to create a
  * new instance of the event class for each file.
  */
-class events
+class Events
 {
 public:
-    events(QString file);
+    Events();
+    qint32 size;
+    Events(QString file);
     QString filenameToString();
     // since we have multiple events stored in a single file
     // we must return a list of the information
     QVector<QString> idToString();
     QVector<QString> triggerToString();
     QVector<QString> timeToString();
-    QVector<QString> titleToString();
+    QVector<QString> titleToString() const;
     QVector<QString> descToString();
     QVector<QString> option1ToString();
     QVector<QString> option2ToString();
@@ -51,12 +53,12 @@ public:
 private:
     //vars
     QString filename;
-    QVector<event> vectorEvents;
+    QVector<Event> vectorEvents;
 
     //functions
     void parseEvent();
     QString readFile();
-    event deepParse(QString internal);
+    Event deepParse(QString internal);
 };
 
 

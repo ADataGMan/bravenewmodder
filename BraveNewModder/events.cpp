@@ -1,7 +1,12 @@
 #include "events.h"
 
-events::events(QString file)
+Events::Events()
 {
+    size = 0;
+}
+Events::Events(QString file)
+{
+    size = 0;
     //store filename
     this->filename = file;
     //load event(s) from file into events vector
@@ -11,14 +16,25 @@ events::events(QString file)
 /*
  * Handle a single event file
  */
-void events::parseEvent()
+void Events::parseEvent()
 {
    QString eventData = readFile();
     if(eventData.isEmpty())
     {
-        //error
-        // TODO: make error function
-        exit(-1);
+        Event temp;
+        temp.eventDesc="No Events";
+        temp.eventTitle="No Events";
+        temp.id="No Events";
+        temp.meanTimeToHappen="No Events";
+        temp.option1="No Events";
+        temp.option2="No Events";
+        temp.option3="No Events";
+        temp.option4="No Events";
+        temp.option5="No Events";
+        temp.option6="No Events";
+        vectorEvents.append(temp);
+        size = 1;
+        return;
     }
 
     // begin parsing
@@ -131,7 +147,7 @@ void events::parseEvent()
  * Read in text file and return the whole
  * file in a QString
  */
-QString events::readFile()
+QString Events::readFile()
 {
     QString data = "";
     QFile file(filename);
@@ -149,17 +165,30 @@ QString events::readFile()
 /*
  * Returns the filename as a QString
  */
- QString events::filenameToString()
+ QString Events::filenameToString()
  {
-    return this->filename;
+    QRegExp final(".*/(\\w+.txt)$");
+    filename.indexOf(final,0);
+    return final.cap(1);
  }
 
  /*
   * Retrieve the data for countries and provinces
   */
- event events::deepParse(QString internal)
+ Event Events::deepParse(QString internal)
  {
-    event current;
+    Event current;
+    size++;
+    current.eventDesc="";
+    current.eventTitle="";
+    current.id="";
+    current.meanTimeToHappen="";
+    current.option1="";
+    current.option2="";
+    current.option3="";
+    current.option4="";
+    current.option5="";
+    current.option6="";
      //create regular expressions for each item
     QRegExp id("\\s*id\\s*=\\s*(\\d{4,8})");
     QRegExp trigger("\\s*trigger\\s*=\\s*\\{");
@@ -291,7 +320,7 @@ QString events::readFile()
 /*
  * Returns a vector of the id strings
  */
-QVector<QString> events::idToString()
+QVector<QString> Events::idToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -304,7 +333,7 @@ QVector<QString> events::idToString()
 /*
  * Returns a vector of the trigger strings
  */
-QVector<QString> events::triggerToString()
+QVector<QString> Events::triggerToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -317,7 +346,7 @@ QVector<QString> events::triggerToString()
 /*
  * Returns a vector of the mean_time_to_happen strings
  */
-QVector<QString> events::timeToString()
+QVector<QString> Events::timeToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -330,7 +359,7 @@ QVector<QString> events::timeToString()
 /*
  * Returns a vector of the title strings
  */
-QVector<QString> events::titleToString()
+QVector<QString> Events::titleToString() const
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -343,7 +372,7 @@ QVector<QString> events::titleToString()
 /*
  * Returns a vector of the description strings
  */
-QVector<QString> events::descToString()
+QVector<QString> Events::descToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -356,7 +385,7 @@ QVector<QString> events::descToString()
 /*
  * Returns a vector of the option1 strings
  */
-QVector<QString> events::option1ToString()
+QVector<QString> Events::option1ToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -369,7 +398,7 @@ QVector<QString> events::option1ToString()
 /*
  * Returns a vector of the option1 strings
  */
-QVector<QString> events::option2ToString()
+QVector<QString> Events::option2ToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -382,7 +411,7 @@ QVector<QString> events::option2ToString()
 /*
  * Returns a vector of the option1 strings
  */
-QVector<QString> events::option3ToString()
+QVector<QString> Events::option3ToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -395,7 +424,7 @@ QVector<QString> events::option3ToString()
 /*
  * Returns a vector of the option1 strings
  */
-QVector<QString> events::option4ToString()
+QVector<QString> Events::option4ToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -408,7 +437,7 @@ QVector<QString> events::option4ToString()
 /*
  * Returns a vector of the option1 strings
  */
-QVector<QString> events::option5ToString()
+QVector<QString> Events::option5ToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
@@ -421,7 +450,7 @@ QVector<QString> events::option5ToString()
 /*
  * Returns a vector of the option1 strings
  */
-QVector<QString> events::option6ToString()
+QVector<QString> Events::option6ToString()
 {
     QVector<QString> strings;
     for(qint32 i = 0; i < this->vectorEvents.size();++i)
