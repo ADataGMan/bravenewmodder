@@ -1,5 +1,5 @@
 #include <QtGui/QApplication>
-#include "bravenewmodder.h"
+#include "./lib/bravenewmodder.h"
 
 int main(int argc, char *argv[])
 {
