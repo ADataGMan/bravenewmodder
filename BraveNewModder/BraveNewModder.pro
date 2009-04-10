@@ -4,15 +4,15 @@
 TARGET = BraveNewModder
 TEMPLATE = app
 SOURCES += main.cpp \
-    bravenewmodder.cpp \
-    eventmodel.cpp \
-    treeitem.cpp \
-    events.cpp
-HEADERS += bravenewmodder.h \
-    events.h \
-    eventmodel.h \
-    treeitem.h \
-    events.h
-FORMS += bravenewmodder.ui \
-    Event.ui \
-    NewMod.ui
+    ./lib/bravenewmodder.cpp \
+    ./lib/eventmodel.cpp \
+    ./lib/treeitem.cpp \
+    ./lib/events.cpp
+HEADERS += ./lib/bravenewmodder.h \
+    ./lib/events.h \
+    ./lib/eventmodel.h \
+    ./lib/treeitem.h \
+    ./lib/events.h
+FORMS += ./ui/bravenewmodder.ui \
+    ./ui/Event.ui \
+    ./ui/NewMod.ui
