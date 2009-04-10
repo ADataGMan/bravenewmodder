@@ -1,5 +1,5 @@
 #include "bravenewmodder.h"
-#include "ui_bravenewmodder.h"
+#include "../ui_bravenewmodder.h"
 
 Bravenewmodder::Bravenewmodder(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::BravenewmodderClass)
@@ -25,6 +25,7 @@ void Bravenewmodder::on_actionLoad_Mod_triggered()
 
 void Bravenewmodder::loadEvents()
 {
+    /*
     QVector<Events> eventVector;
     QDir eventDir(this->eventLoc);
     eventDir.setFilter(QDir::Files | QDir::Hidden | QDir::NoSymLinks);
@@ -53,4 +54,11 @@ void Bravenewmodder::loadEvents()
     ui->trvEvents->setColumnHidden(8,1);
     ui->trvEvents->setColumnHidden(9,1);
     ui->trvEvents->setColumnHidden(10,1);
+    */
+    QDir eventDir(this->eventLoc);
+    eventDir.setFilter(QDir::Files | QDir::Hidden | QDir::NoSymLinks);
+    QStringList eventFiles = eventDir.entryList();
+    QRegExp text(".*txt$");
+    QStringListModel * model = new QStringListModel(eventFiles,this);
+    ui->trvEvents->setModel(model);
 }
