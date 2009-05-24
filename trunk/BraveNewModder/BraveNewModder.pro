@@ -15,4 +15,5 @@ HEADERS += ./lib/bravenewmodder.h \
     ./lib/events.h
 FORMS += ./ui/bravenewmodder.ui \
     ./ui/Event.ui \
-    ./ui/NewMod.ui
+    ./ui/NewMod.ui \
+    ui/advisortypes.ui
