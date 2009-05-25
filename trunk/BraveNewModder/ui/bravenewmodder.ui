@@ -36,7 +36,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>4</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideLeft</enum>
@@ -444,6 +444,29 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>579</y>
+        <width>1024</width>
+        <height>149</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>About</string>
+      </property>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>12</y>
+         <width>1024</width>
+         <height>134</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="tabCommon">
      <attribute name="title">
@@ -581,6 +604,44 @@ p, li { white-space: pre-wrap; }
      <attribute name="title">
       <string>History</string>
      </attribute>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>0</y>
+        <width>1024</width>
+        <height>728</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Advisors</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Countries</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Diplomacy</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Provinces</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Wars</string>
+       </attribute>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="tabInterface">
      <attribute name="title">
@@ -642,11 +703,27 @@ p, li { white-space: pre-wrap; }
      <addaction name="actionSuggested"/>
      <addaction name="actionOff"/>
     </widget>
+    <widget class="QMenu" name="menuEditor_Language">
+     <property name="title">
+      <string>Editor Language</string>
+     </property>
+     <addaction name="actionEnglish"/>
+    </widget>
+    <widget class="QMenu" name="menuBNM_Event_Convention">
+     <property name="title">
+      <string>BNM Event Convention</string>
+     </property>
+     <addaction name="actionEnable"/>
+     <addaction name="actionDisable"/>
+    </widget>
     <addaction name="menuSyntax_Check"/>
     <addaction name="actionAdd_New_Syntax"/>
     <addaction name="separator"/>
+    <addaction name="menuBNM_Event_Convention"/>
+    <addaction name="actionMod_Settings"/>
+    <addaction name="separator"/>
     <addaction name="actionEditor_Settings"/>
-    <addaction name="actionManage_My_Mod"/>
+    <addaction name="menuEditor_Language"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -797,6 +874,26 @@ p, li { white-space: pre-wrap; }
   <action name="actionEditor_Settings">
    <property name="text">
     <string>Editor Settings</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionEnable">
+   <property name="text">
+    <string>Enable</string>
+   </property>
+  </action>
+  <action name="actionDisable">
+   <property name="text">
+    <string>Disable</string>
+   </property>
+  </action>
+  <action name="actionMod_Settings">
+   <property name="text">
+    <string>Mod Settings</string>
    </property>
   </action>
  </widget>
