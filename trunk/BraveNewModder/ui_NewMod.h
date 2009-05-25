@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'NewMod.ui'
 **
-** Created: Tue May 12 20:31:53 2009
+** Created: Mon May 25 02:23:19 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -27,10 +27,6 @@ QT_BEGIN_NAMESPACE
 class Ui_Frame
 {
 public:
-    QGroupBox *groupBox;
-    QGroupBox *groupBox_2;
-    QRadioButton *radioButton;
-    QFrame *frame;
     QGroupBox *groupBox_3;
     QLabel *lblAdvisors;
     QGroupBox *groupBox_4;
@@ -68,34 +64,25 @@ public:
     QGroupBox *groupBox_12;
     QRadioButton *radioButton_18;
     QRadioButton *radioButton_19;
-    QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit;
+    QGroupBox *groupBox_2;
+    QRadioButton *radioButton;
+    QRadioButton *radioButton_20;
+    QRadioButton *radioButton_21;
+    QGroupBox *groupBox;
     QTextBrowser *textBrowser;
 
     void setupUi(QFrame *Frame)
     {
         if (Frame->objectName().isEmpty())
             Frame->setObjectName(QString::fromUtf8("Frame"));
-        Frame->resize(392, 502);
+        Frame->resize(394, 492);
         Frame->setFrameShape(QFrame::StyledPanel);
         Frame->setFrameShadow(QFrame::Raised);
-        groupBox = new QGroupBox(Frame);
-        groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(0, 0, 391, 341));
-        groupBox_2 = new QGroupBox(groupBox);
-        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        groupBox_2->setGeometry(QRect(0, 10, 391, 31));
-        radioButton = new QRadioButton(groupBox_2);
-        radioButton->setObjectName(QString::fromUtf8("radioButton"));
-        radioButton->setGeometry(QRect(2, 10, 181, 19));
-        frame = new QFrame(groupBox);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(0, 40, 394, 301));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        groupBox_3 = new QGroupBox(frame);
+        groupBox_3 = new QGroupBox(Frame);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(0, 40, 391, 261));
+        groupBox_3->setGeometry(QRect(0, 110, 391, 261));
         lblAdvisors = new QLabel(groupBox_3);
         lblAdvisors->setObjectName(QString::fromUtf8("lblAdvisors"));
         lblAdvisors->setGeometry(QRect(80, 20, 91, 21));
@@ -213,15 +200,30 @@ public:
         radioButton_19 = new QRadioButton(groupBox_12);
         radioButton_19->setObjectName(QString::fromUtf8("radioButton_19"));
         radioButton_19->setGeometry(QRect(10, 30, 82, 19));
-        lineEdit = new QLineEdit(frame);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(0, 0, 391, 20));
-        lineEdit_2 = new QLineEdit(frame);
+        lineEdit_2 = new QLineEdit(Frame);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(0, 20, 391, 20));
-        textBrowser = new QTextBrowser(Frame);
+        lineEdit_2->setGeometry(QRect(0, 70, 391, 20));
+        lineEdit = new QLineEdit(Frame);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setGeometry(QRect(0, 90, 391, 20));
+        groupBox_2 = new QGroupBox(Frame);
+        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_2->setGeometry(QRect(0, 0, 391, 71));
+        radioButton = new QRadioButton(groupBox_2);
+        radioButton->setObjectName(QString::fromUtf8("radioButton"));
+        radioButton->setGeometry(QRect(4, 10, 181, 19));
+        radioButton_20 = new QRadioButton(groupBox_2);
+        radioButton_20->setObjectName(QString::fromUtf8("radioButton_20"));
+        radioButton_20->setGeometry(QRect(4, 30, 201, 19));
+        radioButton_21 = new QRadioButton(groupBox_2);
+        radioButton_21->setObjectName(QString::fromUtf8("radioButton_21"));
+        radioButton_21->setGeometry(QRect(4, 50, 191, 19));
+        groupBox = new QGroupBox(Frame);
+        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setGeometry(QRect(0, 370, 391, 121));
+        textBrowser = new QTextBrowser(groupBox);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(0, 340, 391, 161));
+        textBrowser->setGeometry(QRect(0, 12, 391, 107));
 
         retranslateUi(Frame);
 
@@ -231,9 +233,6 @@ public:
     void retranslateUi(QFrame *Frame)
     {
         Frame->setWindowTitle(QApplication::translate("Frame", "Frame", 0, QApplication::UnicodeUTF8));
-        groupBox->setTitle(QApplication::translate("Frame", "Create A New Mod", 0, QApplication::UnicodeUTF8));
-        groupBox_2->setTitle(QApplication::translate("Frame", "Game", 0, QApplication::UnicodeUTF8));
-        radioButton->setText(QApplication::translate("Frame", "Europa Universalis III: In Nomine", 0, QApplication::UnicodeUTF8));
         groupBox_3->setTitle(QApplication::translate("Frame", "Folders", 0, QApplication::UnicodeUTF8));
         lblAdvisors->setText(QApplication::translate("Frame", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -307,8 +306,13 @@ public:
         groupBox_12->setTitle(QApplication::translate("Frame", "Files", 0, QApplication::UnicodeUTF8));
         radioButton_18->setText(QApplication::translate("Frame", "Extend", 0, QApplication::UnicodeUTF8));
         radioButton_19->setText(QApplication::translate("Frame", "Replace", 0, QApplication::UnicodeUTF8));
-        lineEdit->setText(QApplication::translate("Frame", "Mod Title", 0, QApplication::UnicodeUTF8));
         lineEdit_2->setText(QApplication::translate("Frame", "Version Title", 0, QApplication::UnicodeUTF8));
+        lineEdit->setText(QApplication::translate("Frame", "Mod Title", 0, QApplication::UnicodeUTF8));
+        groupBox_2->setTitle(QApplication::translate("Frame", "Game", 0, QApplication::UnicodeUTF8));
+        radioButton->setText(QApplication::translate("Frame", "Europa Universalis III: In Nomine", 0, QApplication::UnicodeUTF8));
+        radioButton_20->setText(QApplication::translate("Frame", "Europa Universalis: Rome: Vae Victus", 0, QApplication::UnicodeUTF8));
+        radioButton_21->setText(QApplication::translate("Frame", "Hearts of Iron III", 0, QApplication::UnicodeUTF8));
+        groupBox->setTitle(QApplication::translate("Frame", "About", 0, QApplication::UnicodeUTF8));
         Q_UNUSED(Frame);
     } // retranslateUi
 

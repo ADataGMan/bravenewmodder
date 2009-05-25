@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'Event.ui'
 **
-** Created: Sun May 24 15:30:54 2009
+** Created: Sun May 24 17:45:38 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -34,6 +34,7 @@ public:
     QGroupBox *gbxType;
     QRadioButton *rdbCountry;
     QRadioButton *rdbProvince;
+    QRadioButton *radioButton;
     QGroupBox *gbxNumber;
     QComboBox *cbxType;
     QComboBox *cbxRange;
@@ -60,12 +61,6 @@ public:
     QGroupBox *groupBox_3;
     QPlainTextEdit *plainTextEdit_2;
     QLineEdit *lineEdit_4;
-    QGroupBox *groupBox_4;
-    QLineEdit *lineEdit_5;
-    QGroupBox *groupBox_5;
-    QPlainTextEdit *plainTextEdit_4;
-    QGroupBox *groupBox_6;
-    QPlainTextEdit *plainTextEdit_3;
 
     void setupUi(QFrame *Frame)
     {
@@ -85,10 +80,13 @@ public:
         gbxType->setAlignment(Qt::AlignCenter);
         rdbCountry = new QRadioButton(gbxType);
         rdbCountry->setObjectName(QString::fromUtf8("rdbCountry"));
-        rdbCountry->setGeometry(QRect(30, 10, 57, 16));
+        rdbCountry->setGeometry(QRect(2, 12, 57, 16));
         rdbProvince = new QRadioButton(gbxType);
         rdbProvince->setObjectName(QString::fromUtf8("rdbProvince"));
-        rdbProvince->setGeometry(QRect(110, 10, 61, 16));
+        rdbProvince->setGeometry(QRect(60, 12, 61, 16));
+        radioButton = new QRadioButton(gbxType);
+        radioButton->setObjectName(QString::fromUtf8("radioButton"));
+        radioButton->setGeometry(QRect(122, 11, 71, 19));
         gbxNumber = new QGroupBox(frame);
         gbxNumber->setObjectName(QString::fromUtf8("gbxNumber"));
         gbxNumber->setGeometry(QRect(190, 0, 241, 31));
@@ -178,24 +176,6 @@ public:
         lineEdit_4 = new QLineEdit(groupBox_3);
         lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
         lineEdit_4->setGeometry(QRect(0, 12, 131, 21));
-        groupBox_4 = new QGroupBox(Frame);
-        groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-        groupBox_4->setGeometry(QRect(0, 620, 591, 351));
-        lineEdit_5 = new QLineEdit(groupBox_4);
-        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
-        lineEdit_5->setGeometry(QRect(0, 12, 131, 21));
-        groupBox_5 = new QGroupBox(groupBox_4);
-        groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
-        groupBox_5->setGeometry(QRect(0, 180, 591, 171));
-        plainTextEdit_4 = new QPlainTextEdit(groupBox_5);
-        plainTextEdit_4->setObjectName(QString::fromUtf8("plainTextEdit_4"));
-        plainTextEdit_4->setGeometry(QRect(0, 12, 591, 160));
-        groupBox_6 = new QGroupBox(groupBox_4);
-        groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
-        groupBox_6->setGeometry(QRect(0, 30, 591, 151));
-        plainTextEdit_3 = new QPlainTextEdit(groupBox_6);
-        plainTextEdit_3->setObjectName(QString::fromUtf8("plainTextEdit_3"));
-        plainTextEdit_3->setGeometry(QRect(0, 12, 591, 140));
 
         retranslateUi(Frame);
 
@@ -208,6 +188,7 @@ public:
         gbxType->setTitle(QApplication::translate("Frame", "Event Type", 0, QApplication::UnicodeUTF8));
         rdbCountry->setText(QApplication::translate("Frame", "Country", 0, QApplication::UnicodeUTF8));
         rdbProvince->setText(QApplication::translate("Frame", "Province", 0, QApplication::UnicodeUTF8));
+        radioButton->setText(QApplication::translate("Frame", "Character", 0, QApplication::UnicodeUTF8));
         gbxNumber->setTitle(QApplication::translate("Frame", "Event Number", 0, QApplication::UnicodeUTF8));
         cbxType->clear();
         cbxType->insertItems(0, QStringList()
@@ -266,12 +247,6 @@ public:
         groupBox_3->setTitle(QApplication::translate("Frame", "Mean Time to Happen", 0, QApplication::UnicodeUTF8));
         plainTextEdit_2->setPlainText(QString());
         lineEdit_4->setText(QApplication::translate("Frame", "Initial Time", 0, QApplication::UnicodeUTF8));
-        groupBox_4->setTitle(QApplication::translate("Frame", "Option 1", 0, QApplication::UnicodeUTF8));
-        lineEdit_5->setText(QApplication::translate("Frame", "AI Chance", 0, QApplication::UnicodeUTF8));
-        groupBox_5->setTitle(QApplication::translate("Frame", "Effects", 0, QApplication::UnicodeUTF8));
-        plainTextEdit_4->setPlainText(QString());
-        groupBox_6->setTitle(QApplication::translate("Frame", "Modifiers", 0, QApplication::UnicodeUTF8));
-        plainTextEdit_3->setPlainText(QString());
         Q_UNUSED(Frame);
     } // retranslateUi
 

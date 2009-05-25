@@ -36,7 +36,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideLeft</enum>
@@ -48,610 +48,424 @@
      <attribute name="title">
       <string>Gameplay Settings</string>
      </attribute>
-     <widget class="QFrame" name="frmGameplaySettings">
+     <widget class="QWidget" name="formLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>10</y>
-        <width>741</width>
-        <height>211</height>
+        <x>110</x>
+        <y>30</y>
+        <width>361</width>
+        <height>421</height>
        </rect>
       </property>
-      <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Plain</enum>
-      </property>
-      <widget class="QLabel" name="lblRulers">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>71</width>
-         <height>31</height>
-        </rect>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="horizontalSpacing">
+        <number>6</number>
        </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+       <property name="verticalSpacing">
+        <number>6</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblRulers">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Rulers&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblColonists">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>90</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Colonists&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMerchants">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>120</y>
-         <width>111</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Merchants&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblAdvisors">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>30</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="sbxRulers">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lblAdvisors">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Advisors&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblLeaders">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>60</y>
-         <width>81</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="sbxAdvisors">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lblLeaders">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Leaders&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblSpreadofSeaProvinces">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>150</y>
-         <width>231</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="sbxLeaders">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lblColonists">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Spread of Sea Provinces&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblInflation">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>0</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Colonists&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="sbxColonists">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lblMerchants">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Inflation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblSpreadofLandProvinces">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>120</y>
-         <width>241</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Spread of Land Provinces&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblSpies">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>180</y>
-         <width>61</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Spies&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblMissionaries">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>150</y>
-         <width>131</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Merchants&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QSpinBox" name="sbxMerchants">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lblMissionaries">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Missionaries&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblDifficulty">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>60</y>
-         <width>91</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QSpinBox" name="sbxMissionaries">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>4</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lblSpies">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Difficulty&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblAIAggressiveness">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>90</y>
-         <width>181</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Spies&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QSpinBox" name="sbxSpies">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Very Hard</string>
+         </property>
+         <property name="maximum">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="lblInflation">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;AI Aggressiveness&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblSizeofColonists">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>30</y>
-         <width>161</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Inflation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QSpinBox" name="sbxInflation">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lblSizeofColonists">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Size of Colonists&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxMissionaries">
-       <property name="geometry">
-        <rect>
-         <x>630</x>
-         <y>150</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxRulers">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>2</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>2</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxColonists">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>90</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>1</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxLeaders">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>60</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>2</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxAdvisors">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>30</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>2</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxMerchants">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>120</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>1</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxSpies">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>180</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Very Hard</string>
-       </property>
-       <property name="maximum">
-        <number>1</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxAIAggressiveness">
-       <property name="geometry">
-        <rect>
-         <x>630</x>
-         <y>90</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>2</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxSizeofColonists">
-       <property name="geometry">
-        <rect>
-         <x>630</x>
-         <y>30</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>3</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxSpreadofSeaProvinces">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>150</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>1</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxDifficulty">
-       <property name="geometry">
-        <rect>
-         <x>630</x>
-         <y>60</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxInflation">
-       <property name="geometry">
-        <rect>
-         <x>630</x>
-         <y>2</y>
-         <width>111</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical</string>
-       </property>
-       <property name="maximum">
-        <number>2</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxSpreadofLandProvinces">
-       <property name="geometry">
-        <rect>
-         <x>630</x>
-         <y>120</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>50 Years (Normal)</string>
-       </property>
-       <property name="maximum">
-        <number>4</number>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="sbxLuckyNations">
-       <property name="geometry">
-        <rect>
-         <x>630</x>
-         <y>180</y>
-         <width>111</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="wrapping">
-        <bool>true</bool>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-       <property name="specialValueText">
-        <string>Historical (Normal)</string>
-       </property>
-       <property name="maximum">
-        <number>2</number>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lblLuckyNations">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>180</y>
-         <width>141</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QSpinBox" name="sbxSizeofColonists">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="lblDifficulty">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Difficulty&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QSpinBox" name="sbxDifficulty">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>4</number>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="lblAIAggressiveness">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;AI Aggressiveness&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QSpinBox" name="sbxAIAggressiveness">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="lblSpreadofLandProvinces">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Spread of Land Provinces&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QSpinBox" name="sbxSpreadofLandProvinces">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>50 Years (Normal)</string>
+         </property>
+         <property name="maximum">
+          <number>4</number>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="lblSpreadofSeaProvinces">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Spread of Sea Provinces&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QSpinBox" name="sbxSpreadofSeaProvinces">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical</string>
+         </property>
+         <property name="maximum">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="lblLuckyNations">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Lucky Nations&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QTextBrowser" name="tbrGameplaySettings">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>581</y>
-        <width>1021</width>
-        <height>141</height>
-       </rect>
-      </property>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QSpinBox" name="sbxLuckyNations">
+         <property name="wrapping">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="specialValueText">
+          <string>Historical (Normal)</string>
+         </property>
+         <property name="maximum">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="tabCommon">
      <attribute name="title">
       <string>Common</string>
      </attribute>
-     <widget class="QTextBrowser" name="tbrInfo_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>630</y>
-        <width>1021</width>
-        <height>91</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTreeView" name="trvEvents_2">
+     <widget class="QTreeView" name="trvEvents_4">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>171</width>
-        <height>631</height>
+        <height>726</height>
        </rect>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea_2">
+     <widget class="QScrollArea" name="scrollArea_4">
       <property name="geometry">
        <rect>
         <x>180</x>
         <y>0</y>
-        <width>851</width>
-        <height>631</height>
+        <width>561</width>
+        <height>726</height>
        </rect>
       </property>
       <property name="verticalScrollBarPolicy">
@@ -663,13 +477,13 @@ p, li { white-space: pre-wrap; }
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <widget class="QWidget" name="scrollAreaWidgetContents_4">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>831</width>
-         <height>627</height>
+         <width>541</width>
+         <height>722</height>
         </rect>
        </property>
       </widget>
@@ -679,181 +493,23 @@ p, li { white-space: pre-wrap; }
      <attribute name="title">
       <string>Decisions</string>
      </attribute>
-     <widget class="QTabWidget" name="tbxReference_4">
-      <property name="geometry">
-       <rect>
-        <x>790</x>
-        <y>0</y>
-        <width>251</width>
-        <height>721</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <property name="elideMode">
-       <enum>Qt::ElideLeft</enum>
-      </property>
-      <widget class="QWidget" name="tabTriggers_3">
-       <attribute name="title">
-        <string>Triggers</string>
-       </attribute>
-       <widget class="QTextBrowser" name="tbrTriggers_3">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>281</width>
-          <height>701</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tabScopes_3">
-       <attribute name="title">
-        <string>Scopes</string>
-       </attribute>
-       <widget class="QTextBrowser" name="tbrScopes_3">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>281</width>
-          <height>701</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tabEffects_3">
-       <attribute name="title">
-        <string>Effects</string>
-       </attribute>
-       <widget class="QTextBrowser" name="tbrEffects_3">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>281</width>
-          <height>701</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tabIndex_3">
-       <attribute name="title">
-        <string>Index</string>
-       </attribute>
-       <widget class="QTabWidget" name="tbxUserdata_3">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>281</width>
-          <height>701</height>
-         </rect>
-        </property>
-        <property name="currentIndex">
-         <number>0</number>
-        </property>
-        <property name="elideMode">
-         <enum>Qt::ElideLeft</enum>
-        </property>
-        <widget class="QWidget" name="tabFlags_3">
-         <attribute name="title">
-          <string>Flags</string>
-         </attribute>
-         <widget class="QTextBrowser" name="tbrFlags_3">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>281</width>
-            <height>681</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tabModifiers_3">
-         <attribute name="title">
-          <string>Modifiers</string>
-         </attribute>
-         <widget class="QTextBrowser" name="tbrModifiers_3">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>281</width>
-            <height>681</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tabVariables_3">
-         <attribute name="title">
-          <string>Variables</string>
-         </attribute>
-         <widget class="QTextBrowser" name="tbrVariables_3">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>281</width>
-            <height>681</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tabData_3">
-         <attribute name="title">
-          <string>Data</string>
-         </attribute>
-         <widget class="QTreeView" name="trvLData_3">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>281</width>
-            <height>681</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-       </widget>
-      </widget>
-     </widget>
-     <widget class="QTextBrowser" name="tbrInfo_5">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>631</y>
-        <width>781</width>
-        <height>91</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTreeView" name="trvEvents_5">
+     <widget class="QTreeView" name="trvEvents_3">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>171</width>
-        <height>631</height>
+        <height>726</height>
        </rect>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea_5">
+     <widget class="QScrollArea" name="scrollArea_3">
       <property name="geometry">
        <rect>
         <x>180</x>
         <y>0</y>
-        <width>611</width>
-        <height>631</height>
+        <width>561</width>
+        <height>726</height>
        </rect>
       </property>
       <property name="verticalScrollBarPolicy">
@@ -865,13 +521,13 @@ p, li { white-space: pre-wrap; }
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_5">
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>591</width>
-         <height>627</height>
+         <width>541</width>
+         <height>722</height>
         </rect>
        </property>
       </widget>
@@ -881,171 +537,13 @@ p, li { white-space: pre-wrap; }
      <attribute name="title">
       <string>Events</string>
      </attribute>
-     <widget class="QTextBrowser" name="tbrInfo">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>631</y>
-        <width>781</width>
-        <height>91</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTabWidget" name="tbxReference_2">
-      <property name="geometry">
-       <rect>
-        <x>790</x>
-        <y>0</y>
-        <width>241</width>
-        <height>721</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <property name="elideMode">
-       <enum>Qt::ElideLeft</enum>
-      </property>
-      <widget class="QWidget" name="tabTriggers">
-       <attribute name="title">
-        <string>Triggers</string>
-       </attribute>
-       <widget class="QTextBrowser" name="tbrTriggers">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>241</width>
-          <height>701</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tabScopes">
-       <attribute name="title">
-        <string>Scopes</string>
-       </attribute>
-       <widget class="QTextBrowser" name="tbrScopes">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>241</width>
-          <height>701</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tabEffects">
-       <attribute name="title">
-        <string>Effects</string>
-       </attribute>
-       <widget class="QTextBrowser" name="tbrEffects">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>241</width>
-          <height>701</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tabIndex">
-       <attribute name="title">
-        <string>Index</string>
-       </attribute>
-       <widget class="QTabWidget" name="tbxUserdata">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>281</width>
-          <height>701</height>
-         </rect>
-        </property>
-        <property name="currentIndex">
-         <number>3</number>
-        </property>
-        <property name="elideMode">
-         <enum>Qt::ElideLeft</enum>
-        </property>
-        <widget class="QWidget" name="tabFlags">
-         <attribute name="title">
-          <string>Flags</string>
-         </attribute>
-         <widget class="QTextBrowser" name="tbrFlags">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>241</width>
-            <height>681</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tabModifiers">
-         <attribute name="title">
-          <string>Modifiers</string>
-         </attribute>
-         <widget class="QTextBrowser" name="tbrModifiers">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>241</width>
-            <height>681</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tabVariables">
-         <attribute name="title">
-          <string>Variables</string>
-         </attribute>
-         <widget class="QTextBrowser" name="tbrVariables">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>241</width>
-            <height>681</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="tabData">
-         <attribute name="title">
-          <string>Data</string>
-         </attribute>
-         <widget class="QTreeView" name="trvLData">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>241</width>
-            <height>671</height>
-           </rect>
-          </property>
-         </widget>
-        </widget>
-       </widget>
-      </widget>
-     </widget>
      <widget class="QTreeView" name="trvEvents">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>0</y>
         <width>171</width>
-        <height>631</height>
+        <height>726</height>
        </rect>
       </property>
      </widget>
@@ -1054,8 +552,8 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>180</x>
         <y>0</y>
-        <width>611</width>
-        <height>631</height>
+        <width>561</width>
+        <height>726</height>
        </rect>
       </property>
       <property name="verticalScrollBarPolicy">
@@ -1072,8 +570,8 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>591</width>
-         <height>627</height>
+         <width>541</width>
+         <height>722</height>
         </rect>
        </property>
       </widget>
