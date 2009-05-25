@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Eventmain</class>
+ <widget class="QFrame" name="Eventmain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Internal Title and Numeration</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <widget class="QGroupBox" name="gbxRange">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Event Range</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QRadioButton" name="rdbUnique">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>12</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Unique</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rdbSeries">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>12</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Series</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="sbxRange">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>12</y>
+       <width>61</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="minimum">
+      <number>10</number>
+     </property>
+     <property name="maximum">
+      <number>10000</number>
+     </property>
+     <property name="value">
+      <number>10000</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gbxNumber">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Event Number</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QComboBox" name="cbxType">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>11</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>- Legacy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>0 Government</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1 Diplomacy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2 Economy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3 Military</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4 Religion</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5 Colonial</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>6 Custom</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>7 Custom</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>8 Custom</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>9 Custom</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QSpinBox" name="sbxNumber">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>11</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>99999999</number>
+     </property>
+     <property name="value">
+      <number>10100500</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gbxType">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Event Type</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QRadioButton" name="rdbCountry">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>12</y>
+       <width>57</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Country</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rdbProvince">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>12</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Province</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>122</x>
+       <y>12</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Character</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>75</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Syntax Check</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>75</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New Event</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>75</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>75</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Preview</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>75</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>75</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_9">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>541</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Internal Event Name                                                Internal Event Series Name                             Series Start #</string>
+    </property>
+    <widget class="QLineEdit" name="lneInternaleventname">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>13</y>
+       <width>241</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>13</y>
+       <width>221</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>13</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>541</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Event Data</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>342</y>
+      <width>541</width>
+      <height>456</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mean Time to Happen</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>541</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Initial MTTH</string>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>10</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Day</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>10</y>
+        <width>51</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Month</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Year</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>541</width>
+       <height>188</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Modifiers</string>
+     </property>
+     <widget class="QPlainTextEdit" name="plainTextEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>12</y>
+        <width>541</width>
+        <height>174</height>
+       </rect>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>541</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Event Title</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>13</y>
+       <width>541</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>143</y>
+      <width>541</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Trigger</string>
+    </property>
+    <widget class="QPlainTextEdit" name="plainTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>13</y>
+       <width>541</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="plainText">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>44</y>
+      <width>541</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Event Description</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>14</y>
+       <width>541</width>
+       <height>85</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

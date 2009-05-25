@@ -7,13 +7,19 @@ SOURCES += main.cpp \
     ./lib/bravenewmodder.cpp \
     ./lib/eventmodel.cpp \
     ./lib/treeitem.cpp \
-    ./lib/events.cpp
+    ./lib/events.cpp \
+    eventmain.cpp
 HEADERS += ./lib/bravenewmodder.h \
     ./lib/events.h \
     ./lib/eventmodel.h \
     ./lib/treeitem.h \
-    ./lib/events.h
+    ./lib/events.h \
+    eventmain.h
 FORMS += ./ui/bravenewmodder.ui \
     ./ui/Event.ui \
     ./ui/NewMod.ui \
-    ui/advisortypes.ui
+    ./ui/advisortypes.ui \
+    ./ui/Decision.ui \
+    ./ui/Option.ui \
+    ./ui/Reference.ui \
+    ./ui/eventmain.ui
