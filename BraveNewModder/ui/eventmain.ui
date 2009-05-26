@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>541</width>
-    <height>670</height>
+    <height>638</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,7 +25,7 @@
      <x>0</x>
      <y>0</y>
      <width>541</width>
-     <height>101</height>
+     <height>75</height>
     </rect>
    </property>
    <property name="title">
@@ -253,84 +253,6 @@
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>75</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Syntax Check</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_8">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>75</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>New Event</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_9">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>75</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>New File</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_10">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>75</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Preview</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_11">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>75</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Save</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_12">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>75</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Clear</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="groupBox_9">
     <property name="geometry">
      <rect>
@@ -388,9 +310,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>100</y>
+     <y>74</y>
      <width>541</width>
-     <height>571</height>
+     <height>566</height>
     </rect>
    </property>
    <property name="title">
@@ -400,9 +322,9 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>342</y>
+      <y>336</y>
       <width>541</width>
-      <height>456</height>
+      <height>452</height>
      </rect>
     </property>
     <property name="title">
@@ -542,7 +464,7 @@ p, li { white-space: pre-wrap; }
       <x>0</x>
       <y>143</y>
       <width>541</width>
-      <height>201</height>
+      <height>196</height>
      </rect>
     </property>
     <property name="title">

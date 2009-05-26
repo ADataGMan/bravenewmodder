@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>541</width>
-    <height>362</height>
+    <height>343</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -100,7 +100,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>130</y>
      <width>541</width>
-     <height>234</height>
+     <height>212</height>
     </rect>
    </property>
    <property name="title">
@@ -125,7 +125,7 @@ p, li { white-space: pre-wrap; }
       <x>0</x>
       <y>30</y>
       <width>541</width>
-      <height>204</height>
+      <height>182</height>
      </rect>
     </property>
     <property name="title">
@@ -137,7 +137,7 @@ p, li { white-space: pre-wrap; }
        <x>0</x>
        <y>12</y>
        <width>541</width>
-       <height>190</height>
+       <height>168</height>
       </rect>
      </property>
      <property name="verticalScrollBarPolicy">
