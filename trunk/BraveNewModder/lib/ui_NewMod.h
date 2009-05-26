@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'NewMod.ui'
 **
-** Created: Tue May 26 03:08:32 2009
+** Created: Tue May 26 04:00:18 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -19,6 +19,7 @@
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
+#include <QtGui/QPushButton>
 #include <QtGui/QRadioButton>
 #include <QtGui/QTextBrowser>
 
@@ -132,6 +133,8 @@ public:
     QRadioButton *radioButton_64;
     QRadioButton *radioButton_65;
     QRadioButton *radioButton_66;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
 
     void setupUi(QFrame *Frame)
     {
@@ -268,7 +271,7 @@ public:
         lineEdit->setGeometry(QRect(0, 90, 391, 20));
         groupBox_2 = new QGroupBox(Frame);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        groupBox_2->setGeometry(QRect(0, 0, 391, 71));
+        groupBox_2->setGeometry(QRect(0, 0, 231, 71));
         radioButton = new QRadioButton(groupBox_2);
         radioButton->setObjectName(QString::fromUtf8("radioButton"));
         radioButton->setGeometry(QRect(4, 10, 181, 19));
@@ -479,6 +482,12 @@ public:
         radioButton_66 = new QRadioButton(groupBox_26);
         radioButton_66->setObjectName(QString::fromUtf8("radioButton_66"));
         radioButton_66->setGeometry(QRect(170, 10, 38, 19));
+        pushButton = new QPushButton(Frame);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(230, 8, 75, 24));
+        pushButton_2 = new QPushButton(Frame);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(310, 8, 75, 24));
 
         retranslateUi(Frame);
 
@@ -628,6 +637,8 @@ public:
         radioButton_64->setText(QApplication::translate("Frame", "75", 0, QApplication::UnicodeUTF8));
         radioButton_65->setText(QApplication::translate("Frame", "100", 0, QApplication::UnicodeUTF8));
         radioButton_66->setText(QApplication::translate("Frame", "200", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("Frame", "Clear", 0, QApplication::UnicodeUTF8));
+        pushButton_2->setText(QApplication::translate("Frame", "Ok", 0, QApplication::UnicodeUTF8));
         Q_UNUSED(Frame);
     } // retranslateUi
 
