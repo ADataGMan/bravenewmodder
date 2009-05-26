@@ -2,8 +2,6 @@
 #define BRAVENEWMODDER_H
 
 #include <QtGui>
-#include "events.h"
-#include "eventmodel.h"
 
 namespace Ui
 {
