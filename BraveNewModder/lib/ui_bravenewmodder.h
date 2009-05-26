@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'bravenewmodder.ui'
 **
-** Created: Mon May 25 05:18:32 2009
+** Created: Mon May 25 20:18:06 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -21,6 +21,7 @@
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
+#include <QtGui/QPushButton>
 #include <QtGui/QScrollArea>
 #include <QtGui/QSpinBox>
 #include <QtGui/QTabWidget>
@@ -97,14 +98,38 @@ public:
     QTreeView *trvEvents_4;
     QScrollArea *scrollArea_4;
     QWidget *scrollAreaWidgetContents_4;
+    QGroupBox *groupBox_4;
+    QPushButton *pushButton_21;
+    QPushButton *pushButton_22;
+    QPushButton *pushButton_23;
+    QPushButton *pushButton_24;
+    QPushButton *pushButton_25;
+    QPushButton *pushButton_26;
+    QPushButton *pushButton_27;
     QWidget *tab;
     QTreeView *trvEvents_3;
     QScrollArea *scrollArea_3;
     QWidget *scrollAreaWidgetContents_3;
+    QGroupBox *groupBox_2;
+    QPushButton *pushButton_13;
+    QPushButton *pushButton_12;
+    QPushButton *pushButton_7;
+    QPushButton *pushButton_9;
+    QPushButton *pushButton_8;
+    QPushButton *pushButton_11;
+    QPushButton *pushButton_10;
     QWidget *TabEvents;
     QTreeView *trvEvents;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
+    QGroupBox *groupBox_3;
+    QPushButton *pushButton_14;
+    QPushButton *pushButton_15;
+    QPushButton *pushButton_16;
+    QPushButton *pushButton_17;
+    QPushButton *pushButton_18;
+    QPushButton *pushButton_19;
+    QPushButton *pushButton_20;
     QWidget *tabHistory;
     QTabWidget *tabWidget;
     QWidget *tab_2;
@@ -404,14 +429,39 @@ public:
         trvEvents_4->setGeometry(QRect(10, 0, 171, 726));
         scrollArea_4 = new QScrollArea(tabCommon);
         scrollArea_4->setObjectName(QString::fromUtf8("scrollArea_4"));
-        scrollArea_4->setGeometry(QRect(180, 0, 561, 726));
+        scrollArea_4->setGeometry(QRect(180, 40, 561, 688));
         scrollArea_4->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
         scrollArea_4->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         scrollArea_4->setWidgetResizable(true);
         scrollAreaWidgetContents_4 = new QWidget();
         scrollAreaWidgetContents_4->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_4"));
-        scrollAreaWidgetContents_4->setGeometry(QRect(0, 0, 541, 722));
+        scrollAreaWidgetContents_4->setGeometry(QRect(0, 0, 541, 684));
         scrollArea_4->setWidget(scrollAreaWidgetContents_4);
+        groupBox_4 = new QGroupBox(tabCommon);
+        groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
+        groupBox_4->setGeometry(QRect(180, 0, 561, 41));
+        groupBox_4->setAlignment(Qt::AlignCenter);
+        pushButton_21 = new QPushButton(groupBox_4);
+        pushButton_21->setObjectName(QString::fromUtf8("pushButton_21"));
+        pushButton_21->setGeometry(QRect(150, 14, 75, 25));
+        pushButton_22 = new QPushButton(groupBox_4);
+        pushButton_22->setObjectName(QString::fromUtf8("pushButton_22"));
+        pushButton_22->setGeometry(QRect(0, 14, 75, 25));
+        pushButton_23 = new QPushButton(groupBox_4);
+        pushButton_23->setObjectName(QString::fromUtf8("pushButton_23"));
+        pushButton_23->setGeometry(QRect(75, 14, 75, 25));
+        pushButton_24 = new QPushButton(groupBox_4);
+        pushButton_24->setObjectName(QString::fromUtf8("pushButton_24"));
+        pushButton_24->setGeometry(QRect(225, 14, 75, 25));
+        pushButton_25 = new QPushButton(groupBox_4);
+        pushButton_25->setObjectName(QString::fromUtf8("pushButton_25"));
+        pushButton_25->setGeometry(QRect(375, 14, 75, 25));
+        pushButton_26 = new QPushButton(groupBox_4);
+        pushButton_26->setObjectName(QString::fromUtf8("pushButton_26"));
+        pushButton_26->setGeometry(QRect(300, 14, 75, 25));
+        pushButton_27 = new QPushButton(groupBox_4);
+        pushButton_27->setObjectName(QString::fromUtf8("pushButton_27"));
+        pushButton_27->setGeometry(QRect(450, 14, 75, 25));
         tbxMain->addTab(tabCommon, QString());
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
@@ -420,14 +470,39 @@ public:
         trvEvents_3->setGeometry(QRect(10, 0, 171, 726));
         scrollArea_3 = new QScrollArea(tab);
         scrollArea_3->setObjectName(QString::fromUtf8("scrollArea_3"));
-        scrollArea_3->setGeometry(QRect(180, 0, 561, 726));
+        scrollArea_3->setGeometry(QRect(180, 40, 561, 688));
         scrollArea_3->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
         scrollArea_3->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         scrollArea_3->setWidgetResizable(true);
         scrollAreaWidgetContents_3 = new QWidget();
         scrollAreaWidgetContents_3->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_3"));
-        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 541, 722));
+        scrollAreaWidgetContents_3->setGeometry(QRect(0, 0, 541, 684));
         scrollArea_3->setWidget(scrollAreaWidgetContents_3);
+        groupBox_2 = new QGroupBox(tab);
+        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_2->setGeometry(QRect(180, 0, 561, 41));
+        groupBox_2->setAlignment(Qt::AlignCenter);
+        pushButton_13 = new QPushButton(groupBox_2);
+        pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
+        pushButton_13->setGeometry(QRect(150, 14, 75, 25));
+        pushButton_12 = new QPushButton(groupBox_2);
+        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
+        pushButton_12->setGeometry(QRect(0, 14, 75, 25));
+        pushButton_7 = new QPushButton(groupBox_2);
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        pushButton_7->setGeometry(QRect(75, 14, 75, 25));
+        pushButton_9 = new QPushButton(groupBox_2);
+        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+        pushButton_9->setGeometry(QRect(225, 14, 75, 25));
+        pushButton_8 = new QPushButton(groupBox_2);
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+        pushButton_8->setGeometry(QRect(375, 14, 75, 25));
+        pushButton_11 = new QPushButton(groupBox_2);
+        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+        pushButton_11->setGeometry(QRect(300, 14, 75, 25));
+        pushButton_10 = new QPushButton(groupBox_2);
+        pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
+        pushButton_10->setGeometry(QRect(450, 14, 75, 25));
         tbxMain->addTab(tab, QString());
         TabEvents = new QWidget();
         TabEvents->setObjectName(QString::fromUtf8("TabEvents"));
@@ -436,14 +511,39 @@ public:
         trvEvents->setGeometry(QRect(10, 0, 171, 726));
         scrollArea = new QScrollArea(TabEvents);
         scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setGeometry(QRect(180, 0, 561, 726));
+        scrollArea->setGeometry(QRect(180, 40, 561, 688));
         scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
         scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 541, 722));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 541, 684));
         scrollArea->setWidget(scrollAreaWidgetContents);
+        groupBox_3 = new QGroupBox(TabEvents);
+        groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
+        groupBox_3->setGeometry(QRect(180, 0, 561, 41));
+        groupBox_3->setAlignment(Qt::AlignCenter);
+        pushButton_14 = new QPushButton(groupBox_3);
+        pushButton_14->setObjectName(QString::fromUtf8("pushButton_14"));
+        pushButton_14->setGeometry(QRect(150, 14, 75, 25));
+        pushButton_15 = new QPushButton(groupBox_3);
+        pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
+        pushButton_15->setGeometry(QRect(0, 14, 75, 25));
+        pushButton_16 = new QPushButton(groupBox_3);
+        pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
+        pushButton_16->setGeometry(QRect(75, 14, 75, 25));
+        pushButton_17 = new QPushButton(groupBox_3);
+        pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
+        pushButton_17->setGeometry(QRect(225, 14, 75, 25));
+        pushButton_18 = new QPushButton(groupBox_3);
+        pushButton_18->setObjectName(QString::fromUtf8("pushButton_18"));
+        pushButton_18->setGeometry(QRect(375, 14, 75, 25));
+        pushButton_19 = new QPushButton(groupBox_3);
+        pushButton_19->setObjectName(QString::fromUtf8("pushButton_19"));
+        pushButton_19->setGeometry(QRect(300, 14, 75, 25));
+        pushButton_20 = new QPushButton(groupBox_3);
+        pushButton_20->setObjectName(QString::fromUtf8("pushButton_20"));
+        pushButton_20->setGeometry(QRect(450, 14, 75, 25));
         tbxMain->addTab(TabEvents, QString());
         tabHistory = new QWidget();
         tabHistory->setObjectName(QString::fromUtf8("tabHistory"));
@@ -536,7 +636,7 @@ public:
 
         retranslateUi(BravenewmodderClass);
 
-        tbxMain->setCurrentIndex(4);
+        tbxMain->setCurrentIndex(2);
         tabWidget->setCurrentIndex(4);
 
 
@@ -663,8 +763,32 @@ public:
         sbxLuckyNations->setSpecialValueText(QApplication::translate("BravenewmodderClass", "Historical (Normal)", 0, QApplication::UnicodeUTF8));
         groupBox->setTitle(QApplication::translate("BravenewmodderClass", "About", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabGameplaySettings), QApplication::translate("BravenewmodderClass", "Gameplay Settings", 0, QApplication::UnicodeUTF8));
+        groupBox_4->setTitle(QApplication::translate("BravenewmodderClass", "File Options", 0, QApplication::UnicodeUTF8));
+        pushButton_21->setText(QApplication::translate("BravenewmodderClass", "Original Doc.", 0, QApplication::UnicodeUTF8));
+        pushButton_22->setText(QApplication::translate("BravenewmodderClass", "Clear Entry", 0, QApplication::UnicodeUTF8));
+        pushButton_23->setText(QApplication::translate("BravenewmodderClass", "Syntax Check", 0, QApplication::UnicodeUTF8));
+        pushButton_24->setText(QApplication::translate("BravenewmodderClass", "New File", 0, QApplication::UnicodeUTF8));
+        pushButton_25->setText(QApplication::translate("BravenewmodderClass", "New Entry", 0, QApplication::UnicodeUTF8));
+        pushButton_26->setText(QApplication::translate("BravenewmodderClass", "Save", 0, QApplication::UnicodeUTF8));
+        pushButton_27->setText(QApplication::translate("BravenewmodderClass", "Preview", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tabCommon), QApplication::translate("BravenewmodderClass", "Common", 0, QApplication::UnicodeUTF8));
+        groupBox_2->setTitle(QApplication::translate("BravenewmodderClass", "File Options", 0, QApplication::UnicodeUTF8));
+        pushButton_13->setText(QApplication::translate("BravenewmodderClass", "Original Doc.", 0, QApplication::UnicodeUTF8));
+        pushButton_12->setText(QApplication::translate("BravenewmodderClass", "Clear Entry", 0, QApplication::UnicodeUTF8));
+        pushButton_7->setText(QApplication::translate("BravenewmodderClass", "Syntax Check", 0, QApplication::UnicodeUTF8));
+        pushButton_9->setText(QApplication::translate("BravenewmodderClass", "New File", 0, QApplication::UnicodeUTF8));
+        pushButton_8->setText(QApplication::translate("BravenewmodderClass", "New Entry", 0, QApplication::UnicodeUTF8));
+        pushButton_11->setText(QApplication::translate("BravenewmodderClass", "Save", 0, QApplication::UnicodeUTF8));
+        pushButton_10->setText(QApplication::translate("BravenewmodderClass", "Preview", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(tab), QApplication::translate("BravenewmodderClass", "Decisions", 0, QApplication::UnicodeUTF8));
+        groupBox_3->setTitle(QApplication::translate("BravenewmodderClass", "File Options", 0, QApplication::UnicodeUTF8));
+        pushButton_14->setText(QApplication::translate("BravenewmodderClass", "Original Doc.", 0, QApplication::UnicodeUTF8));
+        pushButton_15->setText(QApplication::translate("BravenewmodderClass", "Clear Entry", 0, QApplication::UnicodeUTF8));
+        pushButton_16->setText(QApplication::translate("BravenewmodderClass", "Syntax Check", 0, QApplication::UnicodeUTF8));
+        pushButton_17->setText(QApplication::translate("BravenewmodderClass", "New File", 0, QApplication::UnicodeUTF8));
+        pushButton_18->setText(QApplication::translate("BravenewmodderClass", "New Entry", 0, QApplication::UnicodeUTF8));
+        pushButton_19->setText(QApplication::translate("BravenewmodderClass", "Save", 0, QApplication::UnicodeUTF8));
+        pushButton_20->setText(QApplication::translate("BravenewmodderClass", "Preview", 0, QApplication::UnicodeUTF8));
         tbxMain->setTabText(tbxMain->indexOf(TabEvents), QApplication::translate("BravenewmodderClass", "Events", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("BravenewmodderClass", "Advisors", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("BravenewmodderClass", "Countries", 0, QApplication::UnicodeUTF8));

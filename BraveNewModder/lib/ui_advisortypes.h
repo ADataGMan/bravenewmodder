@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'advisortypes.ui'
 **
-** Created: Mon May 25 03:37:45 2009
+** Created: Mon May 25 20:18:06 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -40,7 +40,7 @@ public:
     {
         if (Frame->objectName().isEmpty())
             Frame->setObjectName(QString::fromUtf8("Frame"));
-        Frame->resize(541, 362);
+        Frame->resize(541, 343);
         Frame->setFrameShape(QFrame::StyledPanel);
         Frame->setFrameShadow(QFrame::Raised);
         groupBox = new QGroupBox(Frame);
@@ -63,16 +63,16 @@ public:
         plainTextEdit->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
         groupBox_3 = new QGroupBox(Frame);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(0, 130, 541, 234));
+        groupBox_3->setGeometry(QRect(0, 130, 541, 212));
         lineEdit_2 = new QLineEdit(groupBox_3);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
         lineEdit_2->setGeometry(QRect(0, 12, 61, 19));
         groupBox_4 = new QGroupBox(groupBox_3);
         groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-        groupBox_4->setGeometry(QRect(0, 30, 541, 204));
+        groupBox_4->setGeometry(QRect(0, 30, 541, 182));
         plainTextEdit_2 = new QPlainTextEdit(groupBox_4);
         plainTextEdit_2->setObjectName(QString::fromUtf8("plainTextEdit_2"));
-        plainTextEdit_2->setGeometry(QRect(0, 12, 541, 190));
+        plainTextEdit_2->setGeometry(QRect(0, 12, 541, 168));
         plainTextEdit_2->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
 
         retranslateUi(Frame);

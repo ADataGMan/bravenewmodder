@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'eventmain.ui'
 **
-** Created: Mon May 25 03:37:45 2009
+** Created: Mon May 25 20:18:06 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -20,7 +20,6 @@
 #include <QtGui/QHeaderView>
 #include <QtGui/QLineEdit>
 #include <QtGui/QPlainTextEdit>
-#include <QtGui/QPushButton>
 #include <QtGui/QRadioButton>
 #include <QtGui/QSpinBox>
 #include <QtGui/QTextEdit>
@@ -42,12 +41,6 @@ public:
     QRadioButton *rdbCountry;
     QRadioButton *rdbProvince;
     QRadioButton *radioButton;
-    QPushButton *pushButton_7;
-    QPushButton *pushButton_8;
-    QPushButton *pushButton_9;
-    QPushButton *pushButton_10;
-    QPushButton *pushButton_11;
-    QPushButton *pushButton_12;
     QGroupBox *groupBox_9;
     QLineEdit *lneInternaleventname;
     QLineEdit *lineEdit;
@@ -72,12 +65,12 @@ public:
     {
         if (Eventmain->objectName().isEmpty())
             Eventmain->setObjectName(QString::fromUtf8("Eventmain"));
-        Eventmain->resize(541, 670);
+        Eventmain->resize(541, 638);
         Eventmain->setFrameShape(QFrame::StyledPanel);
         Eventmain->setFrameShadow(QFrame::Raised);
         groupBox = new QGroupBox(Eventmain);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(0, 0, 541, 101));
+        groupBox->setGeometry(QRect(0, 0, 541, 75));
         groupBox->setAlignment(Qt::AlignCenter);
         gbxRange = new QGroupBox(groupBox);
         gbxRange->setObjectName(QString::fromUtf8("gbxRange"));
@@ -122,24 +115,6 @@ public:
         radioButton = new QRadioButton(gbxType);
         radioButton->setObjectName(QString::fromUtf8("radioButton"));
         radioButton->setGeometry(QRect(122, 12, 71, 16));
-        pushButton_7 = new QPushButton(groupBox);
-        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
-        pushButton_7->setGeometry(QRect(100, 75, 75, 24));
-        pushButton_8 = new QPushButton(groupBox);
-        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
-        pushButton_8->setGeometry(QRect(280, 75, 75, 24));
-        pushButton_9 = new QPushButton(groupBox);
-        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
-        pushButton_9->setGeometry(QRect(190, 75, 75, 24));
-        pushButton_10 = new QPushButton(groupBox);
-        pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
-        pushButton_10->setGeometry(QRect(460, 75, 75, 24));
-        pushButton_11 = new QPushButton(groupBox);
-        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
-        pushButton_11->setGeometry(QRect(370, 75, 75, 24));
-        pushButton_12 = new QPushButton(groupBox);
-        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
-        pushButton_12->setGeometry(QRect(10, 75, 75, 24));
         groupBox_9 = new QGroupBox(groupBox);
         groupBox_9->setObjectName(QString::fromUtf8("groupBox_9"));
         groupBox_9->setGeometry(QRect(0, 40, 541, 35));
@@ -154,10 +129,10 @@ public:
         lineEdit_2->setGeometry(QRect(460, 13, 81, 20));
         groupBox_2 = new QGroupBox(Eventmain);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        groupBox_2->setGeometry(QRect(0, 100, 541, 571));
+        groupBox_2->setGeometry(QRect(0, 74, 541, 566));
         groupBox_3 = new QGroupBox(groupBox_2);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(0, 342, 541, 456));
+        groupBox_3->setGeometry(QRect(0, 336, 541, 452));
         groupBox_6 = new QGroupBox(groupBox_3);
         groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
         groupBox_6->setGeometry(QRect(0, 10, 541, 31));
@@ -189,7 +164,7 @@ public:
         textEdit->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         groupBox_5 = new QGroupBox(groupBox_2);
         groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
-        groupBox_5->setGeometry(QRect(0, 143, 541, 201));
+        groupBox_5->setGeometry(QRect(0, 143, 541, 196));
         plainTextEdit = new QPlainTextEdit(groupBox_5);
         plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
         plainTextEdit->setGeometry(QRect(0, 13, 541, 181));
@@ -231,12 +206,6 @@ public:
         rdbCountry->setText(QApplication::translate("Eventmain", "Country", 0, QApplication::UnicodeUTF8));
         rdbProvince->setText(QApplication::translate("Eventmain", "Province", 0, QApplication::UnicodeUTF8));
         radioButton->setText(QApplication::translate("Eventmain", "Character", 0, QApplication::UnicodeUTF8));
-        pushButton_7->setText(QApplication::translate("Eventmain", "Syntax Check", 0, QApplication::UnicodeUTF8));
-        pushButton_8->setText(QApplication::translate("Eventmain", "New Event", 0, QApplication::UnicodeUTF8));
-        pushButton_9->setText(QApplication::translate("Eventmain", "New File", 0, QApplication::UnicodeUTF8));
-        pushButton_10->setText(QApplication::translate("Eventmain", "Preview", 0, QApplication::UnicodeUTF8));
-        pushButton_11->setText(QApplication::translate("Eventmain", "Save", 0, QApplication::UnicodeUTF8));
-        pushButton_12->setText(QApplication::translate("Eventmain", "Clear", 0, QApplication::UnicodeUTF8));
         groupBox_9->setTitle(QApplication::translate("Eventmain", "Internal Event Name                                                Internal Event Series Name                             Series Start #", 0, QApplication::UnicodeUTF8));
         lneInternaleventname->setText(QString());
         lineEdit->setText(QString());
