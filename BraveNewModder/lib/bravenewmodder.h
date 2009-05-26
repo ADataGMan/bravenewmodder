@@ -2,6 +2,7 @@
 #define BRAVENEWMODDER_H
 
 #include <QtGui>
+#include "eventmain.h"
 
 namespace Ui
 {
@@ -23,6 +24,7 @@ private:
     QString eventLoc;
 
 private slots:
+    void on_tbxMain_currentChanged(int index);
     void on_actionLoad_Mod_triggered();
 };
 
