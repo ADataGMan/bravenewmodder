@@ -9,13 +9,15 @@ SOURCES += main.cpp \
     ./lib/eventmain.cpp \
     ./lib/editorsettings.cpp \
     ./lib/bookmarks.cpp \
-    ./lib/mission.cpp
+    ./lib/mission.cpp \
+    ./lib/buildings.cpp
 HEADERS += ./lib/bravenewmodder.h \
     ./lib/treeitem.h \
     ./lib/eventmain.h \
     ./lib/editorsettings.h \
     ./lib/bookmarks.h \
-    ./lib/mission.h
+    ./lib/mission.h \
+    ./lib/buildings.h
 FORMS += ./ui/bravenewmodder.ui \
     ./ui/NewMod.ui \
     ./ui/advisortypes.ui \
@@ -25,4 +27,5 @@ FORMS += ./ui/bravenewmodder.ui \
     ./ui/eventmain.ui \
     ./ui/editorsettings.ui \
     ./ui/bookmarks.ui \
-    ./ui/mission.ui
+    ./ui/mission.ui \
+    ./ui/buildings.ui
