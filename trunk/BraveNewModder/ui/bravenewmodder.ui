@@ -36,7 +36,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>7</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideLeft</enum>
@@ -58,7 +58,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea_4">
+     <widget class="QScrollArea" name="saCommon">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -76,13 +76,13 @@
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_4">
+      <widget class="QWidget" name="saCommonContent">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>541</width>
-         <height>684</height>
+         <width>542</width>
+         <height>686</height>
         </rect>
        </property>
       </widget>
@@ -115,7 +115,7 @@
         <string>Original Doc.</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_22">
+      <widget class="QPushButton" name="pushButoon_20">
        <property name="geometry">
         <rect>
          <x>0</x>
@@ -209,7 +209,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea_3">
+     <widget class="QScrollArea" name="saDecision">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -227,13 +227,13 @@
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+      <widget class="QWidget" name="saDecisionContent">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>541</width>
-         <height>684</height>
+         <width>542</width>
+         <height>686</height>
         </rect>
        </property>
       </widget>
@@ -360,7 +360,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea">
+     <widget class="QScrollArea" name="saEvent">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -378,13 +378,13 @@
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
+      <widget class="QWidget" name="saEventContent">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>541</width>
-         <height>684</height>
+         <width>542</width>
+         <height>686</height>
         </rect>
        </property>
       </widget>
@@ -644,7 +644,7 @@
          </property>
         </widget>
        </widget>
-       <widget class="QScrollArea" name="scrollArea_5">
+       <widget class="QScrollArea" name="saHistoryWars">
         <property name="geometry">
          <rect>
           <x>170</x>
@@ -662,13 +662,13 @@
         <property name="widgetResizable">
          <bool>true</bool>
         </property>
-        <widget class="QWidget" name="scrollAreaWidgetContents_5">
+        <widget class="QWidget" name="saHistoryWarsContent">
          <property name="geometry">
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>541</width>
-           <height>660</height>
+           <width>542</width>
+           <height>662</height>
           </rect>
          </property>
         </widget>
@@ -880,7 +880,7 @@
        </property>
       </widget>
      </widget>
-     <widget class="QScrollArea" name="scrollArea_2">
+     <widget class="QScrollArea" name="saMissions">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -898,13 +898,13 @@
       <property name="widgetResizable">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <widget class="QWidget" name="saMissionsContent">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>541</width>
-         <height>684</height>
+         <width>542</width>
+         <height>686</height>
         </rect>
        </property>
       </widget>
@@ -928,7 +928,7 @@
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>19</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

@@ -5,6 +5,10 @@ Bravenewmodder::Bravenewmodder(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::BravenewmodderClass)
 {
     ui->setupUi(this);
+
+    Eventmain* eventScrollArea = new Eventmain();   //create new Eventmain object
+    eventScrollArea->show();                        //'show' it
+    ui->saEvent->setWidget(eventScrollArea);        //set as scroll area widget's content
 }
 
 Bravenewmodder::~Bravenewmodder()
@@ -61,4 +65,9 @@ void Bravenewmodder::loadEvents()
     QRegExp text(".*txt$");
     QStringListModel * model = new QStringListModel(eventFiles,this);
     ui->trvEvents->setModel(model);
+}
+
+void Bravenewmodder::on_tbxMain_currentChanged(int index)
+{
+    //load appropriate data
 }
