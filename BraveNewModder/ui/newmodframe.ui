@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>NewMod</class>
- <widget class="QFrame" name="NewMod">
+ <class>NewModFrame</class>
+ <widget class="QFrame" name="NewModFrame">
   <property name="geometry">
    <rect>
     <x>0</x>

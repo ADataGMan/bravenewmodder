@@ -1,19 +1,19 @@
-#include "mission.h"
-#include "ui_mission.h"
+#include "missionframe.h"
+#include "../ui_missionframe.h"
 
-mission::mission(QWidget *parent) :
+MissionFrame::MissionFrame(QWidget *parent) :
     QFrame(parent),
-    m_ui(new Ui::mission)
+    m_ui(new Ui::MissionFrame)
 {
     m_ui->setupUi(this);
 }
 
-mission::~mission()
+MissionFrame::~MissionFrame()
 {
     delete m_ui;
 }
 
-void mission::changeEvent(QEvent *e)
+void MissionFrame::changeEvent(QEvent *e)
 {
     switch (e->type()) {
     case QEvent::LanguageChange:
