@@ -11,9 +11,6 @@ Bravenewmodder::Bravenewmodder(QWidget *parent)
     eventScrollArea->show();                        //'show' it
     ui->saEvent->setWidget(eventScrollArea);        //set as scroll area widget's content
 
-    Buildings* buildingScrollArea = new Buildings();
-    buildingScrollArea->show();
-
 }
 
 Bravenewmodder::~Bravenewmodder()
