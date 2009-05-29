@@ -6,9 +6,14 @@ Bravenewmodder::Bravenewmodder(QWidget *parent)
 {
     ui->setupUi(this);
 
+    //--------Load ui files---------//
     Eventmain* eventScrollArea = new Eventmain();   //create new Eventmain object
     eventScrollArea->show();                        //'show' it
     ui->saEvent->setWidget(eventScrollArea);        //set as scroll area widget's content
+
+    Buildings* buildingScrollArea = new Buildings();
+    buildingScrollArea->show();
+
 }
 
 Bravenewmodder::~Bravenewmodder()
