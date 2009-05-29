@@ -10,22 +10,26 @@ SOURCES += main.cpp \
     ./lib/editorsettings.cpp \
     ./lib/bookmarks.cpp \
     ./lib/mission.cpp \
-    ./lib/buildings.cpp
+    ./lib/buildingsframe.cpp \
+    ./ui/newmod.cpp \
+    ./ui/decisionframe.cpp
 HEADERS += ./lib/bravenewmodder.h \
     ./lib/treeitem.h \
     ./lib/eventmain.h \
     ./lib/editorsettings.h \
     ./lib/bookmarks.h \
     ./lib/mission.h \
-    ./lib/buildings.h
+    ./lib/buildingsframe.h \
+    ./ui/newmod.h \
+    ./ui/decisionframe.h
 FORMS += ./ui/bravenewmodder.ui \
-    ./ui/NewMod.ui \
     ./ui/advisortypes.ui \
-    ./ui/Decision.ui \
     ./ui/Option.ui \
     ./ui/Reference.ui \
     ./ui/eventmain.ui \
     ./ui/editorsettings.ui \
     ./ui/bookmarks.ui \
     ./ui/mission.ui \
-    ./ui/buildings.ui
+    ./ui/buildingsframe.ui \
+    ./ui/newmod.ui \
+    ./ui/decisionframe.ui
