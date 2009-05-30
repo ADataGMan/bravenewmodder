@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>editorsettings</class>
- <widget class="QFrame" name="editorsettings">
+ <class>EditorSettingsFrame</class>
+ <widget class="QFrame" name="EditorSettingsFrame">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -257,7 +257,7 @@
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>211</width>
+      <width>227</width>
       <height>191</height>
      </rect>
     </property>
