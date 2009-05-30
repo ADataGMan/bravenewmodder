@@ -13,7 +13,9 @@ SOURCES += main.cpp \
     ./lib/buildingsframe.cpp \
     ./lib/newmodframe.cpp \
     ./lib/decisionframe.cpp \
-    fileoptions.cpp
+    fileoptions.cpp \
+    unit.cpp \
+    defines.cpp
 HEADERS += ./lib/bravenewmodder.h \
     ./lib/treeitem.h \
     ./lib/eventmain.h \
@@ -23,7 +25,9 @@ HEADERS += ./lib/bravenewmodder.h \
     ./lib/buildingsframe.h \
     ./lib/newmodframe.h \
     ./lib/decisionframe.h \
-    fileoptions.h
+    fileoptions.h \
+    unit.h \
+    defines.h
 FORMS += ./ui/bravenewmodder.ui \
     ./ui/advisortypes.ui \
     ./ui/Option.ui \
@@ -35,4 +39,6 @@ FORMS += ./ui/bravenewmodder.ui \
     ./ui/buildingsframe.ui \
     ./ui/newmodframe.ui \
     ./ui/decisionframe.ui \
-    fileoptions.ui
+    fileoptions.ui \
+    unit.ui \
+    defines.ui
