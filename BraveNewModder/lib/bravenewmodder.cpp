@@ -73,3 +73,18 @@ void Bravenewmodder::on_tbxMain_currentChanged(int index)
 {
     //load appropriate data
 }
+
+void Bravenewmodder::on_actionImport_Mod_triggered()
+{
+    //Import Mod imports items into the database
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Import Mod"), "/", tr("Mod Files (*.mod)"));
+    DlgLoading *dlgImportFiles = new DlgLoading();
+    dlgImportFiles->setFileName(fileName);
+    dlgImportFiles->show();
+}
+
+void Bravenewmodder::on_actionExit_triggered()
+{
+    //Exit the app
+    exit(0);
+}
