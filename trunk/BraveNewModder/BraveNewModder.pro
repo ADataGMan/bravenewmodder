@@ -8,7 +8,7 @@ SOURCES += main.cpp \
     ./lib/treeitem.cpp \
     ./lib/eventmain.cpp \
     ./lib/editorsettings.cpp \
-    ./lib/bookmarks.cpp \
+    ./lib/bookmarkframe.cpp \
     ./lib/missionframe.cpp \
     ./lib/buildingsframe.cpp \
     ./lib/newmodframe.cpp \
@@ -17,7 +17,7 @@ HEADERS += ./lib/bravenewmodder.h \
     ./lib/treeitem.h \
     ./lib/eventmain.h \
     ./lib/editorsettings.h \
-    ./lib/bookmarks.h \
+    ./lib/bookmarkframe.h \
     ./lib/missionframe.h \
     ./lib/buildingsframe.h \
     ./lib/newmodframe.h \
@@ -28,7 +28,7 @@ FORMS += ./ui/bravenewmodder.ui \
     ./ui/Reference.ui \
     ./ui/eventmain.ui \
     ./ui/editorsettings.ui \
-    ./ui/bookmarks.ui \
+    ./ui/bookmarkframe.ui \
     ./ui/missionframe.ui \
     ./ui/buildingsframe.ui \
     ./ui/newmodframe.ui \

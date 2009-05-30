@@ -1,19 +1,19 @@
-#include "bookmarks.h"
-#include "ui_bookmarks.h"
+#include "bookmarkframe.h"
+#include "../ui_bookmarkframe.h"
 
-bookmarks::bookmarks(QWidget *parent) :
+BookmarkFrame::BookmarkFrame(QWidget *parent) :
     QFrame(parent),
-    m_ui(new Ui::bookmarks)
+    m_ui(new Ui::BookmarkFrame)
 {
     m_ui->setupUi(this);
 }
 
-bookmarks::~bookmarks()
+BookmarkFrame::~BookmarkFrame()
 {
     delete m_ui;
 }
 
-void bookmarks::changeEvent(QEvent *e)
+void BookmarkFrame::changeEvent(QEvent *e)
 {
     switch (e->type()) {
     case QEvent::LanguageChange:
