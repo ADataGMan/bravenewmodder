@@ -318,6 +318,9 @@
    <property name="title">
     <string>Event Data</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
@@ -329,6 +332,9 @@
     </property>
     <property name="title">
      <string>Mean Time to Happen</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <widget class="QGroupBox" name="groupBox_6">
      <property name="geometry">
