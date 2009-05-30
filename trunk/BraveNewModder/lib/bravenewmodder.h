@@ -3,6 +3,7 @@
 
 #include <QtGui>
 #include "eventmain.h"
+#include "dlgloading.h"
 
 namespace Ui
 {
@@ -24,6 +25,8 @@ private:
     QString eventLoc;
 
 private slots:
+    void on_actionExit_triggered();
+    void on_actionImport_Mod_triggered();
     void on_tbxMain_currentChanged(int index);
     void on_actionLoad_Mod_triggered();
 };
