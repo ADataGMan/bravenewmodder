@@ -13,9 +13,11 @@ SOURCES += main.cpp \
     ./lib/buildingsframe.cpp \
     ./lib/newmodframe.cpp \
     ./lib/decisionframe.cpp \
-    fileoptions.cpp \
-    unit.cpp \
-    defines.cpp
+    ./lib/fileoptions.cpp \
+    ./lib/unit.cpp \
+    ./lib/defines.cpp \
+    ./lib/eventmodifiers.cpp \
+    ./lib/governments.cpp
 HEADERS += ./lib/bravenewmodder.h \
     ./lib/treeitem.h \
     ./lib/eventmain.h \
@@ -25,9 +27,11 @@ HEADERS += ./lib/bravenewmodder.h \
     ./lib/buildingsframe.h \
     ./lib/newmodframe.h \
     ./lib/decisionframe.h \
-    fileoptions.h \
-    unit.h \
-    defines.h
+    ./lib/fileoptions.h \
+    ./lib/unit.h \
+    ./lib/defines.h \
+    ./lib/eventmodifiers.h \
+    ./lib/governments.h
 FORMS += ./ui/bravenewmodder.ui \
     ./ui/advisortypes.ui \
     ./ui/Option.ui \
@@ -39,6 +43,8 @@ FORMS += ./ui/bravenewmodder.ui \
     ./ui/buildingsframe.ui \
     ./ui/newmodframe.ui \
     ./ui/decisionframe.ui \
-    fileoptions.ui \
-    unit.ui \
-    defines.ui
+    ./ui/fileoptions.ui \
+    ./ui/unit.ui \
+    ./ui/defines.ui \
+    ./ui/eventmodifiers.ui \
+    ./ui/governments.ui
