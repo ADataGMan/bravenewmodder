@@ -18,6 +18,10 @@ Bravenewmodder::Bravenewmodder(QWidget *parent)
     MissionFrame *missionScrollArea = new MissionFrame();
     missionScrollArea->show();
     ui->saMissions->setWidget(missionScrollArea);
+
+    RefPaneFrame *eventRef = new RefPaneFrame();
+    eventRef->show();
+    ui->saRefPaneEvent->setWidget(eventRef);
 }
 
 Bravenewmodder::~Bravenewmodder()
