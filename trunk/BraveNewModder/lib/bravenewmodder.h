@@ -7,6 +7,7 @@
 #include "eventmain.h"
 #include "decisionframe.h"
 #include "missionframe.h"
+#include "refpaneframe.h"
 
 
 namespace Ui
