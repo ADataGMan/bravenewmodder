@@ -76,6 +76,12 @@ void Bravenewmodder::on_tbxMain_currentChanged(int index)
 
 void Bravenewmodder::on_actionImport_Mod_triggered()
 {
+    //TODO: Add Error Checking!!!
+    //TODO: Clean up failed imports
+    //TODO: parse and input data to database (requires a database)
+
+
+
     //Import Mod imports items into the database
     QString fileName = QFileDialog::getOpenFileName(this, tr("Import Mod"), "/", tr("Mod Files (*.mod)"));
     int totalSize = 0;
@@ -103,6 +109,7 @@ void Bravenewmodder::on_actionImport_Mod_triggered()
             QStringList dirContent = dirDir.entryList();
             dirContent.pop_front();
             dirContent.pop_front();
+            allFiles.push_back("------" + line.section('"',1,1) + "------"); //insert header for detailed view
             allFiles.append(dirContent);
             //read in all files
             totalSize += dirContent.length();
@@ -122,7 +129,10 @@ void Bravenewmodder::on_actionImport_Mod_triggered()
     msgBox.setText("All files imported successfully.\t\t\t");
     for(int i = 0; i < allFiles.length(); i++)
     {
-        details = details + allFiles.at(i) + "\n";
+        details = details
+                  + ((!allFiles.at(i).startsWith("------"))?("     "):("")) //condensed if statement; if it isnt a category name, indent by 2 spaces
+                  + allFiles.at(i)
+                  + "\n";
     }
     msgBox.setDetailedText("The following files have been added as part of " + modName + ":\n" + details);
     msgBox.exec();
