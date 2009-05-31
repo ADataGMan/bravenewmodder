@@ -3,7 +3,8 @@
 
 #include <QtGui>
 #include "eventmain.h"
-#include "dlgloading.h"
+#include <QProgressDialog>
+#include <QMessageBox>
 
 namespace Ui
 {
