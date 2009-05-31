@@ -2,9 +2,12 @@
 #define BRAVENEWMODDER_H
 
 #include <QtGui>
+
+//--------External ui files--------//
 #include "eventmain.h"
-#include <QProgressDialog>
-#include <QMessageBox>
+#include "decisionframe.h"
+#include "missionframe.h"
+
 
 namespace Ui
 {
