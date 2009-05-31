@@ -7,10 +7,17 @@ Bravenewmodder::Bravenewmodder(QWidget *parent)
     ui->setupUi(this);
 
     //--------Load ui files---------//
-    Eventmain* eventScrollArea = new Eventmain();   //create new Eventmain object
+    Eventmain *eventScrollArea = new Eventmain();   //create new Eventmain object
     eventScrollArea->show();                        //'show' it
     ui->saEvent->setWidget(eventScrollArea);        //set as scroll area widget's content
 
+    DecisionFrame *decisionScrollArea = new DecisionFrame();
+    decisionScrollArea->show();
+    ui->saDecision->setWidget(decisionScrollArea);
+
+    MissionFrame *missionScrollArea = new MissionFrame();
+    missionScrollArea->show();
+    ui->saMissions->setWidget(missionScrollArea);
 }
 
 Bravenewmodder::~Bravenewmodder()
