@@ -17,8 +17,7 @@ SOURCES += main.cpp \
     ./lib/unit.cpp \
     ./lib/defines.cpp \
     ./lib/eventmodifiers.cpp \
-    ./lib/governments.cpp \
-    ./lib/dlgloading.cpp
+    ./lib/governments.cpp
 HEADERS += ./lib/bravenewmodder.h \
     ./lib/treeitem.h \
     ./lib/eventmain.h \
@@ -32,8 +31,7 @@ HEADERS += ./lib/bravenewmodder.h \
     ./lib/unit.h \
     ./lib/defines.h \
     ./lib/eventmodifiers.h \
-    ./lib/governments.h \
-    ./lib/dlgloading.h
+    ./lib/governments.h
 FORMS += ./ui/bravenewmodder.ui \
     ./ui/advisortypes.ui \
     ./ui/Option.ui \
@@ -49,5 +47,4 @@ FORMS += ./ui/bravenewmodder.ui \
     ./ui/unit.ui \
     ./ui/defines.ui \
     ./ui/eventmodifiers.ui \
-    ./ui/governments.ui \
-    ./ui/dlgloading.ui
+    ./ui/governments.ui

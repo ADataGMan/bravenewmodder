@@ -78,9 +78,54 @@ void Bravenewmodder::on_actionImport_Mod_triggered()
 {
     //Import Mod imports items into the database
     QString fileName = QFileDialog::getOpenFileName(this, tr("Import Mod"), "/", tr("Mod Files (*.mod)"));
-    DlgLoading *dlgImportFiles = new DlgLoading();
-    dlgImportFiles->setFileName(fileName);
-    dlgImportFiles->show();
+    int totalSize = 0;
+    int currentLoc = 0;
+    QFile modFile(fileName);
+    QStringList allFiles;
+    QString modName;
+    QString modPath = fileName.section('/',0,fileName.count('/')-1)+"/";
+    if(!modFile.open(QIODevice::ReadOnly | QIODevice::Text))
+        return;
+    QTextStream in(&modFile);
+    while(!in.atEnd())
+    {
+        QString line = in.readLine();
+        if(line.startsWith("name",Qt::CaseInsensitive))
+        {
+            //we found the name of the mod
+            modName = line.section('"',1,1);
+        } else
+        {
+            //normal line, we will either have 'extend' or 'replace'
+            //either way we need to load the folders
+            QString dirString = fileName.left(fileName.length()-4) + "/" + line.section('"',1,1);
+            QDir dirDir(dirString);
+            QStringList dirContent = dirDir.entryList();
+            dirContent.pop_front();
+            dirContent.pop_front();
+            allFiles.append(dirContent);
+            //read in all files
+            totalSize += dirContent.length();
+            QProgressDialog progress("Loading " + modName,"Cancel Import",0,totalSize,this);
+            progress.setMinimumDuration(0);
+           // progress.show();
+            progress.setWindowModality(Qt::WindowModal);
+            for(currentLoc = 0; currentLoc < totalSize; currentLoc++)
+            {
+                progress.setLabelText("Loading " + modName + "/" + line.section('"',1,1));
+                progress.setValue(currentLoc);
+            }
+        }
+    }
+    QMessageBox msgBox;
+    QString details;
+    msgBox.setText("All files imported successfully.\t\t\t");
+    for(int i = 0; i < allFiles.length(); i++)
+    {
+        details = details + allFiles.at(i) + "\n";
+    }
+    msgBox.setDetailedText("The following files have been added as part of " + modName + ":\n" + details);
+    msgBox.exec();
 }
 
 void Bravenewmodder::on_actionExit_triggered()
