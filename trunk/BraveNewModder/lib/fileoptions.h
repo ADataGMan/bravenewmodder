@@ -4,21 +4,21 @@
 #include <QtGui/QFrame>
 
 namespace Ui {
-    class Fileoptions;
+    class FileOptions;
 }
 
-class Fileoptions : public QFrame {
+class FileOptions : public QFrame {
     Q_OBJECT
-    Q_DISABLE_COPY(Fileoptions)
+    Q_DISABLE_COPY(FileOptions)
 public:
-    explicit Fileoptions(QWidget *parent = 0);
-    virtual ~Fileoptions();
+    explicit FileOptions(QWidget *parent = 0);
+    virtual ~FileOptions();
 
 protected:
     virtual void changeEvent(QEvent *e);
 
 private:
-    Ui::Fileoptions *m_ui;
+    Ui::FileOptions *m_ui;
 };
 
 #endif // FILEOPTIONS_H

@@ -8,6 +8,7 @@
 #include "decisionframe.h"
 #include "missionframe.h"
 #include "refpaneframe.h"
+#include "fileoptions.h"
 
 
 namespace Ui
