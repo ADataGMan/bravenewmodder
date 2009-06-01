@@ -9,6 +9,7 @@
 #include "missionframe.h"
 #include "refpaneframe.h"
 #include "fileoptions.h"
+#include "eventoption.h"
 
 
 namespace Ui

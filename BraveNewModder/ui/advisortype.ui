@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Frame</class>
- <widget class="QFrame" name="Frame">
+ <class>Advisortype</class>
+ <widget class="QFrame" name="Advisortype">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>541</width>
-    <height>419</height>
+    <height>416</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -65,32 +65,26 @@ p, li { white-space: pre-wrap; }
     </property>
    </widget>
   </widget>
-  <widget class="QGroupBox" name="groupBox_2">
+  <widget class="QGroupBox" name="groupBox_5">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>106</y>
+     <y>30</y>
      <width>541</width>
-     <height>101</height>
+     <height>78</height>
     </rect>
    </property>
    <property name="title">
-    <string>Effects</string>
+    <string>Advisor Description</string>
    </property>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QTextEdit" name="textEdit_2">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>12</y>
       <width>541</width>
-      <height>90</height>
+      <height>64</height>
      </rect>
-    </property>
-    <property name="horizontalScrollBarPolicy">
-     <enum>Qt::ScrollBarAsNeeded</enum>
-    </property>
-    <property name="plainText">
-     <string/>
     </property>
    </widget>
   </widget>
@@ -146,26 +140,32 @@ p, li { white-space: pre-wrap; }
     </widget>
    </widget>
   </widget>
-  <widget class="QGroupBox" name="groupBox_5">
+  <widget class="QGroupBox" name="groupBox_2">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>30</y>
+     <y>106</y>
      <width>541</width>
-     <height>78</height>
+     <height>101</height>
     </rect>
    </property>
    <property name="title">
-    <string>Advisor Description</string>
+    <string>Effects</string>
    </property>
-   <widget class="QTextEdit" name="textEdit_2">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>12</y>
       <width>541</width>
-      <height>64</height>
+      <height>90</height>
      </rect>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="plainText">
+     <string/>
     </property>
    </widget>
   </widget>
