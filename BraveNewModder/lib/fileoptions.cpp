@@ -1,19 +1,19 @@
 #include "fileoptions.h"
-#include "ui_fileoptions.h"
+#include "../ui_fileoptions.h"
 
-Fileoptions::Fileoptions(QWidget *parent) :
+FileOptions::FileOptions(QWidget *parent) :
     QFrame(parent),
-    m_ui(new Ui::Fileoptions)
+    m_ui(new Ui::FileOptions)
 {
     m_ui->setupUi(this);
 }
 
-Fileoptions::~Fileoptions()
+FileOptions::~FileOptions()
 {
     delete m_ui;
 }
 
-void Fileoptions::changeEvent(QEvent *e)
+void FileOptions::changeEvent(QEvent *e)
 {
     switch (e->type()) {
     case QEvent::LanguageChange:
