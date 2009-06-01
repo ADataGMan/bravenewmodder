@@ -10,6 +10,9 @@ Bravenewmodder::Bravenewmodder(QWidget *parent)
     Eventmain *eventScrollArea = new Eventmain();   //create new Eventmain object                     //'show' it
     ui->saEvent->setWidget(eventScrollArea);        //set as scroll area widget's content
 
+/*    Eventoption *eventScrollArea = new Eventoption();
+    ui->saEvent->setWidget(eventScrollArea); */
+
     DecisionFrame *decisionScrollArea = new DecisionFrame();
     ui->saDecision->setWidget(decisionScrollArea);
 

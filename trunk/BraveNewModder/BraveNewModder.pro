@@ -18,7 +18,9 @@ SOURCES += main.cpp \
     ./lib/defines.cpp \
     ./lib/eventmodifiers.cpp \
     ./lib/governments.cpp \
-    ./lib/refpaneframe.cpp
+    ./lib/refpaneframe.cpp \
+    ./lib/eventoption.cpp \
+    ./lib/advisortype.cpp
 HEADERS += ./lib/bravenewmodder.h \
     ./lib/treeitem.h \
     ./lib/eventmain.h \
@@ -33,10 +35,11 @@ HEADERS += ./lib/bravenewmodder.h \
     ./lib/defines.h \
     ./lib/eventmodifiers.h \
     ./lib/governments.h \
-    ./lib/refpaneframe.h
+    ./lib/refpaneframe.h \
+    ./lib/eventoption.h \
+    ./lib/advisortype.h
 FORMS += ./ui/bravenewmodder.ui \
-    ./ui/advisortypes.ui \
-    ./ui/Option.ui \
+    ./ui/advisortype.ui \
     ./ui/eventmain.ui \
     ./ui/editorsettingsframe.ui \
     ./ui/bookmarkframe.ui \
@@ -49,4 +52,6 @@ FORMS += ./ui/bravenewmodder.ui \
     ./ui/defines.ui \
     ./ui/eventmodifiers.ui \
     ./ui/governments.ui \
-    ./ui/refpaneframe.ui
+    ./ui/refpaneframe.ui \
+    ./ui/eventoption.ui
+

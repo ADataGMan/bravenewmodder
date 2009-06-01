@@ -81,8 +81,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>542</width>
-         <height>686</height>
+         <width>541</width>
+         <height>684</height>
         </rect>
        </property>
       </widget>
@@ -167,6 +167,22 @@
          <height>686</height>
         </rect>
        </property>
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>0</y>
+          <width>120</width>
+          <height>686</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
       </widget>
      </widget>
      <widget class="QScrollArea" name="saRefPaneEvent">
@@ -224,8 +240,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>559</width>
-         <height>39</height>
+         <width>557</width>
+         <height>37</height>
         </rect>
        </property>
       </widget>
@@ -294,8 +310,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>542</width>
-           <height>662</height>
+           <width>541</width>
+           <height>660</height>
           </rect>
          </property>
         </widget>
@@ -376,8 +392,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>542</width>
-           <height>662</height>
+           <width>541</width>
+           <height>660</height>
           </rect>
          </property>
         </widget>
@@ -474,7 +490,7 @@
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>22</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
