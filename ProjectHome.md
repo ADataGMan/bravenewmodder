@@ -1,0 +1,1 @@
+Brave New Modder is meant to help those of us who are less technically minded to be able to easily and quickly create new content for Europa Universalis III.
